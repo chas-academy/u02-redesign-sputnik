@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AASA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,UAAU;CACvB",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "_landingpage.scss"
     ],
     "names": [],
     "file": "style.css"
