@@ -10,17 +10,20 @@
     <header class="grid-container">
       <nav>
         <ul>
-          <li>Start</li>
-          <li>Om oss</li>
-          <li>Verksamhetsområden</li>
-          <li>Statistik</li>
-          <li>Övright</li>
+          <li><a href="#" class="opacity">Start</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Verksamhetsområden</a></li>
+          <li><a href="#" >Statistik</a></li>
+          <li><a href="#" >Övrigt</a></li>
+          <div class="search">
+            <input required maxlength="60" type="search" placeholder="Ange sökord...">
+            <button>Sök</button>
+          </div>
         </ul>
-        <input type="text" placeholder="Ange sökord...">
-        <button>Sök</button>
+      
 
       </nav>
-      <div class="calender">
+      <article class="calender">
         <div><h3>Kommande viktiga datum</h3>
         </div>
         <div><h5>December</h5>
@@ -32,26 +35,26 @@
             <p>28: Sista ansökningsdagen till  
               Konst- och kulturutbildning</p>
       </div>
-      </div>
-      <div class="textarea">
+      </article>
+      <section class="textarea">
         <div>
           <h1>Välkomen till MYH!</h1>
           <p>Myndigheten för yrkeshögskolans huvuduppdrag är 
             att ansvara för frågor som rör yrkeshögskolan 
             i Sverige och verka för att utbildningarna 
             tillgodoser arbetslivets behov av kompetens. </p>
-            <button>OM OSS</button>
+            <button class="big-btn">OM OSS</button>
         </div>
         <div><h2>Funderar du på att <br> söka till Yrkeshogskola?</h2>
           <p>Gå vidare till Yrkeshöskolan.se för mer information
              kring skolor,utbildningar,viktiga datum m.m.</p>
-             <button>Yrkeshögskolan.se</button>
+             <button class="big-btn">Yrkeshögskolan.se</button>
         </div>
-      </div>
+      </section>
       <aside>
-        <div><img src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor"></div>
+        <div class="logo"><img src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor"></div>
         <ul>
-          <h3>Gå direkt till</h3>
+          <h3>Gå direkt till:</h3>
           <li><a href="#">Lagar,regler,tillsyn</a></li>
           <li><a href="#">Statistik</a></li>
           <li><a href="#">Verksamhetsområden</a></li>
@@ -59,8 +62,8 @@
           <li><a href="#">För dig som bedriver utbildning</a></li>
           <li><a href="#">För företag och organisationer</a></li>
         </ul>
-        <div><img src="/src/youtube.svg" alt="Youtube logo">
-        <img src="/src/facebook.svg" alt="facebook logo"></div>
+        <section> <a href=""><img src="/src/youtube.svg" alt="Youtube logo"></a>
+        <a href="#"><img src="/src/facebook.svg" alt="facebook logo"></a></section>
       </aside>
     </header>
   </body>
