@@ -223,6 +223,42 @@ main {
     height: 620px;
   }
 }
+//aktuellt
+.aktuelltheader {
+  margin-top: 6rem;
+  color: $darkcolor;
+  font-size: 5rem;
+  text-align: center;
+}
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  div {
+    margin: 4rem;
+    background-color: $basecColorDiv;
+    border-radius: $box-radius;
+    p {
+      color: $darkcolor;
+      font-size: 1.3rem;
+      max-width: 50ch;
+      margin: 1rem;
+    }
+    h3 {
+      margin: 1rem;
+      color: $darkcolor;
+      font-size: 2.5rem;
+      max-width: 25ch;
+    }
+  }
+
+  img {
+    border-radius: $box-radius;
+    width: 800px;
+    height: 420px;
+  }
+}
 
 //        -<Media@>-
 @media (max-width: 1700px) {
