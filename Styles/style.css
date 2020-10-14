@@ -212,6 +212,11 @@ aside a:hover {
   margin-top: 1.5rem;
 }
 
+main {
+  background-color: blue;
+  height: 100vh;
+}
+
 @media (max-width: 1700px) {
   .grid-container {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";

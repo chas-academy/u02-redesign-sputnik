@@ -169,6 +169,13 @@ aside {
     margin-top: 1.5rem;
   }
 }
+//Main
+
+main {
+  background-color: blue;
+  height: 100vh;
+}
+
 //        -<Media@>-
 @media (max-width: 1700px) {
   .grid-container {
