@@ -226,6 +226,7 @@ main {
 //aktuellt
 .aktuelltheader {
   margin-top: 6rem;
+  margin-bottom: 4rem;
   color: $darkcolor;
   font-size: 5rem;
   text-align: center;
@@ -236,7 +237,7 @@ main {
   flex-direction: row;
   justify-content: center;
   div {
-    margin: 4rem;
+    margin: 2rem 1rem 2rem 1rem;
     background-color: $basecColorDiv;
     border-radius: $box-radius;
     p {
@@ -255,7 +256,7 @@ main {
 
   img {
     border-radius: $box-radius;
-    width: 800px;
+    width: 700px;
     height: 420px;
   }
 }
@@ -282,6 +283,21 @@ main {
   }
 }
 @media (max-width: 1200px) {
+  .flexContainer {
+    div {
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+        max-width: 35ch;
+      }
+    }
+    img {
+      width: 500px;
+      height: 320px;
+    }
+  }
   .firstSectionMain {
     margin-top: 5rem;
   }
@@ -406,6 +422,23 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .flexContainer {
+    div {
+      margin: 2rem 0rem 2rem 0rem;
+      h3 {
+        font-size: 1.5rem;
+        max-width: 20ch;
+      }
+      p {
+        font-size: 1rem;
+        max-width: 35ch;
+      }
+    }
+    img {
+      width: 400px;
+      height: 280px;
+    }
+  }
   .firstSectionMain {
     margin-top: 2rem;
     .textContainer {

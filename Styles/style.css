@@ -286,6 +286,7 @@ main {
 
 .aktuelltheader {
   margin-top: 6rem;
+  margin-bottom: 4rem;
   color: #264653;
   font-size: 5rem;
   text-align: center;
@@ -307,7 +308,7 @@ main {
 }
 
 .flexContainer div {
-  margin: 4rem;
+  margin: 2rem 1rem 2rem 1rem;
   background-color: #e9c46a;
   border-radius: 25px;
 }
@@ -328,7 +329,7 @@ main {
 
 .flexContainer img {
   border-radius: 25px;
-  width: 800px;
+  width: 700px;
   height: 420px;
 }
 
@@ -346,6 +347,17 @@ main {
 }
 
 @media (max-width: 1200px) {
+  .flexContainer div h3 {
+    font-size: 1.5rem;
+  }
+  .flexContainer div p {
+    font-size: 1rem;
+    max-width: 35ch;
+  }
+  .flexContainer img {
+    width: 500px;
+    height: 320px;
+  }
   .firstSectionMain {
     margin-top: 5rem;
   }
@@ -477,6 +489,21 @@ main {
 }
 
 @media (max-width: 768px) {
+  .flexContainer div {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .flexContainer div h3 {
+    font-size: 1.5rem;
+    max-width: 20ch;
+  }
+  .flexContainer div p {
+    font-size: 1rem;
+    max-width: 35ch;
+  }
+  .flexContainer img {
+    width: 400px;
+    height: 280px;
+  }
   .firstSectionMain {
     margin-top: 2rem;
   }
