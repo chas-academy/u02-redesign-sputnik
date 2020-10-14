@@ -1,21 +1,41 @@
 @import "_variabels.scss";
 
 .grid-container {
-  height: 100vh;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "aside nav nav nav nav nav"
-    "aside textarea textarea textarea . ."
-    "aside textarea textarea textarea calender calender"
-    "aside textarea textarea textarea calender calender"
-    "aside textarea textarea textarea calender calender"
+    "aside textarea textarea calender calender ."
+    "aside textarea textarea calender calender ."
+    "aside textarea textarea calender calender ."
+    "aside textarea textarea calender calender ."
     "aside . . . . .";
 }
+//hamburger menu
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 35px;
+
+  .bar {
+    height: 6px;
+    width: 100%;
+    background-color: $text-color;
+    border-radius: 10px;
+  }
+}
 nav {
+  position: relative;
   grid-area: nav;
+
   .search {
     display: flex;
     margin-top: 0.4rem;
@@ -41,33 +61,37 @@ nav {
     @include flexCenter;
     justify-content: flex-start;
     padding-left: 3rem;
+    margin-top: 1rem;
 
     li {
-      background-color: $base-color-nav;
-      padding: 0.7rem 1.5rem 0.8rem 1.5rem;
-      margin: 0.5rem;
-      margin-top: 1rem;
-      font-size: $font-size-p;
+      font-family: inter;
+      margin: 0.8rem;
+
+      font-weight: 500;
       border-radius: $box-radius;
       cursor: pointer;
+    }
+    a {
+      font-size: 1.5rem;
+      color: white;
     }
   }
 }
 //aside landingpage
 aside {
   position: relative;
-  img {
-    padding-left: 2rem;
+  .logo {
+    img {
+      width: 160px;
+      height: 160px;
+      margin-left: 2rem;
+    }
   }
   section {
-    position: absolute;
-    bottom: 3%;
-    padding-left: 3rem;
-    margin-top: 1rem;
     img {
-      height: 110px;
-      width: 110px;
-      padding: 1rem;
+      height: 50px;
+      width: 50px;
+      margin-left: 4rem;
     }
   }
   h3 {
@@ -81,19 +105,27 @@ aside {
     margin-top: 8rem;
   }
   li {
-    margin: 1.5rem;
+    margin: 1.5rem 0rem 1.5rem 1rem;
   }
   a {
     font-size: 18px;
     color: $darkcolor;
+    transition: 350ms;
+  }
+  a:hover {
+    color: #051318;
+    text-decoration: underline;
+    transition: 350ms;
   }
 }
 //calender landingpage
 .calender {
+  margin-top: 6rem;
   margin-right: 2rem;
   grid-area: calender;
   background-color: $text-color;
   border-radius: $box-radius;
+  color: $darkcolor;
 
   h5 {
     font-size: 1.8rem;
@@ -101,6 +133,7 @@ aside {
     margin-left: 0.8rem;
   }
   p {
+    margin: 0.5rem;
     margin-left: 0.8rem;
     font-size: 1.5rem;
   }
@@ -113,6 +146,7 @@ aside {
     border-radius: 10px 10px 0px 0px;
   }
 }
+//textarea
 .textarea {
   grid-area: textarea;
   color: $text-color;
@@ -122,10 +156,10 @@ aside {
     margin-bottom: 3rem;
   }
   h1 {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1rem;
     max-width: 50ch;
   }
   h2 {
@@ -133,5 +167,191 @@ aside {
   }
   .big-btn {
     margin-top: 1.5rem;
+  }
+}
+//        -<Media@>-
+@media (max-width: 1700px) {
+  .grid-container {
+    grid-template-areas:
+      "aside nav nav nav nav nav"
+      "aside textarea textarea textarea calender calender"
+      "aside textarea textarea textarea calender calender"
+      "aside textarea textarea textarea calender calender"
+      "aside textarea textarea textarea calender calender"
+      "aside . . . . .";
+  }
+  nav {
+    li,
+    a {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  //navigation
+  nav ul a {
+    font-size: 1.2rem;
+  }
+
+  //navigation end
+  .grid-container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.2fr 1.1fr 0.2fr;
+    grid-template-rows: 0.1fr 0fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "aside nav nav nav"
+      "aside . . ."
+      "aside textarea textarea  ."
+      "aside calender calender ."
+      ". . . .";
+  }
+
+  nav {
+    grid-area: nav;
+    div {
+      font-size: 1rem;
+    }
+    ul li {
+      border-radius: 0px;
+      margin-top: 0rem;
+    }
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .textarea {
+    grid-area: textarea;
+  }
+
+  .calender {
+    grid-area: calender;
+    height: 300px;
+
+    margin: 5rem;
+    h5 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  nav {
+    .search {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        width: 100%;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .textarea {
+    .big-btn {
+      font-size: 20px;
+    }
+    p {
+      font-size: 1rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .textarea {
+    h1,
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  aside {
+    .logo {
+      padding: 0rem;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    li {
+      margin: 1rem 0.5rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+    h3 {
+      margin: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+@media (max-width: 650px) {
+  aside {
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "textarea textarea textarea textarea textarea ."
+      "textarea textarea textarea textarea textarea ."
+      ". calender calender calender calender ."
+      ". calender calender calender calender .";
+  }
+  .nav {
+    grid-area: nav;
+  }
+  .textarea {
+    grid-area: textarea;
+  }
+  .calender {
+    grid-area: calender;
   }
 }

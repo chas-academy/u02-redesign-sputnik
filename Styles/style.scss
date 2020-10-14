@@ -16,6 +16,7 @@
 }
 header {
   background-color: $darkcolor;
+  overflow-y: hidden;
 }
 a {
   color: black;
@@ -28,7 +29,10 @@ a {
   padding: 0.4rem 1.5rem 0.4rem 1.5rem;
   cursor: pointer;
   border: none;
-  color: black;
+  color: $darkcolor;
+}
+.big-btn:hover {
+  box-shadow: 2px 0px 10px rgb(24, 23, 23);
 }
 
 .opacity {

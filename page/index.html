@@ -4,22 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/hamburgermenu.js" defer></script>
     <title>Start - Myndigheten för yrkeshögskolan</title>
   </head>
   <body>
     <header class="grid-container">
       <nav>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
         <ul>
+
           <li><a href="#" class="opacity">Start</a></li>
           <li><a href="#">Om oss</a></li>
           <li><a href="#">Verksamhetsområden</a></li>
           <li><a href="#" >Statistik</a></li>
-          <li><a href="#" >Övrigt</a></li>
-          <div class="search">
-            <input required maxlength="60" type="search" placeholder="Ange sökord...">
-            <button>Sök</button>
-          </div>
+          <li><a href="#" >Lagar,regler,tillsyn</a></li>
+          
         </ul>
+    <!--     <div class="search">
+          <input required maxlength="60" type="search" placeholder="Ange sökord...">
+          <button>Sök</button>
+        </div> -->
+        
       
 
       </nav>
@@ -29,7 +39,7 @@
         <div><h5>December</h5>
         <p>18: Ansök öppnar för att bedriva 
           teckenspråks utbildning</p>
-          <p>19:Ansök öppnar för att bedriva 
+          <p>19: Ansök öppnar för att bedriva 
             Skrivtolkutbildning utbildning </p>
             <p>25: MYH konferans för företagare</p>
             <p>28: Sista ansökningsdagen till  
@@ -55,16 +65,15 @@
         <div class="logo"><img src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor"></div>
         <ul>
           <h3>Gå direkt till:</h3>
-          <li><a href="#">Lagar,regler,tillsyn</a></li>
-          <li><a href="#">Statistik</a></li>
-          <li><a href="#">Verksamhetsområden</a></li>
           <li><a href="#">Ansök om att bedriva utbildning</a></li>
           <li><a href="#">För dig som bedriver utbildning</a></li>
           <li><a href="#">För företag och organisationer</a></li>
+          <section class="facebookYoutube"> <a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA/featured"><img src="/src/youtube.svg" alt="Youtube logo"></a>
+            </section>
         </ul>
-        <section> <a href=""><img src="/src/youtube.svg" alt="Youtube logo"></a>
-        <a href="#"><img src="/src/facebook.svg" alt="facebook logo"></a></section>
+        
       </aside>
     </header>
+    
   </body>
 </html>
