@@ -172,8 +172,57 @@ aside {
 //Main
 
 main {
-  background-color: blue;
   height: 100vh;
+}
+.firstSectionMain {
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    margin-left: 1rem;
+    font-size: 3rem;
+  }
+  p {
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 35ch;
+    margin-left: 1rem;
+  }
+
+  .textContainer {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: $basecColorDiv;
+    border-radius: $box-radius;
+    .arrow {
+      width: 60px;
+      height: 60px;
+    }
+    .leftArrow {
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      margin-left: 1rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-family: Poppins;
+      font-weight: 500;
+      margin-left: 1rem;
+      text-align: start;
+      align-items: center;
+    }
+  }
+  .imgMain {
+    width: 811px;
+    height: 620px;
+  }
 }
 
 //        -<Media@>-
