@@ -87,17 +87,16 @@ aside {
       margin-left: 2rem;
     }
   }
-  section {
-    img {
-      height: 50px;
-      width: 50px;
-      margin-left: 4rem;
-    }
+
+  img {
+    height: 50px;
+    width: 50px;
+    margin-left: 4rem;
   }
+
   h3 {
     color: $darkcolor;
     font-size: 28px;
-    margin: 1.5rem;
   }
   grid-area: aside;
   background-color: $basecColorDiv;
@@ -179,7 +178,7 @@ main {
   margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
-  h1 {
+  h2 {
     margin-left: 1rem;
     font-size: 3rem;
   }
@@ -227,6 +226,9 @@ main {
 
 //        -<Media@>-
 @media (max-width: 1700px) {
+  .firstSectionMain {
+    margin-top: 8rem;
+  }
   .grid-container {
     grid-template-areas:
       "aside nav nav nav nav nav"
@@ -244,6 +246,9 @@ main {
   }
 }
 @media (max-width: 1200px) {
+  .firstSectionMain {
+    margin-top: 5rem;
+  }
   //navigation
   nav ul a {
     font-size: 1.2rem;
@@ -356,8 +361,22 @@ main {
   .navbar-links.active {
     display: flex;
   }
+  .firstSectionMain {
+    .imgMain {
+      width: 500px;
+      height: 313px;
+      margin: 2rem;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .firstSectionMain {
+    margin-top: 2rem;
+    .textContainer {
+      margin: 1rem 0rem 1rem 0rem;
+    }
+  }
+
   .textarea {
     h1,
     h2 {
@@ -409,5 +428,34 @@ main {
   }
   .calender {
     grid-area: calender;
+  }
+}
+@media (max-width: 600px) {
+  .firstSectionMain {
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+    }
+    .imgMain {
+      width: 250px;
+      height: 250px;
+      margin: 0rem;
+    }
+    .textContainer {
+      .arrow {
+        width: 45px;
+        height: 45px;
+      }
+      .leftArrow {
+        width: 45px;
+        height: 45px;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
   }
 }

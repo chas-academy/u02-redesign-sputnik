@@ -113,7 +113,7 @@ aside .logo img {
   margin-left: 2rem;
 }
 
-aside section img {
+aside img {
   height: 50px;
   width: 50px;
   margin-left: 4rem;
@@ -122,7 +122,6 @@ aside section img {
 aside h3 {
   color: #264653;
   font-size: 28px;
-  margin: 1.5rem;
 }
 
 aside ul {
@@ -228,7 +227,7 @@ main {
       flex-wrap: wrap;
 }
 
-.firstSectionMain h1 {
+.firstSectionMain h2 {
   margin-left: 1rem;
   font-size: 3rem;
 }
@@ -286,6 +285,9 @@ main {
 }
 
 @media (max-width: 1700px) {
+  .firstSectionMain {
+    margin-top: 8rem;
+  }
   .grid-container {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
   }
@@ -296,6 +298,9 @@ main {
 }
 
 @media (max-width: 1200px) {
+  .firstSectionMain {
+    margin-top: 5rem;
+  }
   nav ul a {
     font-size: 1.2rem;
   }
@@ -416,9 +421,20 @@ main {
     display: -ms-flexbox;
     display: flex;
   }
+  .firstSectionMain .imgMain {
+    width: 500px;
+    height: 313px;
+    margin: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .firstSectionMain {
+    margin-top: 2rem;
+  }
+  .firstSectionMain .textContainer {
+    margin: 1rem 0rem 1rem 0rem;
+  }
   .textarea h1,
   .textarea h2 {
     font-size: 2rem;
@@ -475,6 +491,32 @@ main {
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
     grid-area: calender;
+  }
+}
+
+@media (max-width: 600px) {
+  .firstSectionMain h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .firstSectionMain p {
+    text-align: center;
+  }
+  .firstSectionMain .imgMain {
+    width: 250px;
+    height: 250px;
+    margin: 0rem;
+  }
+  .firstSectionMain .textContainer .arrow {
+    width: 45px;
+    height: 45px;
+  }
+  .firstSectionMain .textContainer .leftArrow {
+    width: 45px;
+    height: 45px;
+  }
+  .firstSectionMain .textContainer h3 {
+    font-size: 1.2rem;
   }
 }
 
