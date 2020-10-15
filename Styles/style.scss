@@ -14,6 +14,9 @@
   text-decoration: none;
   font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
   background-color: $darkcolor;
   overflow-y: hidden;
