@@ -1,0 +1,105 @@
+body {
+    margin: 0 auto;
+    background-color: #2A9D8F;
+    max-width: 900px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgb(245, 219, 181);
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+header {
+    height: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 70%;
+    height: auto;
+}
+
+aside {
+    float: right;
+    box-sizing: border-box;
+    margin-top: 35px;
+    width: 30%;
+    height: auto;
+}
+
+.sidebar {
+    display: inline;
+    margin-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #264653;
+}
+
+.linksmall, .linkbig {
+    background-color: rgb(206, 175, 0);
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.linksmall {
+    border-radius: 40px;
+    height: 40px;
+}
+
+.linkbig {
+    border-radius: 30px;
+    height: 70px;
+}
+
+.pil {
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.pilbig {
+    float: right;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+footer {
+    clear: both;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 50px;
+}
