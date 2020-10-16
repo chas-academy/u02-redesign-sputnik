@@ -35,27 +35,6 @@ nav {
   position: relative;
   grid-area: nav;
 
-  .search {
-    display: flex;
-    margin-top: 0.4rem;
-
-    button {
-      border: none;
-      background-color: $base-color-nav;
-      font-size: 1.5rem;
-      border-radius: $box-radius;
-      padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-      margin: 0.2rem 0rem 0rem 1rem;
-    }
-    input {
-      font-size: 1rem;
-      border-radius: $box-radius;
-      padding: 1rem;
-      margin-left: 3rem;
-      background-color: $base-color-nav;
-      border: none;
-    }
-  }
   ul {
     @include flexCenter;
     justify-content: flex-start;
@@ -252,8 +231,6 @@ aside {
 
   .aktuelltimg {
     border-radius: $box-radius;
-    width: 700px;
-    height: 420px;
   }
 }
 footer {
@@ -407,6 +384,7 @@ footer {
     }
   }
 }
+
 @media (max-width: 1024px) {
   .textarea {
     .big-btn {

@@ -42,31 +42,6 @@ nav {
   grid-area: nav;
 }
 
-nav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.4rem;
-}
-
-nav .search button {
-  border: none;
-  background-color: #ffeb00;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-  margin: 0.2rem 0rem 0rem 1rem;
-}
-
-nav .search input {
-  font-size: 1rem;
-  border-radius: 25px;
-  padding: 1rem;
-  margin-left: 3rem;
-  background-color: #ffeb00;
-  border: none;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,8 +298,6 @@ aside a:hover {
 
 .flexContainer .aktuelltimg {
   border-radius: 25px;
-  width: 700px;
-  height: 420px;
 }
 
 footer {
