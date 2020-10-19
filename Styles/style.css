@@ -96,6 +96,30 @@ nav ul a {
   color: white;
 }
 
+.search-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-container form input {
+  background-color: #264653;
+  color: #faf8f8;
+  border-style: none;
+  width: 50%;
+}
+
+.search-container form button {
+  background-color: #264653;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
 aside {
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
@@ -104,16 +128,19 @@ aside {
   background-color: #e9c46a;
 }
 
+aside button {
+  width: 100px;
+}
+
 aside .logo img {
   width: 160px;
   height: 160px;
-  margin-left: 2rem;
+  margin: 2rem;
 }
 
 aside img {
   height: 50px;
   width: 50px;
-  margin-left: 4rem;
 }
 
 aside h3 {
@@ -486,11 +513,8 @@ footer section h5 {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  nav .search button {
-    width: 100%;
-  }
-  nav .search input {
-    width: 100%;
+  .search-container form {
+    margin: 1rem;
   }
 }
 
@@ -533,7 +557,6 @@ footer section h5 {
   }
   .navbar-links ul li {
     text-align: center;
-    width: 100%;
   }
   .navbar-links ul li a {
     padding: 0.5rem 1rem;
@@ -552,7 +575,7 @@ footer section h5 {
 
 @media (max-width: 768px) {
   .flexContainer div {
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
   .flexContainer div h3 {
     font-size: 1.5rem;

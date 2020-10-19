@@ -10,6 +10,7 @@
   <body>
 
     <header id="headerScroll" class="grid-container">
+      <!--Navbar-->
       <nav>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
@@ -22,7 +23,6 @@
           <li><a href="#">Om oss</a></li>
           <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
           <li><a href="/page/statistik.html" >Statistik</a></li>
-          
           <li class="dropdown">
             <a href="#" class="dropbtn">Övrigt</a>
             <div class="dropdown-content">
@@ -31,19 +31,23 @@
               <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
               <a href="#">Nyhetsrum</a>
               <a href="#">Kontakt</a>
-              
             </div>
           </li>
+          <!--search menu!-->
+          <div class="search-container">
+            <form action="submit">
+            <input name="search" class="search" type="search" placeholder="Sökord...">
+            <button type="submit" class="btn"><img src="/src/search.svg" alt=""></button>
+          </form>
+          </div>
+         <!--search menu end!-->
         </ul>
-       
-     
       </div>
-      
     </nav>
 
         
       
-
+    <!--Calender section-->
    
       <article class="calender">
         <div><h3>Kommande viktiga datum</h3>
@@ -79,26 +83,24 @@
       </section>
       
     </section>
-      
+      <!--Aside section-->
         <aside>
           <div class="logo"><img src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor"></div>
           <div class="search">
-            <input required maxlength="60" type="search" placeholder="Ange sökord...">
-            <button>Sök</button>
           </div> 
+          
           <ul>
             <li><h3>Gå direkt till:</h3></li>
             <li><a href="#firstSection">Ansök om att bedriva utbildning</a></li>
             <li><a href="#secoundSection">För dig som bedriver utbildning</a></li>
             <li><a href="#thirdSection">För företag och organisationer</a></li>
-            <li><a href="https://www.youtube.com/channel/UC8iPn0eKy-5vQ6Mx_-ep-KA/featured"><img src="/src/youtube.svg" alt="Youtube logo"></a></li>
+            
           </ul>
         </aside>
-
-
-
     </header>
-    
+    <!--Header end!-->
+
+    <!--Main start-->
     <main>
 
       <!--First section main-->
@@ -138,7 +140,7 @@
       <img class="imgMain" src="/src/interview.svg" alt="illustration av två personer på interview">
    </section>
 </main>
-  
+  <!--Aktuellt section start!-->
   <h1 class="aktuelltheader">Aktuellt</h1>
   <section class="flexContainer">
     <div>
@@ -167,11 +169,10 @@
           innebär en 35 procentig ökning jämfört med i fjol...&emsp; <a href="#">Läs mer! ➡️</a>
       </p>
     </div>
-   
   </section>
    
+  <!--Footer start-->
 <footer>
-  
   <img class="wave" src="/src/wave.jpg" alt="">
   <article>
     

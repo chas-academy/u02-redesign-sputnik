@@ -64,7 +64,6 @@ nav {
   ul {
     @include flexCenter;
     margin-top: 1rem;
-
     li {
       font-family: inter;
       margin: 0.8rem;
@@ -79,22 +78,47 @@ nav {
     }
   }
 }
+
+//search menu nav
+.search-container {
+  form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    input {
+      background-color: #264653;
+      color: $text-color;
+      border-style: none;
+      width: 50%;
+    }
+    button {
+      background-color: #264653;
+      color: white;
+      cursor: pointer;
+      border-style: none;
+    }
+  }
+}
+
 //aside landingpage
 aside {
   grid-area: aside;
   background-color: $basecColorDiv;
+  button {
+    width: 100px;
+  }
   .logo {
     img {
       width: 160px;
       height: 160px;
-      margin-left: 2rem;
+      margin: 2rem;
     }
   }
 
   img {
     height: 50px;
     width: 50px;
-    margin-left: 4rem;
   }
 
   h3 {
@@ -409,13 +433,12 @@ footer {
     .search {
       display: flex;
       justify-content: flex-end;
-
-      button {
-        width: 100%;
-      }
-      input {
-        width: 100%;
-      }
+    }
+  }
+  //search styling
+  .search-container {
+    form {
+      margin: 1rem;
     }
   }
 }
@@ -454,7 +477,6 @@ footer {
 
   .navbar-links ul li {
     text-align: center;
-    width: 100%;
   }
 
   .navbar-links ul li a {
@@ -475,7 +497,7 @@ footer {
 @media (max-width: 768px) {
   .flexContainer {
     div {
-      margin: 2rem 0rem 2rem 0rem;
+      margin: 2rem 2rem 2rem 2rem;
       h3 {
         font-size: 1.5rem;
         max-width: 20ch;
