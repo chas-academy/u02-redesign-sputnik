@@ -73,6 +73,7 @@ nav {
   }
 }
 
+// Lagar-Main-content:
 main {
   background-color: #264653;
   color: white;
@@ -89,7 +90,7 @@ main {
     gap: 6em;
     padding-top: 4em;
 
-    // Main-navbar:
+    // Lagar-Main-navbar:
     & #lagar-nav {
       width: 50%;
       display: flex;
@@ -117,6 +118,7 @@ main {
       border-radius: $box-radius;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     & #lagar-nav ul li img {
@@ -132,7 +134,7 @@ main {
       color: black;
     }
 
-    // Main-text
+    // Lagar-Main-text
     & article {
       background: #264653;
       width: 50%;
@@ -156,7 +158,7 @@ main {
     }
   }
 
-  // Main-img:
+  // Lagar-Main-img:
   & img {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -170,8 +172,8 @@ main {
 
 // Media Queries:
 
-@media only screen and (max-width: 1280px) {
-}
+// @media only screen and (max-width: 1280px) {
+// }
 // main {
 //   background: blanchedalmond;
 //   display: grid;
