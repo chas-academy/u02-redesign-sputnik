@@ -81,6 +81,7 @@ main {
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
+  align-items: center;
 
   & section {
     grid-column: 2/3;
@@ -89,6 +90,7 @@ main {
     align-items: center;
     gap: 6em;
     padding-top: 4em;
+    max-width: 1024px;
 
     // Lagar-Main-navbar:
     & #lagar-nav {
@@ -125,7 +127,6 @@ main {
       margin: 0;
       padding: 0;
       background: #e9c46a;
-      color: #e76f51;
       border-radius: $box-radius;
     }
 
@@ -172,27 +173,26 @@ main {
 
 // Media Queries:
 
-// @media only screen and (max-width: 1280px) {
-// }
-// main {
-//   background: blanchedalmond;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   grid-template-rows: 1fr 1fr 1fr;
-//   // justify-items: center;
-// }
+@media only screen and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
 
-// main section {
-//   grid-column: 1/2;
-// }
+  main section {
+    grid-column: 1/2;
+  }
 
-// #lagar-nav {
-//   grid-row: 1/2;
-// }
+  #lagar-nav {
+    grid-row: 1/2;
+  }
 
-// main article {
-//   grid-row: 2/3;
-// }
+  main article {
+    grid-row: 2/3;
+  }
+}
 
 @media (max-width: 1024px) {
   .toggle-button {

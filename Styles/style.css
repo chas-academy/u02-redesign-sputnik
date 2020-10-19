@@ -749,6 +749,9 @@ main {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section {
@@ -766,6 +769,7 @@ main section {
           align-items: center;
   gap: 6em;
   padding-top: 4em;
+  max-width: 1024px;
 }
 
 main section #lagar-nav {
@@ -811,13 +815,15 @@ main section #lagar-nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section #lagar-nav ul li img {
   margin: 0;
   padding: 0;
   background: #e9c46a;
-  color: #e76f51;
   border-radius: 25px;
 }
 
@@ -867,6 +873,66 @@ main img {
   background: #264653;
   padding: 2em;
   margin: 2em;
+}
+
+@media only screen and (max-width: 1023px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  main section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #lagar-nav {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  main article {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+@media (max-width: 1024px) {
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 * {
