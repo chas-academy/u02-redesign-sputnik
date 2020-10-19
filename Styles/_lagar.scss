@@ -168,27 +168,9 @@ main {
   }
 }
 
-.thommie1 {
-  float: left;
-  width: 50%;
-  padding: 0 20px;
-}
-
-.thommie2 {
-  float: right;
-  width: 50%;
-  padding: 15px;
-  margin-top: 2px;
-}
-
 // Media Queries:
 
 @media only screen and (max-width: 1280px) {
-  .thommie1,
-  .thommie2 {
-    width: 100%;
-    background-color: blanchedalmond;
-  }
 }
 // main {
 //   background: blanchedalmond;
@@ -238,24 +220,5 @@ main {
 
   .navbar-links.active {
     display: flex;
-  }
-}
-
-.Left_side {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-}
-.Right_side {
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-}
-
-@media only screen and (max-width: 620px) {
-  .Left_side,
-  .Right_side {
-    width: 100%;
   }
 }
