@@ -378,7 +378,7 @@ footer {
   }
   //navigation
   nav ul a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   //navigation end
@@ -559,8 +559,8 @@ footer {
       "nav nav nav nav nav nav"
       "textarea textarea textarea textarea textarea ."
       "textarea textarea textarea textarea textarea ."
-      ". calender calender calender calender ."
-      ". calender calender calender calender .";
+      "calender calender calender calender calender calender"
+      "calender calender calender calender calender calender";
   }
   .nav {
     grid-area: nav;
@@ -570,6 +570,7 @@ footer {
   }
   .calender {
     grid-area: calender;
+    height: 400px;
   }
 }
 @media (max-width: 600px) {
@@ -635,5 +636,9 @@ footer {
     p {
       font-size: 0.8rem;
     }
+  }
+  .calender {
+    grid-area: calender;
+    height: 500px;
   }
 }
