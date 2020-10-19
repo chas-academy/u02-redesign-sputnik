@@ -1,0 +1,26 @@
+/* Starting from here */
+* {
+  box-sizing: border-box;
+}
+ol, li, ul {
+  list-style: none;
+}
+.Left_side {
+  float:left;
+  width:50%;
+  padding:0 20px;
+}
+.Right_side {
+  float:left;
+  width:50%;
+  padding:15px;
+  margin-top:7px;
+}
+.sidebar {
+  position: relative;
+}
+@media only screen and (max-width:620px) {
+  .Left_side, .Right_side {
+    width:100%;
+  }
+}

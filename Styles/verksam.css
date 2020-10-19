@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+}
+
+
+.toggle-button .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #faf8f8;
+  border-radius: 10px;
+}
+
+nav {
+  position: relative;
+  
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3rem;
+  
+}
+
+nav ul li {
+  font-family: inter;
+  margin: 0.8rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+nav ul a {
+  font-size: 1.5rem;
+  color: black;
+}
+
+
+
+section{
+  z-index: 1;
+  
+}
+
+.flexContainer1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+
+
+}
+
+.textContainer{
+  background-color: #e9c46a;
+  margin: 2rem;
+  border-radius: 25px;
+  
+  
+}
+
+h1{
+  
+  font-size: 4rem;
+  text-align: center;
+  color: #264653;  
+}
+h3{
+  font-size: 2rem;
+  text-align: center;
+  background-color: #264653;
+  color: white;
+  border-radius: 25px;
+  
+}
+p{
+  text-align: center;
+  padding: 1rem;
+}
+.humanImg{
+  width: 500px;
+  height: 500px;
+  margin-top: 8rem;
+}
+
+
+.backgroundpicture {
+  position: absolute; 
+  width: 100%; 
+  height: auto; 
+  opacity: 20%; 
+  margin-top: 480px; 
+}
+/* Hitta en annan bild eller gör denna skalbar */
+
+.rightbox1{
+  margin-top: 25em;
+}
+
+  .bildfooter {
+    display: flex; 
+    position: absolute; 
+    margin-top: -190px; 
+    background-color: img; dator.jpg; 
+    width: 1450px; 
+    height: 300px; 
+}
+
+footer {
+    display: flex; 
+    position: absolute; 
+    background-color:#E9C46A; 
+    width: 1450px; 
+    height: 200px; 
+    font-size: 12px; 
+    font-family: "inter:100";
+
+}
+
+/*
+@media only screen and (max-width: 320px) {
+  .textContainer .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
+
+/*
+@media only screen and (max-width: 450px) {
+  .textContainer, .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textContainer, .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .textContainer, .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .textContainer, .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .textContainer, .flexContainer .rightbox {
+  width: 100%; 
+  }
+}
