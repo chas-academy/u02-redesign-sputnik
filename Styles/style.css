@@ -34,37 +34,40 @@
   border-radius: 10px;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #faf8f8;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content :hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a {
+  color: #264653;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 nav {
   position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 5;
   grid-area: nav;
-}
-
-nav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.4rem;
-}
-
-nav .search button {
-  border: none;
-  background-color: #ffeb00;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-  margin: 0.2rem 0rem 0rem 1rem;
-}
-
-nav .search input {
-  font-size: 1rem;
-  border-radius: 25px;
-  padding: 1rem;
-  margin-left: 3rem;
-  background-color: #ffeb00;
-  border: none;
 }
 
 nav ul {
@@ -77,10 +80,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 3rem;
   margin-top: 1rem;
 }
 
@@ -239,6 +238,9 @@ aside a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -251,6 +253,7 @@ aside a:hover {
 .firstSectionMain .textContainer .arrow {
   width: 60px;
   height: 60px;
+  margin-right: 1rem;
 }
 
 .firstSectionMain .textContainer .leftArrow {
@@ -266,6 +269,7 @@ aside a:hover {
   font-size: 2rem;
   font-family: Poppins;
   font-weight: 500;
+  margin: 0 1rem 0 1rem;
   margin-left: 1rem;
   text-align: start;
   -webkit-box-align: center;
@@ -274,8 +278,8 @@ aside a:hover {
 }
 
 .firstSectionMain .imgMain {
-  width: 811px;
-  height: 620px;
+  width: 700px;
+  height: 700px;
 }
 
 .aktuelltheader {
@@ -323,8 +327,6 @@ aside a:hover {
 
 .flexContainer .aktuelltimg {
   border-radius: 25px;
-  width: 700px;
-  height: 420px;
 }
 
 footer {
@@ -643,6 +645,35 @@ footer section h5 {
   }
   .firstSectionMain .textContainer h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .arrowup {
+    display: none;
+  }
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+  footer article {
+    text-align: center;
+  }
+  .textarea .big-btn {
+    font-size: 0.8rem;
+  }
+  .textarea h1,
+  .textarea h2 {
+    font-size: 1.8rem;
+  }
+  .textarea p {
+    font-size: 0.8rem;
+  }
+  .firstSectionMain h2 {
+    font-size: 1.8rem;
+  }
+  .firstSectionMain p {
+    font-size: 0.8rem;
   }
 }
 
