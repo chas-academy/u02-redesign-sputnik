@@ -89,6 +89,7 @@ main {
     gap: 6em;
     padding-top: 4em;
 
+    // Main-navbar:
     & #lagar-nav {
       width: 50%;
       display: flex;
@@ -131,6 +132,7 @@ main {
       color: black;
     }
 
+    // Main-text
     & article {
       background: #264653;
       width: 50%;
@@ -154,6 +156,7 @@ main {
     }
   }
 
+  // Main-img:
   & img {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -162,5 +165,97 @@ main {
     background: #264653;
     padding: 2em;
     margin: 2em;
+  }
+}
+
+.thommie1 {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.thommie2 {
+  float: right;
+  width: 50%;
+  padding: 15px;
+  margin-top: 2px;
+}
+
+// Media Queries:
+
+@media only screen and (max-width: 1280px) {
+  .thommie1,
+  .thommie2 {
+    width: 100%;
+    background-color: blanchedalmond;
+  }
+}
+// main {
+//   background: blanchedalmond;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: 1fr 1fr 1fr;
+//   // justify-items: center;
+// }
+
+// main section {
+//   grid-column: 1/2;
+// }
+
+// #lagar-nav {
+//   grid-row: 1/2;
+// }
+
+// main article {
+//   grid-row: 2/3;
+// }
+
+@media (max-width: 1024px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.Left_side {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+.Right_side {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 620px) {
+  .Left_side,
+  .Right_side {
+    width: 100%;
   }
 }
