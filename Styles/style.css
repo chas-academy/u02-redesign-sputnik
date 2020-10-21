@@ -320,10 +320,6 @@ footer section h5 {
   .grid-container {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
   }
-  nav li,
-  nav a {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -350,19 +346,6 @@ footer section h5 {
         grid-template-rows: 0.1fr 0fr 1fr 1fr;
     gap: 0px 0px;
         grid-template-areas: "aside nav nav nav" "aside . . ." "aside textarea textarea  ." "aside calender calender ." ". . . .";
-  }
-  nav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: nav;
-  }
-  nav div {
-    font-size: 1rem;
-  }
-  nav ul li {
-    border-radius: 0px;
-    margin-top: 0rem;
   }
   aside {
     -ms-grid-row: 1;
@@ -393,17 +376,6 @@ footer section h5 {
   .calender h3 {
     font-size: 1.5rem;
   }
-  nav .search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .search-container form {
-    margin: 1rem;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -415,44 +387,6 @@ footer section h5 {
   }
   .textarea h1 {
     font-size: 3rem;
-  }
-  nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul {
-    margin-top: 4rem;
-    padding-left: 0rem;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar-links ul li {
-    text-align: center;
-  }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .firstSectionMain .imgMain {
     width: 500px;
@@ -737,6 +671,9 @@ nav ul a {
   nav ul li {
     border-radius: 0px;
     margin-top: 0rem;
+  }
+  .search-container form {
+    margin: 1rem;
   }
 }
 
