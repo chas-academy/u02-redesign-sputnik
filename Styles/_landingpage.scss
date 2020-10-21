@@ -13,85 +13,25 @@
     "aside textarea textarea calender calender ."
     "aside .  . . . .";
 }
-//hamburger menu
-.toggle-button {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 40px;
-  height: 35px;
 
-  .bar {
-    height: 6px;
-    width: 100%;
-    background-color: $text-color;
-    border-radius: 10px;
-  }
-}
-nav {
-  position: relative;
-  grid-area: nav;
-
-  .search {
-    display: flex;
-    margin-top: 0.4rem;
-
-    button {
-      border: none;
-      background-color: $base-color-nav;
-      font-size: 1.5rem;
-      border-radius: $box-radius;
-      padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-      margin: 0.2rem 0rem 0rem 1rem;
-    }
-    input {
-      font-size: 1rem;
-      border-radius: $box-radius;
-      padding: 1rem;
-      margin-left: 3rem;
-      background-color: $base-color-nav;
-      border: none;
-    }
-  }
-  ul {
-    @include flexCenter;
-    justify-content: flex-start;
-    padding-left: 3rem;
-    margin-top: 1rem;
-
-    li {
-      font-family: inter;
-      margin: 0.8rem;
-
-      font-weight: 500;
-      border-radius: $box-radius;
-      cursor: pointer;
-    }
-    a {
-      font-size: 1.5rem;
-      color: white;
-    }
-  }
-}
 //aside landingpage
 aside {
   grid-area: aside;
   background-color: $basecColorDiv;
+  button {
+    width: 100px;
+  }
   .logo {
     img {
       width: 160px;
       height: 160px;
-      margin-left: 2rem;
+      margin: 2rem;
     }
   }
 
   img {
     height: 50px;
     width: 50px;
-    margin-left: 4rem;
   }
 
   h3 {
@@ -189,6 +129,7 @@ aside {
   .textContainer {
     margin: 1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 80px;
@@ -197,6 +138,7 @@ aside {
     .arrow {
       width: 60px;
       height: 60px;
+      margin-right: 1rem;
     }
     .leftArrow {
       justify-content: center;
@@ -209,16 +151,24 @@ aside {
       font-size: 2rem;
       font-family: Poppins;
       font-weight: 500;
+      margin: 0 1rem 0 1rem;
       margin-left: 1rem;
       text-align: start;
       align-items: center;
     }
   }
   .imgMain {
-    width: 811px;
-    height: 620px;
+    width: 700px;
+    height: 700px;
+  }
+  #changeColorSectionTwo {
+    background-color: $baseColorSectionTwo;
+  }
+  #changeColorSectionThree {
+    background-color: $baseColorSectionThree;
   }
 }
+
 //aktuellt
 .aktuelltheader {
   margin-top: 6rem;
@@ -231,7 +181,7 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   div {
     margin: 2rem 1rem 2rem 1rem;
     background-color: $basecColorDiv;
@@ -239,25 +189,24 @@ aside {
     p {
       color: $darkcolor;
       font-size: 1.3rem;
-      max-width: 50ch;
+      max-width: 35ch;
       margin: 1rem;
     }
     h3 {
+      font-size: 2.2rem;
       margin: 1rem;
       color: $darkcolor;
-      font-size: 2.5rem;
       max-width: 25ch;
     }
   }
 
   .aktuelltimg {
     border-radius: $box-radius;
-    width: 700px;
-    height: 420px;
+    width: 100%;
+    height: 400px;
   }
 }
 footer {
-  border-top: solid 10px white;
   background-color: $basecColorDiv;
   .wave {
     width: 100%;
@@ -314,12 +263,6 @@ footer {
       "aside textarea textarea textarea calender calender"
       "aside . . . . .";
   }
-  nav {
-    li,
-    a {
-      font-size: 1rem;
-    }
-  }
 }
 @media (max-width: 1200px) {
   .flexContainer {
@@ -340,12 +283,7 @@ footer {
   .firstSectionMain {
     margin-top: 5rem;
   }
-  //navigation
-  nav ul a {
-    font-size: 1.2rem;
-  }
 
-  //navigation end
   .grid-container {
     display: grid;
     grid-template-columns: 0.7fr 1.2fr 1.1fr 0.2fr;
@@ -357,17 +295,6 @@ footer {
       "aside textarea textarea  ."
       "aside calender calender ."
       ". . . .";
-  }
-
-  nav {
-    grid-area: nav;
-    div {
-      font-size: 1rem;
-    }
-    ul li {
-      border-radius: 0px;
-      margin-top: 0rem;
-    }
   }
 
   aside {
@@ -393,19 +320,8 @@ footer {
       font-size: 1.5rem;
     }
   }
-  nav {
-    .search {
-      display: flex;
-      justify-content: flex-end;
 
-      button {
-        width: 100%;
-      }
-      input {
-        width: 100%;
-      }
-    }
-  }
+  //search styling
 }
 @media (max-width: 1024px) {
   .textarea {
@@ -419,39 +335,7 @@ footer {
       font-size: 3rem;
     }
   }
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar-links ul {
-    margin-top: 4rem;
-    padding-left: 0rem;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
-    width: 100%;
-  }
-
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
   .firstSectionMain {
     .imgMain {
       width: 500px;
@@ -463,7 +347,7 @@ footer {
 @media (max-width: 768px) {
   .flexContainer {
     div {
-      margin: 2rem 0rem 2rem 0rem;
+      margin: 2rem 2rem 2rem 2rem;
       h3 {
         font-size: 1.5rem;
         max-width: 20ch;
@@ -525,8 +409,8 @@ footer {
       "nav nav nav nav nav nav"
       "textarea textarea textarea textarea textarea ."
       "textarea textarea textarea textarea textarea ."
-      ". calender calender calender calender ."
-      ". calender calender calender calender .";
+      "calender calender calender calender calender calender"
+      "calender calender calender calender calender calender";
   }
   .nav {
     grid-area: nav;
@@ -536,6 +420,7 @@ footer {
   }
   .calender {
     grid-area: calender;
+    height: 400px;
   }
 }
 @media (max-width: 600px) {
@@ -565,5 +450,45 @@ footer {
         font-size: 1.2rem;
       }
     }
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    .arrowup {
+      display: none;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    article {
+      text-align: center;
+    }
+  }
+
+  .textarea {
+    .big-btn {
+      font-size: 0.8rem;
+    }
+    h1,
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .firstSectionMain {
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .calender {
+    grid-area: calender;
+    height: 500px;
   }
 }

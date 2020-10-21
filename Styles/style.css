@@ -11,92 +11,6 @@
       grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside .  . . . .";
 }
 
-.toggle-button {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 40px;
-  height: 35px;
-}
-
-.toggle-button .bar {
-  height: 6px;
-  width: 100%;
-  background-color: #faf8f8;
-  border-radius: 10px;
-}
-
-nav {
-  position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 5;
-  grid-area: nav;
-}
-
-nav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.4rem;
-}
-
-nav .search button {
-  border: none;
-  background-color: #ffeb00;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-  margin: 0.2rem 0rem 0rem 1rem;
-}
-
-nav .search input {
-  font-size: 1rem;
-  border-radius: 25px;
-  padding: 1rem;
-  margin-left: 3rem;
-  background-color: #ffeb00;
-  border: none;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 3rem;
-  margin-top: 1rem;
-}
-
-nav ul li {
-  font-family: inter;
-  margin: 0.8rem;
-  font-weight: 500;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-nav ul a {
-  font-size: 1.5rem;
-  color: white;
-}
-
 aside {
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
@@ -105,16 +19,19 @@ aside {
   background-color: #e9c46a;
 }
 
+aside button {
+  width: 100px;
+}
+
 aside .logo img {
   width: 160px;
   height: 160px;
-  margin-left: 2rem;
+  margin: 2rem;
 }
 
 aside img {
   height: 50px;
   width: 50px;
-  margin-left: 4rem;
 }
 
 aside h3 {
@@ -239,6 +156,9 @@ aside a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -251,6 +171,7 @@ aside a:hover {
 .firstSectionMain .textContainer .arrow {
   width: 60px;
   height: 60px;
+  margin-right: 1rem;
 }
 
 .firstSectionMain .textContainer .leftArrow {
@@ -266,6 +187,7 @@ aside a:hover {
   font-size: 2rem;
   font-family: Poppins;
   font-weight: 500;
+  margin: 0 1rem 0 1rem;
   margin-left: 1rem;
   text-align: start;
   -webkit-box-align: center;
@@ -274,8 +196,16 @@ aside a:hover {
 }
 
 .firstSectionMain .imgMain {
-  width: 811px;
-  height: 620px;
+  width: 700px;
+  height: 700px;
+}
+
+.firstSectionMain #changeColorSectionTwo {
+  background-color: #f4a261;
+}
+
+.firstSectionMain #changeColorSectionThree {
+  background-color: #e76f51;
 }
 
 .aktuelltheader {
@@ -296,9 +226,9 @@ aside a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .flexContainer div {
@@ -310,25 +240,24 @@ aside a:hover {
 .flexContainer div p {
   color: #264653;
   font-size: 1.3rem;
-  max-width: 50ch;
+  max-width: 35ch;
   margin: 1rem;
 }
 
 .flexContainer div h3 {
+  font-size: 2.2rem;
   margin: 1rem;
   color: #264653;
-  font-size: 2.5rem;
   max-width: 25ch;
 }
 
 .flexContainer .aktuelltimg {
   border-radius: 25px;
-  width: 700px;
-  height: 420px;
+  width: 100%;
+  height: 400px;
 }
 
 footer {
-  border-top: solid 10px white;
   background-color: #e9c46a;
 }
 
@@ -391,10 +320,6 @@ footer section h5 {
   .grid-container {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
   }
-  nav li,
-  nav a {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -412,9 +337,6 @@ footer section h5 {
   .firstSectionMain {
     margin-top: 5rem;
   }
-  nav ul a {
-    font-size: 1.2rem;
-  }
   .grid-container {
     display: -ms-grid;
     display: grid;
@@ -424,19 +346,6 @@ footer section h5 {
         grid-template-rows: 0.1fr 0fr 1fr 1fr;
     gap: 0px 0px;
         grid-template-areas: "aside nav nav nav" "aside . . ." "aside textarea textarea  ." "aside calender calender ." ". . . .";
-  }
-  nav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: nav;
-  }
-  nav div {
-    font-size: 1rem;
-  }
-  nav ul li {
-    border-radius: 0px;
-    margin-top: 0rem;
   }
   aside {
     -ms-grid-row: 1;
@@ -467,20 +376,6 @@ footer section h5 {
   .calender h3 {
     font-size: 1.5rem;
   }
-  nav .search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  nav .search button {
-    width: 100%;
-  }
-  nav .search input {
-    width: 100%;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -493,45 +388,6 @@ footer section h5 {
   .textarea h1 {
     font-size: 3rem;
   }
-  nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul {
-    margin-top: 4rem;
-    padding-left: 0rem;
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar-links ul li {
-    text-align: center;
-    width: 100%;
-  }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .firstSectionMain .imgMain {
     width: 500px;
     height: 313px;
@@ -541,7 +397,7 @@ footer section h5 {
 
 @media (max-width: 768px) {
   .flexContainer div {
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
   .flexContainer div h3 {
     font-size: 1.5rem;
@@ -596,7 +452,7 @@ footer section h5 {
     -ms-grid-rows: 0.3fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-        grid-template-areas: "nav nav nav nav nav nav" "textarea textarea textarea textarea textarea ." "textarea textarea textarea textarea textarea ." ". calender calender calender calender ." ". calender calender calender calender .";
+        grid-template-areas: "nav nav nav nav nav nav" "textarea textarea textarea textarea textarea ." "textarea textarea textarea textarea textarea ." "calender calender calender calender calender calender" "calender calender calender calender calender calender";
   }
   .nav {
     -ms-grid-row: 1;
@@ -614,9 +470,10 @@ footer section h5 {
   .calender {
     -ms-grid-row: 4;
     -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
     grid-area: calender;
+    height: 400px;
   }
 }
 
@@ -643,6 +500,221 @@ footer section h5 {
   }
   .firstSectionMain .textContainer h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .arrowup {
+    display: none;
+  }
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+  footer article {
+    text-align: center;
+  }
+  .textarea .big-btn {
+    font-size: 0.8rem;
+  }
+  .textarea h1,
+  .textarea h2 {
+    font-size: 1.8rem;
+  }
+  .textarea p {
+    font-size: 0.8rem;
+  }
+  .firstSectionMain h2 {
+    font-size: 1.8rem;
+  }
+  .firstSectionMain p {
+    font-size: 0.8rem;
+  }
+  .calender {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-area: calender;
+    height: 500px;
+  }
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40px;
+  height: 35px;
+}
+
+.toggle-button .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #faf8f8;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #faf8f8;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content :hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a {
+  color: #264653;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: nav;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  font-family: inter;
+  margin: 0.8rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+nav ul a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.search-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-container form input {
+  background-color: #264653;
+  color: #faf8f8;
+  border-style: none;
+  width: 50%;
+}
+
+.search-container form button {
+  background-color: #264653;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+
+@media (max-width: 1700px) {
+  nav li,
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  nav div {
+    font-size: 1rem;
+  }
+  nav ul li {
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+  .search-container form {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
