@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Styles/style.css"> 
-  <script src="hamburgermenu.js" defer></script>
+  <script src="/hamburgermenu.js" defer></script>
   <title>Lagar, regler, tillsyn</title>
 </head>
 
 <body>
-  <header>
-    <nav>
+  <!-- <header id="headerScroll" class="grid-container"> -->
+    <!--Navbar-->
+    
+    <nav id="header-nav">
       <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -20,19 +22,30 @@
       <div class="navbar-links">
         <ul>
           <li><a href="#" class="opacity">Start</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Verksamhetsområden</a></li>
-          <li><a href="#">Statistik</a></li>
-          <li><a href="#">Lagar,regler,tillsyn</a></li>
+          <li><a href="/page/omoss.html">Om oss</a></li>
+          <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+          <li><a href="/page/statistik.html">Statistik</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Övrigt</a>
+            <div class="dropdown-content">
+              <a href="/page/publications.html">Publikationer</a>
+              <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
+              <a href="#">Nyhetsrum</a>
+              <a href="#">Kontakt</a>
+            </div>
+          </li>
+          <!--search menu!-->
+          <div class="search-container">
+            <form action="submit">
+              <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+              <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+            </form>
+          </div>
+          <!--search menu end!-->
         </ul>
       </div>
-         <div class="search">
-              <input required maxlength="60" type="search" placeholder="Ange sökord...">
-              <button>Sök</button>
-          </div>
-        </div>
-   </nav>
-  </header>
+    </nav>
+  <!-- </header> -->
 
   <!-- Main content: -->
   <main>
@@ -76,10 +89,12 @@
   </main>
 
   <!-- Footer -->
-  <footer>
-    <img class="wave" src="/src/wave.jpg" alt="">
+  <div class="wave1">
+    <img id="wave1" class="wave" src="../src/wave1.svg" alt="">
+  </div>
+  
+  <footer>    
     <article>
-    
       <section>
         <h5>Kontakt</h5>
         <ul>
@@ -90,9 +105,8 @@
           <li>Ring vår växel 010-209 01 00
             Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</li>
         </ul>
-    
-    
       </section>
+
       <section>
         <h5>Om webbplatsen</h5>
         <ul>
@@ -102,8 +116,8 @@
           <li><a href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
           <li><a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
         </ul>
-    
       </section>
+      
       <section>
         <h5>Våra övriga webbplatser</h5>
         <ul>
