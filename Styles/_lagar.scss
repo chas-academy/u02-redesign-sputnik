@@ -104,13 +104,27 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      transition: 0.2s;
+    }
+
+    // Hover-effect:
+    & #lagar-nav ul li:hover {
+      background: $baseColorSectionTwo;
+      transform: scale(1.05, 1.05);
     }
 
     & #lagar-nav ul li img {
       margin: 0;
       padding: 0;
       background: $basecColorDiv;
-      border-radius: $box-radius;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+
+    // Hover-effect:
+    & #lagar-nav ul li:hover img {
+      background: $baseColorSectionTwo;
+      transform: rotate(-90deg);
     }
 
     & #lagar-nav ul li a {

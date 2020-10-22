@@ -693,13 +693,29 @@ main section #lagar-nav ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main section #lagar-nav ul li:hover {
+  background: #f4a261;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 main section #lagar-nav ul li img {
   margin: 0;
   padding: 0;
   background: #e9c46a;
-  border-radius: 25px;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main section #lagar-nav ul li:hover img {
+  background: #f4a261;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 main section #lagar-nav ul li a {
