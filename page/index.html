@@ -12,10 +12,10 @@
     <header id="headerScroll" class="grid-container">
       <!--Navbar-->
       <nav>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <a aria-haspopup="true" class="toggle-button">
+          <span aria-label="meny" class="bar"></span>
+          <span aria-label="meny" class="bar"></span>
+          <span aria-label="meny" class="bar"></span>
         </a>
         <div class="navbar-links">
         <ul>
@@ -34,7 +34,7 @@
           </li>
           <!--search menu!-->
           <li><form action="submit">
-            <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+            <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
             <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
           </form></li>
            
@@ -146,7 +146,8 @@
   <section class="flexContainer">
     <div>
       <img class="aktuelltimg" src="/src/imageoneaktuellt.png" alt="personer vid ett skrivbord">
-      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Marknadsfor-YH-utbildningar-som-mojliga-uppdragsutbildningar/" target="_blank"  ><h3>Marknadsför YH-utbildningar som möjliga uppdragsutbildningar</h3></a>
+      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Marknadsfor-YH-utbildningar-som-mojliga-uppdragsutbildningar/" rel="noopener"  target="_blank">
+      <h3>Marknadsför YH-utbildningar som möjliga uppdragsutbildningar</h3></a>
     <p>7 oktober 2020 </p>
     <p>
       Du som anordnare har nu möjlighet att 
@@ -160,9 +161,10 @@
   
     <div>
       
-      <img class="aktuelltimg" src="/src/imagetwoaktuellt.png" alt="personer vid ett skrivbord">
-      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Rekordmanga-ansokningar-om-att-bedriva-YH-utbildning/" target="_blank"><h3>Rekordmånga ansökningar om
-        att bedriva YH-utbildning</h3></a>
+      <img class="aktuelltimg" src="/src/imagetwoaktuellt.png" alt="konstnärlig bild illustration">
+      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Rekordmanga-ansokningar-om-att-bedriva-YH-utbildning/" rel="noopener" target="_blank">
+        <h3>Rekordmånga ansökningar om att bedriva YH-utbildning</h3>
+      </a>
       <p>30 september 2020</p>
       <p>
         Myndigheten för yrkeshögskolan (MYH) har fått in fler ansökningar om att
@@ -192,25 +194,24 @@
    <section>
      <h5>Om webbplatsen</h5>
      <ul>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor (cookies🍪)</a></li>
-       <li><a href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor (cookies🍪)</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
      </ul>
   
    </section>
    <section> 
      <h5>Våra övriga webbplatser</h5>
      <ul>
-    <li><a href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
-    <li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
-    <li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
-    <li><a href="www.blitolk.nu">blitolk.nu</a></li>
-    <li><a href="www.seqf.se">seqf.se</a></li>
+    <li><a rel="noopener" href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
+    <li><a rel="noopener" href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
+    <li><a rel="noopener" href="www.blitolk.nu">blitolk.nu</a></li>
+    <li><a rel="noopener" href="www.seqf.se">seqf.se</a></li>
   </ul>
   </section>
    <img src="/src/myhLogo.svg" alt="myndigheten-for-yrkeshogskola">
-   <a href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
+   <a aria-label="pil som tar dig till början" href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="bild som tar dig till början av sidan."></a>
    </div>
   </footer>
 
