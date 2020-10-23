@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 .grid-container {
+  border-bottom: 2px solid #e76f51;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
@@ -200,11 +202,11 @@ aside a:hover {
   height: 700px;
 }
 
-.firstSectionMain #changeColorSectionTwo {
+.firstSectionMain .changeColorSectionTwo {
   background-color: #f4a261;
 }
 
-.firstSectionMain #changeColorSectionThree {
+.firstSectionMain .changeColorSectionThree {
   background-color: #e76f51;
 }
 
@@ -254,28 +256,14 @@ aside a:hover {
 .flexContainer .aktuelltimg {
   border-radius: 25px;
   width: 100%;
-  height: 400px;
 }
 
 footer {
   background-color: #e9c46a;
 }
 
-footer .wave {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  color: white;
-}
-
-footer .arrowup {
-  width: 80px;
-  height: 80px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-footer article {
+footer .footer-container {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,6 +273,18 @@ footer article {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #e9c46a;
+}
+
+footer .wave {
+  width: 100%;
+  height: 100%;
+}
+
+footer .arrowup {
+  width: 80px;
+  height: 80px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 footer img {
@@ -331,7 +331,6 @@ footer section h5 {
     max-width: 35ch;
   }
   .flexContainer img {
-    width: 500px;
     height: 320px;
   }
   .firstSectionMain {
@@ -409,7 +408,6 @@ footer section h5 {
   }
   .flexContainer img {
     width: 400px;
-    height: 280px;
   }
   .firstSectionMain {
     margin-top: 2rem;
@@ -511,7 +509,7 @@ footer section h5 {
     width: 150px;
     height: 150px;
   }
-  footer article {
+  footer footer-container {
     text-align: center;
   }
   .textarea .big-btn {
@@ -945,7 +943,7 @@ nav ul a {
   color: white;
 }
 
-.search-container form {
+nav form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,14 +953,14 @@ nav ul a {
           justify-content: center;
 }
 
-.search-container form input {
+nav form input {
   background-color: #264653;
   color: #faf8f8;
   border-style: none;
   width: 50%;
 }
 
-.search-container form button {
+nav form button {
   background-color: #264653;
   color: white;
   cursor: pointer;
@@ -992,7 +990,7 @@ nav ul a {
     border-radius: 0px;
     margin-top: 0rem;
   }
-  .search-container form {
+  form {
     margin: 1rem;
   }
 }

@@ -12,10 +12,10 @@
     <header id="headerScroll" class="grid-container">
       <!--Navbar-->
       <nav>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <a aria-haspopup="true" class="toggle-button">
+          <span aria-label="meny" class="bar"></span>
+          <span aria-label="meny" class="bar"></span>
+          <span aria-label="meny" class="bar"></span>
         </a>
         <div class="navbar-links">
         <ul>
@@ -33,13 +33,10 @@
             </div>
           </li>
           <!--search menu!-->
-          <div class="search-container">
-            <form action="submit">
-            <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+          <li><form action="submit">
+            <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
             <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
-          </form>
-          </div>
-         <!--search menu end!-->
+          </form></li>
         </ul>
       </div>
     </nav>
@@ -69,7 +66,7 @@
             att ansvara för frågor som rör yrkeshögskolan 
             i Sverige och verka för att utbildningarna 
             tillgodoser arbetslivets behov av kompetens. </p>
-            <button class="big-btn">OM OSS</button>
+            <button onclick="window.location.href= 'omoss.html';" class="big-btn">OM OSS</button>
         </div>
         
         <section>
@@ -77,7 +74,7 @@
           <h2>Funderar du på att <br> söka till Yrkeshogskola?</h2>
           <p>Gå vidare till Yrkeshöskolan.se för mer information
              kring skolor,utbildningar,viktiga datum m.m.</p>
-             <button class="big-btn">Yrkeshögskolan.se</button>
+             <button onclick="window.location.href='https://www.yrkeshogskolan.se/';" class ="big-btn">Yrkeshogskolan.se</button>
         </div>
       </section>
       
@@ -103,48 +100,50 @@
     <main>
 
       <!--First section main-->
-      <section class="firstSectionMain">
+      <div class="firstSectionMain">
         <article>
-        <h2 id="firstSection">Ansök om att <br> bedriva utbildning📩</h2>
+        <h2 id="firstSection">Ansök om att</h2>
+        <h2>bedriva utbildning📩</h2>
         <div class="textContainer"><h3>Yrkeshögskoleutbildning </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
         <div class="textContainer"><h3>Konst- och kulturutbildning </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
         <div class="textContainer"><h3>Utbildning med endast tillsyn </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
         <div class="textContainer"><h3>Tolkutbildning </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
       </article>
       <img class="imgMain" src="/src/done.svg" alt="kille som tittar på sin check lista illustration">
-      </section>
+      </div>
        <!--secound section main-->
-      <section id="secoundSection" class="firstSectionMain">
+      <div id="secoundSection" class="firstSectionMain">
         <img class="imgMain" src="/src/road1.svg" alt="illustration av en kille som går över böcker.">
         <article>
         <h2>För dig som bedriver <br>
           utbildning💭</h2>
-        <div id="changeColorSectionTwo" class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a><h3> Yrkeshögskoleutbildning </h3></div>
-        <div id="changeColorSectionTwo" class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>Riktlinjer för coronaviruset </h3></div>
-        <div id="changeColorSectionTwo" class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>Distansstöd – för anordnare </h3></div>
-        <div id="changeColorSectionTwo" class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>verktyg för utbildning </h3></div>
+        <div  class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a><h3> Yrkeshögskoleutbildning </h3></div>
+        <div  class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>Riktlinjer för coronaviruset </h3></div>
+        <div  class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>Distansstöd – för anordnare </h3></div>
+        <div  class="textContainer"><a href="#"><img class="leftArrow"  src="/src/Vector.svg" alt="pill"></a> <h3>verktyg för utbildning </h3></div>
       </article>
-      </section>
+      </div>
         <!--third section main-->
-      <section  id="thirdSection" class="firstSectionMain">
+      <div  id="thirdSection" class="firstSectionMain">
         <article>
         <h2>För företag och <br>
           organisationer💼</h2>
           <p>Arbetslivet är den främsta drivkraften
             bakom vilka yrkeshögskoleutbildningar 
             som startar och hur de är upplagda.</p>
-            <div id="changeColorSectionThree" class="textContainer"><h3>Verktyg för omställning </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a> </div>
-            <div id="changeColorSectionThree" class="textContainer"><h3>Påverka yrkeshögskolan </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
+            <div class="textContainer"><h3>Verktyg för omställning </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a> </div>
+            <div class="textContainer"><h3>Påverka yrkeshögskolan </h3><a href="#"><img class="arrow"  src="/src/Vector.svg" alt="pill"></a></div>
       </article>
       <img class="imgMain" src="/src/interview.svg" alt="illustration av två personer på interview">
-   </section>
+   </div>
 </main>
   <!--Aktuellt section start!-->
   <h1 class="aktuelltheader">Aktuellt</h1>
   <section class="flexContainer">
     <div>
       <img class="aktuelltimg" src="/src/imageoneaktuellt.png" alt="personer vid ett skrivbord">
-      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Marknadsfor-YH-utbildningar-som-mojliga-uppdragsutbildningar/" target="_blank"  ><h3>Marknadsför YH-utbildningar som möjliga uppdragsutbildningar</h3></a>
+      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Marknadsfor-YH-utbildningar-som-mojliga-uppdragsutbildningar/" rel="noopener"  target="_blank">
+      <h3>Marknadsför YH-utbildningar som möjliga uppdragsutbildningar</h3></a>
     <p>7 oktober 2020 </p>
     <p>
       Du som anordnare har nu möjlighet att 
@@ -158,9 +157,10 @@
   
     <div>
       
-      <img class="aktuelltimg" src="/src/imagetwoaktuellt.png" alt="personer vid ett skrivbord">
-      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Rekordmanga-ansokningar-om-att-bedriva-YH-utbildning/" target="_blank"><h3>Rekordmånga ansökningar om
-        att bedriva YH-utbildning</h3></a>
+      <img class="aktuelltimg" src="/src/imagetwoaktuellt.png" alt="konstnärlig bild illustration">
+      <a href="https://www.myh.se/Nyhetsrum/Nyheter/2020/Rekordmanga-ansokningar-om-att-bedriva-YH-utbildning/" rel="noopener" target="_blank">
+        <h3>Rekordmånga ansökningar om att bedriva YH-utbildning</h3>
+      </a>
       <p>30 september 2020</p>
       <p>
         Myndigheten för yrkeshögskolan (MYH) har fått in fler ansökningar om att
@@ -171,10 +171,10 @@
   </section>
    
   <!--Footer start-->
+  
 <footer>
   <img class="wave" src="/src/wave.jpg" alt="">
-  <article>
-    
+  <div class="footer-container">
    <section>
      <h5>Kontakt</h5>
      <ul>
@@ -190,26 +190,25 @@
    <section>
      <h5>Om webbplatsen</h5>
      <ul>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor (cookies🍪)</a></li>
-       <li><a href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
-       <li><a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor (cookies🍪)</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
+       <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
      </ul>
   
    </section>
    <section> 
      <h5>Våra övriga webbplatser</h5>
      <ul>
-    <li><a href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
-    <li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
-    <li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
-    <li><a href="www.blitolk.nu">blitolk.nu</a></li>
-    <li><a href="www.seqf.se">seqf.se</a></li>
+    <li><a rel="noopener" href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
+    <li><a rel="noopener" href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
+    <li><a rel="noopener" href="www.blitolk.nu">blitolk.nu</a></li>
+    <li><a rel="noopener" href="www.seqf.se">seqf.se</a></li>
   </ul>
   </section>
    <img src="/src/myhLogo.svg" alt="myndigheten-for-yrkeshogskola">
-   <a href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
-   </article>
+   <a aria-label="pil som tar dig till början" href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="bild som tar dig till början av sidan."></a>
+   </div>
   </footer>
 
   </body>
