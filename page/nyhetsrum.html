@@ -35,7 +35,7 @@
             <!--search menu!-->
             <li><form action="submit">
               <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
-              <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+              <button type="submit" class="btn"><img src="/src/blacksearch.svg" alt="search button"></button>
             </form></li>
           </ul>
         </div>
@@ -59,8 +59,15 @@
           filmer, kalendarium och annan aktuell
         </p>
         <p>
-          information.
-        </p></div>
+          information📒
+        </p>
+        <div>
+            <button class="nybtn" onclick="window.location.href= '#nyheteraktuellt';">Aktuellt</button>
+            <button class="nybtn" onclick="window.location.href= '#pressmeddelanden';">Pressmeddelanden</button>
+        </div>
+    </div>
+     
+   
        
   
       </section>
@@ -68,9 +75,9 @@
     </header>
   
     <main>
-        <div class="parallax_2"> <img src="/src/mauntenflip.jpg" alt="backgroundsbild på berg">
-        </div>
-        <div>
+        <img class="parallax_2" src="/src/mauntenflip.jpg" alt="backgroundsbild på berg">
+      
+        <div id="nyheteraktuellt">
             <h1>Aktuellt</h1>
             <h2>Senaste nytt hittar ni i denna sektionen</h2>
             <h3>För arkiv <a href="#">Klicka <span class="Colorlink"> här!</span></span></a></h3>
@@ -109,7 +116,7 @@
     <summary class="press">
         <div class="parallax"><img src="/src/mounten.jpg" alt="backgroundsbild på berg">
     </div>
-        <div>
+        <div id="pressmeddelanden">
             <h1>Pressmeddelanden</h1>
             <h2>Senaste pressmeddelanden hittar ni i denna sektionen</h2>
             <h3>För arkiv <a href="#">Klicka <span class="Colorlink"> här!</span></span></a></h3>

@@ -64,31 +64,57 @@ p {
     display: none;
   }
 }
+.toggle-button {
+  .bar {
+    background-color: $darkcolor;
+  }
+}
 header {
   overflow: hidden;
   position: relative;
   height: 100vh;
 
   nav {
-    z-index: 3;
+    z-index: 2;
     a {
       color: $darkcolor;
     }
-  }
-  .opacity {
-    opacity: 100%;
+
+    .opacity {
+      opacity: 100%;
+    }
+    form {
+      input {
+        background: transparent;
+      }
+      button {
+        height: 15px;
+        width: 15px;
+        background: transparent;
+      }
+    }
   }
 }
 
 .nyhetsrum-header {
-  padding-top: 15rem;
+  padding-top: 8rem;
   display: flex;
   position: relative;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   text-align: center;
-
+  .nybtn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    margin: 4rem 1rem 1rem 1rem;
+    border-color: $baseColorSectionThree;
+    cursor: pointer;
+  }
+  .nybtn:hover {
+    padding: 0.6rem;
+  }
   h1 {
     color: $darkcolor;
     font-size: 5rem;
@@ -130,6 +156,8 @@ main {
       font-size: 2.5rem;
       font-weight: 700;
       color: $darkcolor;
+      max-width: 20ch;
+      margin: 0 auto;
     }
     h3 {
       font-size: 1.8rem;
@@ -144,14 +172,8 @@ main {
     z-index: -1;
     position: absolute;
     top: 0%;
-    background-image: url("/src/mauntenflip.jpg");
     height: 100%;
     width: 100%;
-    //create parallaz scrolling effect
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .Colorlink {
     color: $baseColorSectionThree;
@@ -281,6 +303,83 @@ footer {
       font-weight: 600;
       color: $darkcolor;
       margin: 0.5rem 0rem 0.5rem 0rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .press {
+    section {
+      height: 100%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    div {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  main {
+    section {
+      height: 100%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    div {
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .nyhetsrum-header {
+    margin-top: 10rem;
+    .nybtn {
+      font-size: 0.8rem;
+      margin: 1rem;
+      padding: 0.6rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  footer {
+    section {
+      width: 100%;
+      text-align: center;
+      li {
+        max-width: none;
+      }
     }
   }
 }
