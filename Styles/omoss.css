@@ -1,21 +1,15 @@
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-
-
-.wrapper{
-  
-    background: #264653;
-    background-size: cover;
-    height: 170vh;
-    margin: 10px;
-    
+.wrapper {
+  background: #264653;
+  background-size: cover;
+  height: 170vh;
+  margin: 10px;
 }
-
 
 .content {
   line-height: 1.9;
@@ -26,132 +20,101 @@
   border-radius: 10px;
 }
 
-
-
-.navbar{
-    height: 80px;
-    width: 100%;
-    
+.navbar {
+  height: 80px;
+  width: 100%;
 }
 
-.logo{
-    width: 120px;
-    height: auto;
-    padding: 10px 10px;
-
+.logo {
+  width: 120px;
+  height: auto;
+  padding: 10px 10px;
 }
 
-.navbar ul{
-    float: right;
-    margin-right: 20px;
-     border-radius: 25px;
-
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+  border-radius: 25px;
 }
 
 .navbar ul li {
-    list-style: none;
-    margin: 20px 70px 20px 20px;
-    display: inline-block;
-    line-height: 50px;
-  
-    
+  list-style: none;
+  margin: 20px 70px 20px 20px;
+  display: inline-block;
+  line-height: 50px;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color:black;
-    font-size: 15px;
-    padding: 20px 13px 10px 10px;
-    font-family: 'Roboto', sans-serif;
-    transition: .4s;
-    
-  
-
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  padding: 20px 13px 10px 10px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.4s;
 }
 
-.navbar ul li a.active, 
-.navbar ul li a:hover{
-    background: #ffeb00;
-    border-radius: 2px;
-    
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: #ffeb00;
+  border-radius: 2px;
 }
-
 
 .wrapper .center {
-   padding: 10px;
-   user-select: none;
-    font-family: sans-serif;
-    width: 100%;
- 
-    
+  padding: 10px;
+  user-select: none;
+  font-family: sans-serif;
+  width: 100%;
 }
 
-
-.center h1{
-    color: #e9c46a;
-    font-size: 30px;
-    font-weight: bold;
-    width: 100%;
- 
-    
+.center h1 {
+  color: #e9c46a;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
 }
 
 .center h2 {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    
-  
-      
- }
-
-
- .center h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
- .center .buttons {
-    margin: 5px 0 0 15px; 
- }
+.center h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-
+.center .buttons {
+  margin: 5px 0 0 15px;
+}
 
 .buttons button {
-    
-    height: 70px;
-    width: 200px;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: #e9c46a;
-    border: 5px solid #e9c46a;
-    outline:none;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: .5s;
+  height: 70px;
+  width: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #e9c46a;
+  border: 5px solid #e9c46a;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: 0.5s;
 }
 
-
 .buttons .btn {
-margin: 20px;
-
+  margin: 20px;
 }
 
 .buttons button:hover {
-    background: #e9c46a;
+  background: #e9c46a;
 }
 
-
-.buttons .picture{
-    height: 240px;
-    width: 450px;
-    float: 5px;
-    
+.buttons .picture {
+  height: 240px;
+  width: 450px;
+  float: 5px;
 }
-
-
 
 footer {
   border-top: solid 10px white;
@@ -169,7 +132,7 @@ footer .arrowup {
   width: 80px;
   height: 80px;
   -webkit-transform: rotate(180deg);
-   transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 footer article {
@@ -210,49 +173,31 @@ footer section h5 {
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-
-
-@media only screen and (min-width:1024px){
-
-  .navbar
+@media only screen and (min-width: 1024px) {
+  .navbar;
 }
 
-
-
-
-
-
-@media only screen and (min-width:1024px){
- 
-.wrapper  {
- 
+@media only screen and (min-width: 1024px) {
+  .wrapper {
     width: 100%;
- 
   }
 
-  .center h1{
+  .center h1 {
     text-align: left;
     font-size: 10px;
   }
-  .center h2 h3{
+  .center h2 h3 {
     text-align: left;
-  
   }
-  .center .buttons{
+  .center .buttons {
     text-align: left;
     font-size: 1px;
   }
-
 }
 
-
-@media only screen and (min-width:500px){
-.footer {
-  width: 100%;
-  display: flex;
+@media only screen and (min-width: 500px) {
+  .footer {
+    width: 100%;
+    display: flex;
+  }
 }
-}
-
-
-
-

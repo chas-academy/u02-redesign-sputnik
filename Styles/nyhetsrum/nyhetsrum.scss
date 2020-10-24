@@ -1,5 +1,5 @@
-@import "_variabels.scss";
-@import "_nav.scss";
+@import "../_variabels.scss";
+@import "../_nav.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 //Geniral styling here!
@@ -153,14 +153,14 @@ main {
     }
     h2 {
       margin-top: 2rem;
-      font-size: 2.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: $darkcolor;
       max-width: 20ch;
       margin: 0 auto;
     }
     h3 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       font-weight: 500;
       color: $darkcolor;
       a {
@@ -176,7 +176,7 @@ main {
     width: 100%;
   }
   .Colorlink {
-    color: $baseColorSectionThree;
+    color: #ac4fc6;
   }
   section {
     padding: 1.5rem;
@@ -214,21 +214,21 @@ main {
     width: 100%;
 
     h1 {
-      margin-top: 10rem;
+      margin-top: 8rem;
       font-size: 5rem;
       font-weight: 700;
       color: $darkcolor;
     }
     h2 {
-      margin-top: 2.2rem;
-      font-size: 2rem;
+      padding: 1rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: $darkcolor;
       max-width: 30ch;
       margin: 0 auto;
     }
     h3 {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       font-weight: 500;
       color: $darkcolor;
       a {
