@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publikationer - MYH</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/publikationer.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+    <script src="/hamburgermenu.js" defer></script>
+</head>
+<body id="headerScroll">
+	
+	<nav>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div>
+			
+			<ul class="topPanel__menu">
+				<li><a class="img"></a></li>
+				<li class="active"><a href="#" class="opacity">Start</a></li>
+				<li><a href="/page/omoss.html">Om oss</a></li>
+				<li><a href="/page/verksamhetomraden.html">Kontankt</a></li>
+				<li><a href="/page/statistik.html" >Statistik</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropbtn">Övrigt</a>
+				  <div class="dropdown-content">
+					<a href="/page/publications.html">Publikationer</a>
+					<a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
+					<a href="#">Nyhetsrum</a>
+					<a href="#">Verksamhetsområdet</a>
+				  </div>
+				</li>
+				<!--search menu!-->
+				<div class="searchBlock">
+				  <form action="submit">
+				  <input name="search" class="search" type="search" placeholder="Write me here">
+				  <button type="submit" class="button2">sök</button>
+				</form>
+				</div>
+			   <!--search menu end!-->
+			  </ul>     
+        </div>
+    </nav>
+
+	
+	<div class="main">
+		<div class="Left_side">
+			<div class="lastNews-block flex-c">
+				<div class="lastNews-block__img">
+					<a href="#"><img src="https://www.myh.se/ServeImage.aspx?image=%2FDocuments%2FPublikationer%2FHandbokForTilltrade_reviderat_5juni2020_justerad_200703.pdf&width=70&height=99&method=Pdf" alt=""></a>
+				</div>
+					<div class="lastNews-block__info">
+					<h3><i class="news-icon"></i> Handbok för tillträde till yrkeshögskolan - 2020</h3>
+					<div class="lastNews-block__text">
+						<p>Denna handbok vänder sig i första hand till de som bedriver yrkeshögskoleutbildning och behöver stöd...  </p>
+					</div>
+					<div class="lastNews-block__buttons flex-c">
+						<a href="#" class="button">Ladda Ner</a> <span><b>10</b>/07/2020</span>
+					</div>
+				</div>				
+			</div><!-- lastNews-block -->
+			<div class="lastNews-block flex-c">
+				<div class="lastNews-block__img">
+					<a href="#"><img src="https://www.myh.se/ServeImage.aspx?image=%2FDocuments%2FPublikationer%2FKvalitetskriterier_validering.pdf&width=70&height=99&method=Pdf" alt=""></a>
+				</div>
+				<div class="lastNews-block__info">
+					<h3><i class="news-icon"></i> Kvalitetskriterier för validering - yrkeshögskoleutbildning, konst- och kulturutbildningar och tolkutbildning inom folkbildningen</h3>
+					<div class="lastNews-block__text">
+						<p>Myndigheten har tagit fram kvalitetskriterier för arbetet med validering inom de utbildningsformer som...  </p>
+					</div>
+					<div class="lastNews-block__buttons flex-c">
+						<a href="#" class="button">Ladda Ner</a> <span><b>09</b>/06/2020</span>
+					</div>
+				</div>
+			</div><!-- lastNews-block -->
+			<div class="lastNews-block flex-c">
+				<div class="lastNews-block__img">
+					<a href="#"><img src="https://www.myh.se/ServeImage.aspx?image=%2FDocuments%2FPublikationer%2FRapporter%2F2020%2FAnalys_HalsoSjukvard2020.pdf&width=70&height=99&method=Pdf" alt=""></a>
+				</div>
+				<div class="lastNews-block__info">
+					<h3><i class="news-icon"></i> 
+						Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+					<div class="lastNews-block__text">
+						<p>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för de handläggare som...  </p>
+					</div>
+					<div class="lastNews-block__buttons flex-c">
+						<a href="#" class="button">Ladda Ner</a> <span><b>19</b>/05/2020</span>
+					</div>
+				</div>
+			</div><!-- lastNews-block -->
+			<div class="lastNews-block flex-c">
+				<div class="lastNews-block__img">
+					<a href="#"><img src="https://www.myh.se/ServeImage.aspx?image=%2FDocuments%2FPublikationer%2FRapporter%2F2020%2FAnalys_HalsoSjukvard2020.pdf&width=70&height=99&method=Pdf" alt=""></a>
+				</div>
+				<div class="lastNews-block__info">
+					<h3><i class="news-icon"></i> 
+						Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+					<div class="lastNews-block__text">
+						<p>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för de handläggare som...  </p>
+					</div>
+					<div class="lastNews-block__buttons flex-c">
+						<a href="#" class="button">Ladda Ner</a> <span><b>19</b>/05/2020</span>
+					</div>
+				</div>
+			</div><!-- lastNews-block -->
+			<div class="lastNews-block flex-c">
+				<div class="lastNews-block__img">
+					<a href="#"><img src="https://www.myh.se/ServeImage.aspx?image=%2FDocuments%2FPublikationer%2FRapporter%2F2020%2FAnalys_HalsoSjukvard2020.pdf&width=70&height=99&method=Pdf" alt=""></a>
+				</div>
+				<div class="lastNews-block__info">
+					<h3><i class="news-icon"></i> 
+						Områdesanalys hälso- och sjukvård samt socialt arbete</h3>
+					<div class="lastNews-block__text">
+						<p>Områdesanalysen är framtagen av Myndigheten för yrkeshögskolan som ett underlag för de handläggare som...  </p>
+					</div>
+					<div class="lastNews-block__buttons flex-c">
+						<a href="#" class="button">Ladda Ner</a> <span><b>19</b>/05/2020</span>
+					</div>
+				</div>
+			</div><!-- lastNews-block -->
+		  </div>
+		
+		  <div class="Right_side">
+			<div class="sidebar">
+                <!-- Första Block -->								
+				<div class="backcolor_css">
+					<a class="backfont_css" href="#">Publikationstyp</a>
+					<img class="arrow_right" src="/src/pil.png" alt="">
+				</div>
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div class="sp-title">Rapporter</div>
+						<span class="author">Träffar</span> <span>93</span>
+					</div>
+				</div>								
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div class="sp-title">Återrapportering av regeringsuppdrag</div>
+						<span class="author">Träffar</span> <span>64</span>
+					</div>
+				</div>
+				<br>
+				<!-- ******** -->
+		
+				<!-- Andra Block -->
+				<div class="backcolor_css">
+					<a class="backfont_css" href="#">Verksamhetsområde</a>
+					<img class="arrow_right" src="/src/pil.png" alt="">
+				</div>
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div href="" class="sp-title">Yrkeshögskolan</div>
+						<span class="author">Träffar</span> <span>142</span>
+					</div>
+				</div>
+				<!-- ******** -->
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div href="" class="sp-title">Konst- och kulturutbildningar</div>
+						<span class="author">Träffar</span> <span>32</span>
+					</div>
+				</div>
+				<br>
+				<!-- ******** -->
+				
+				<!-- Tredje Block -->
+				<div class="backcolor_css">
+					<a class="backfont_css" href="#">Träffar från år</a>
+					<img class="arrow_right" src="/src/pil.png" alt="">
+				</div>
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div class="sp-title">2020</div>
+						<span class="author">Träffar</span> <span>116</span>
+					</div>
+				</div>
+				<!-- ******** -->
+				<!-- block-sp -->
+				<div class="block-sp">
+					<img src="images/pdf.webp" alt="">
+					<div class="block-sp-info">
+						<div class="sp-title">2015</div>
+						<span class="author">Träffar</span> <span>112</span>
+					</div>
+				</div>
+				<br>
+				<!-- ******** -->		
+			</div>
+		  </div>
+		</div>
+	</div>
+    
+	<div class="footer">			
+		<svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none" style="margin-top:-20px;">
+			<path transform="translate(0, -20)" d="M0,0 c80,-30 1900,0 350,18 c90,-17 260,7.5 350,-20 v50 h-700" fill="#244354" />
+			<path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#e9c46a" />
+		</svg>
+	
+		<article style="margin-top: -10px;">
+			<section>
+			  <h5>Kontakt</h5>
+			  <ul>
+				<li>Digitalt kundforum</li>
+				<li>Har du en fråga? Besök vårt kundforum, <a href="https://forum.myh.se/org/myndigheten-for-yrkeshogskola/">forum.myh.se</a></li>
+				<li>Telefon</li>
+				<li>Ring vår växel 010-209 01 00
+				 Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</li>
+			  </ul>
+			  
+			 
+			</section>
+			<section>
+			  <h5>Om webbplatsen</h5>
+			  <ul>
+				<li><a href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
+				<li><a href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor (cookies🍪)</a></li>
+				<li><a href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
+				<li><a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
+			  </ul>			   
+			</section>
+			<section> 
+			  <h5>Våra övriga webbplatser</h5>
+				<ul>	
+					<li><a href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
+					<li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
+					<li><a href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
+					<li><a href="www.blitolk.nu">blitolk.nu</a></li>
+					<li><a href="www.seqf.se">seqf.se</a></li>				
+				</ul>				  
+			</section>
+			<img src="/src/myhLogo.svg" alt="myndigheten-for-yrkeshogskola">
+				<a href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
+			</article>		
+		</div>
+</body>
+</html>
