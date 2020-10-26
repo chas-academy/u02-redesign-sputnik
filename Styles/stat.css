@@ -118,7 +118,9 @@ main {
 /* Navigation and search start */
 
 nav {
-  position: relative;
+  display: flex;
+  align-self: center;
+  margin: auto;
 }
 nav ul {
   display: -webkit-box;
@@ -265,7 +267,7 @@ footer {
   box-sizing: border-box;
 }
 
-footer .wave {
+#wave1 {
   width: 100%;
   height: 100%;
   margin-bottom: -7px;
