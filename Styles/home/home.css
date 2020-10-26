@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 .toggle-button {
   position: absolute;
   top: 1rem;
@@ -7,11 +5,11 @@
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 40px;
   height: 35px;
 }
@@ -29,7 +27,7 @@
   background-color: #faf8f8;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -64,11 +62,11 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1rem;
 }
 
@@ -91,8 +89,8 @@ nav form {
   display: flex;
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav form input {
@@ -122,8 +120,8 @@ nav form button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   nav div {
     font-size: 1rem;
@@ -141,11 +139,11 @@ nav form button {
   nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;
@@ -162,8 +160,8 @@ nav form button {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar-links ul li {
     text-align: center;
@@ -179,319 +177,10 @@ nav form button {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html {
-  background-color: #264653;
-}
-
-nav {
-  position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 5;
-  grid-area: nav;
-}
-
-nav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.4rem;
-}
-
-nav .search button {
-  border: none;
-  background-color: #ffeb00;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-  margin: 0.2rem 0rem 0rem 1rem;
-}
-
-nav .search input {
-  font-size: 1rem;
-  border-radius: 25px;
-  padding: 1rem;
-  margin-left: 3rem;
-  background-color: #ffeb00;
-  border: none;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  padding-left: 3rem;
-  margin-top: 1rem;
-}
-
-nav ul li {
-  font-family: inter;
-  margin: 0.8rem;
-  font-weight: 500;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-nav ul a {
-  font-size: 1.5rem;
-  color: #faf8f8;
-}
-
-main {
-  background-color: #264653;
-  color: #faf8f8;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 10fr 1fr;
-  grid-template-columns: 1fr 10fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-main section {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 6em;
-  padding-top: 4em;
-  max-width: 1024px;
-}
-
-main section #lagar-nav {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-main section #lagar-nav div {
-  padding: 1em;
-}
-
-main section #lagar-nav ul {
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-main section #lagar-nav ul li {
-  background: #e9c46a;
-  margin: 0;
-  padding: 1em;
-  width: 100%;
-  border: 3px solid #264653;
-  border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-main section #lagar-nav ul li:hover {
-  background: #f4a261;
-  -webkit-transform: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
-}
-
-main section #lagar-nav ul li img {
-  margin: 0;
-  padding: 0;
-  background: #e9c46a;
-  border-radius: 50%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-main section #lagar-nav ul li:hover img {
-  background: #f4a261;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-main section #lagar-nav ul li a {
-  font-family: inter;
-  color: black;
-}
-
-main section article {
-  background: #264653;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-main section article h1 {
-  margin: 1em 1em 0.5em 0.5em;
-  font-size: 2rem;
-  color: #e9c46a;
-}
-
-main section article p:first-of-type {
-  font-weight: bold;
-}
-
-main section article p {
-  margin: 1em;
-}
-
-main img {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  max-width: 40%;
-  height: auto;
-  background: #264653;
-  padding: 2em;
-  margin: 2em;
-}
-
-#header-nav {
-  background-color: #264653;
-}
-
-@media only screen and (max-width: 1023px) {
-  main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 0.3fr;
-    grid-template-rows: 1fr 0.3fr;
-    justify-items: center;
-  }
-  main section {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  main section #lagar-nav {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  main section article {
-    background: #264653;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  }
-  main section article h1 {
-    margin: 1em 1em 0.5em 0.5em;
-    font-size: 2rem;
-    color: #e9c46a;
-  }
-  main section article p:first-of-type {
-    font-weight: bold;
-  }
-  main section article p {
-    margin: 1em;
-  }
-  main img {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    max-width: 100%;
-    height: 100%;
-    background: #264653;
-    padding: 2rem;
-    margin: 0;
-  }
-}
-
-* {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   list-style: none;
   text-decoration: none;
   font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
@@ -522,7 +211,7 @@ a {
 
 .big-btn:hover {
   -webkit-box-shadow: 2px 0px 10px #181717;
-  box-shadow: 2px 0px 10px #181717;
+          box-shadow: 2px 0px 10px #181717;
 }
 
 .opacity {
@@ -551,11 +240,11 @@ p {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside .  . . . .";
+      grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside textarea textarea calender calender ." "aside .  . . . .";
 }
 
 aside {
@@ -675,14 +364,14 @@ aside a:hover {
 
 .firstSectionMain {
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .firstSectionMain h2 {
@@ -704,11 +393,11 @@ aside a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 80px;
   background-color: #e9c46a;
@@ -723,8 +412,8 @@ aside a:hover {
 
 .firstSectionMain .textContainer .leftArrow {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60px;
   height: 60px;
   margin-left: 1rem;
@@ -738,8 +427,8 @@ aside a:hover {
   margin-left: 1rem;
   text-align: start;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .firstSectionMain .imgMain {
@@ -768,14 +457,14 @@ aside a:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .flexContainer div {
@@ -813,10 +502,10 @@ footer .footer-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #e9c46a;
 }
 
@@ -829,7 +518,7 @@ footer .arrowup {
   width: 80px;
   height: 80px;
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 footer img {
@@ -863,7 +552,7 @@ footer section h5 {
     margin-top: 8rem;
   }
   .grid-container {
-    grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
+        grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
   }
 }
 
@@ -885,11 +574,11 @@ footer section h5 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 0.7fr 1.2fr 1.1fr 0.2fr;
-    grid-template-columns: 0.7fr 1.2fr 1.1fr 0.2fr;
+        grid-template-columns: 0.7fr 1.2fr 1.1fr 0.2fr;
     -ms-grid-rows: 0.1fr 0fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "aside nav nav nav" "aside . . ." "aside textarea textarea  ." "aside calender calender ." ". . . .";
+        grid-template-areas: "aside nav nav nav" "aside . . ." "aside textarea textarea  ." "aside calender calender ." ". . . .";
   }
   aside {
     -ms-grid-row: 1;
@@ -991,11 +680,11 @@ footer section h5 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 0.3fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "nav nav nav nav nav nav" "textarea textarea textarea textarea textarea ." "textarea textarea textarea textarea textarea ." "calender calender calender calender calender calender" "calender calender calender calender calender calender";
+        grid-template-areas: "nav nav nav nav nav nav" "textarea textarea textarea textarea textarea ." "textarea textarea textarea textarea textarea ." "calender calender calender calender calender calender" "calender calender calender calender calender calender";
   }
   .nav {
     -ms-grid-row: 1;
@@ -1082,4 +771,4 @@ footer section h5 {
     height: 500px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

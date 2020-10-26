@@ -4,53 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verksamhetsområden</title>
-    <script src="/hamburgermenu.js" defer></script>
+    <script src="..styles/hamburgermenu.js"></script>
     <link rel="stylesheet" href="../styles/verksam.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap">
 </head>
 <body>
-    <header id="headerScroll" class="grid-container">
-        <!--Navbar-->
-        <nav>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-          <ul>
-            <li><a href="#" class="opacity">Start</a></li>
-            <li><a href="/page/omoss.html">Om oss</a></li>
-            <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
-            <li><a href="/page/statistik.html" >Statistik</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropbtn">Övrigt</a>
-              <div class="dropdown-content">
-                <a href="/page/publications.html">Publikationer</a>
-                <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
-                <a href="#">Nyhetsrum</a>
-                <a href="#">Kontakt</a>
-              </div>
-            </li>
-            <!--search menu!-->
-            <div class="search-container">
-              <form action="submit">
-              <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
-              <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
-            </form>
-            </div>
-           <!--search menu end!-->
-          </ul>
-        </div>
-      </nav>
-      </header>
-
-    <img class="backgroundpicture" src="../src/backgroundpicture1.jpg" alt="">
   
+  <header id="headerScroll" class="grid-container">
+    <!--Navbar-->
+    <nav>
+      <a aria-haspopup="true" class="toggle-button">
+        <span  class="bar"></span>
+        <span  class="bar"></span>
+        <span  class="bar"></span>
+      </a>
+      <div class="navbar-links">
+      <ul>
+        <li><a href="/page/index.html" class="opacity">Start</a></li>
+        <li><a href="/page/omoss.html">Om oss</a></li>
+        <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+        <li><a href="/page/statistik.html" >Statistik</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Övrigt</a>
+          <div class="dropdown-content">
+            <a href="/page/publications.html">Publikationer</a>
+            <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
+            <a href="/page/nyhetsrum.html">Nyhetsrum</a>
+            <a href="#">Kontakt</a>
+          </div>
+        </li>
+        <!--search menu!-->
+        <li><form action="submit">
+          <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+          <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+        </form></li>
+      </ul>
+    </div>
+  </nav>
 
-        <h1>Verksamhetsområden</h1>
-      
+<!--
+    <img class="backgroundpicture" src="../src/backgroundpicture1.jpg" alt="">
+  -->
+        <div class="title">
+        <h1>Verksamhetsområden</h1></div>
+  
            <section class="textContainer">
            <h3>Yrkeshögskolan</h3>
            <p>
@@ -65,6 +63,7 @@
                    Utbildningar som är högskoleförberedande, 
                    yrkesinriktade eller inom kulturarvsområdet och drivs av privata utbildningsanordnare.
                </p>
+           </section>
         
                <section class="textContainer">
                <h3>Om Validering</h3>
@@ -82,9 +81,7 @@
                </p>
             </section>
 
-            <img class="humanImg" src="../src/human.svg" alt="">
-
-            <section class="rightbox1"></section>
+            <section class="rightbox1">
             <section class="textContainer">
                 <h3>Tolkutbildningar</h3>
                 <p>
@@ -98,6 +95,9 @@
                 Eftergymnasiala utbildningar inom olika områden som bedrivs av fristående skolor. Utbildningarnas statliga stöd omfattas endast av tillsyn.
                 </p>
             </section>
+
+            <img class="humanImg" src="../src/human.svg" alt="">
+
             <footer>
   
                 <img class="wave" src="/src/wave.jpg" alt="">
@@ -122,8 +122,8 @@
                      <li><a href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
                      <li><a href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
                    </ul>
-                
                  </section>
+
                  <section> 
                    <h5>Våra övriga webbplatser</h5>
                    <ul>

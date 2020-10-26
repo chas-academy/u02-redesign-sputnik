@@ -1,6 +1,10 @@
-@import "_variabels.scss";
+@import "../_variabels.scss";
+@import "../_nav.scss";
+@import "../general.scss";
 
 .grid-container {
+  border-bottom: 2px solid #e76f51;
+  height: 100vh;
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -161,10 +165,10 @@ aside {
     width: 700px;
     height: 700px;
   }
-  #changeColorSectionTwo {
+  .changeColorSectionTwo {
     background-color: $baseColorSectionTwo;
   }
-  #changeColorSectionThree {
+  .changeColorSectionThree {
     background-color: $baseColorSectionThree;
   }
 }
@@ -203,27 +207,25 @@ aside {
   .aktuelltimg {
     border-radius: $box-radius;
     width: 100%;
-    height: 400px;
   }
 }
 footer {
   background-color: $basecColorDiv;
+  .footer-container {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: $basecColorDiv;
+  }
   .wave {
     width: 100%;
     height: 100%;
-    background-color: white;
-    color: white;
   }
   .arrowup {
     width: 80px;
     height: 80px;
     transform: rotate(180deg);
-  }
-  article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: $basecColorDiv;
   }
 
   img {
@@ -276,7 +278,6 @@ footer {
       }
     }
     img {
-      width: 500px;
       height: 320px;
     }
   }
@@ -359,7 +360,6 @@ footer {
     }
     img {
       width: 400px;
-      height: 280px;
     }
   }
   .firstSectionMain {
@@ -461,7 +461,7 @@ footer {
       width: 150px;
       height: 150px;
     }
-    article {
+    footer-container {
       text-align: center;
     }
   }

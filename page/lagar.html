@@ -1,51 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/style.css"> 
+  <script src="/hamburgermenu.js" defer></script>
   <title>Lagar, regler, tillsyn</title>
 </head>
 
 <body>
-  <main>
-    <nav>
-      <div>
-        <h4>Start > Lagar, regler, tillsyn</h4>
-      </div>
+  <!--Navbar-->    
+  <nav id="header-nav">
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
       <ul>
-        <li><a href="#">Lagar och fördningar</a></li>
-        <li><a href="#">Gällande föreskrifter</a></li>
-        <li><a href="#">Allmänna råd</a></li>
-        <li><a href="#">Tillsyn</a></li>
-        <li><a href="#">Kvalitetsgranskning</a></li>
-        <li><a href="#">Anmäl brister i en utbildning</a></li>
+        <li><a href="#" class="opacity">Start</a></li>
+        <li><a href="/page/omoss.html">Om oss</a></li>
+        <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+        <li><a href="/page/statistik.html">Statistik</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Övrigt</a>
+          <div class="dropdown-content">
+            <a href="/page/publications.html">Publikationer</a>
+            <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
+            <a href="/page/nyhetsrum.html">Nyhetsrum</a>
+            <a href="#">Kontakt</a>
+          </div>
+        </li>
+        <!--search menu!-->
+        <li>
+          <form action="submit">
+            <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+            <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+          </form>
+        </li>
+        <!--search menu end!-->
       </ul>
-    </nav>
+    </div>
+  </nav>  
 
-    <article>
-      <h1>Lagar, regler, tillsyn</h1>
-      <p>
-        För alla utbildningsformer finns det lagar och andra bestämmelser som måste följas. Det gäller till exempel hur
-        utbildningarna ska utformas, kursplaner, betygskriterier, examina, tillträde och avgifter.
-      </p>
-      <p>
-        Här hittar du de lagar och förordningar som reglerar de utbildningsformer som Myndigheten för yrkeshögskolan
-        ansvarar
-        för. Här finns även de föreskrifter som vi har beslutat om, samt de allmänna råd vi har gett ut.
-      </p>
-      <p>
-        Genom tillsyn kontrollerar myndigheten att utbildningarna följer de lagar och regler som gäller. I menyn till
-        höger kan
-        du läsa om hur tillsynen går till och hitta tillsynsbeslut.
-      </p>
-      <p>
-        Om du anser att det finns brister i en utbildning kan du anmäla det till oss. Anmäl brister i en utbildning.
-      </p>
-    </article>
+  <!-- Main content: -->
+  <main>
+    <section>
+      <nav id="lagar-nav">
+        <div>
+          <h3>Start > Lagar, regler, tillsyn</h3>
+        </div>
+        <ul>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Lagar-och-forordningar/">Lagar och fördningar</a><img src="../src/Vector.svg" alt=""></li>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Foreskrifter/">Gällande föreskrifter</a><img src="../src/Vector.svg" alt=""></li>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Allmanna-rad/">Allmänna råd</a><img src="../src/Vector.svg" alt=""></li>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Tillsyn/">Tillsyn</a><img src="../src/Vector.svg" alt=""></li>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Kvalitetsgranskning/">Kvalitetsgranskning</a><img src="../src/Vector.svg" alt=""></li>
+          <li><a href="https://www.myh.se/Lagar-regler-och-tillsyn/Anmal-brister-i-en-utbildning/">Anmäl brister i en utbildning</a><img src="../src/Vector.svg" alt=""></li>
+        </ul>
+      </nav>
 
+      <article>
+        <h1>Lagar, regler, tillsyn</h1>
+        <p>
+          För alla utbildningsformer finns det lagar och andra bestämmelser som måste följas. Det gäller till exempel hur
+          utbildningarna ska utformas, kursplaner, betygskriterier, examina, tillträde och avgifter.
+        </p>
+        <p>
+          Här hittar du de lagar och förordningar som reglerar de utbildningsformer som Myndigheten för yrkeshögskolan
+          ansvarar
+          för. Här finns även de föreskrifter som vi har beslutat om, samt de allmänna råd vi har gett ut.
+        </p>
+        <p>
+          Genom tillsyn kontrollerar myndigheten att utbildningarna följer de lagar och regler som gäller. I menyn till
+          höger kan
+          du läsa om hur tillsynen går till och hitta tillsynsbeslut.
+        </p>
+        <p>
+          Om du anser att det finns brister i en utbildning kan du anmäla det till oss. Anmäl brister i en utbildning.
+        </p>
+      </article>
+    </section>
     <img src="../src/book_reader.svg" alt="">
   </main>
+
+  <!-- Footer -->  
+      
+  <footer>
+    <img class="wave" src="/src/wave-blue.png" alt="">
+    <div class="footer-container">
+      <section>
+        <h5>Kontakt</h5>
+        <ul>
+          <li>Digitalt kundforum</li>
+          <li>Har du en fråga? Besök vårt kundforum, <a
+              href="https://forum.myh.se/org/myndigheten-for-yrkeshogskola/">forum.myh.se</a></li>
+          <li>Telefon</li>
+          <li>Ring vår växel 010-209 01 00
+            Växeln är öppen vardagar 9.00 - 11.30, 13.00 - 15.00</li>
+        </ul>
+  
+  
+      </section>
+      <section>
+        <h5>Om webbplatsen</h5>
+        <ul>
+          <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Anvanda-webbplatsen/">Använda webbplatsen</a></li>
+          <li><a rel="noopener" href="https://www.myh.se/Om-webbplatsen/Webbkakor-pa-den-har-webbplatsen/">Om webbkakor
+              (cookies🍪)</a></li>
+          <li><a rel="noopener" href="https://www.myh.se/Webbkarta/">Webbkarta</a></li>
+          <li><a rel="noopener"
+              href="https://www.myh.se/Om-webbplatsen/Tillganglighetsredogorelse-/">Tillgänglighetsredogörelse</a></li>
+        </ul>
+  
+      </section>
+      <section>
+        <h5>Våra övriga webbplatser</h5>
+        <ul>
+          <li><a rel="noopener" href="https://www.yrkeshogskolan.se/">yrkeshogskolan.se</a></li>
+          <li><a rel="noopener" href="https://www.konstkulturutbildning.se/">konstkulturutbildning.se</a></li>
+          <li><a rel="noopener" href="www.blitolk.nu">blitolk.nu</a></li>
+          <li><a rel="noopener" href="www.seqf.se">seqf.se</a></li>
+        </ul>
+      </section>
+      <img src="/src/myhLogo.svg" alt="myndigheten-for-yrkeshogskola">
+      <a aria-label="pil som tar dig till början" href="#header-nav"><img class="arrowup" src="/src/Vector.svg"
+          alt="bild som tar dig till början av sidan."></a>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,232 @@
+// Reset:
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $darkcolor;
+}
+
+// Main-Navbar
+nav {
+  position: relative;
+  grid-area: nav;
+
+  .search {
+    display: flex;
+    margin-top: 0.4rem;
+
+    button {
+      border: none;
+      background-color: $base-color-nav;
+      font-size: 1.5rem;
+      border-radius: $box-radius;
+      padding: 1.2rem 2.8rem 1.4rem 2.8rem;
+      margin: 0.2rem 0rem 0rem 1rem;
+    }
+    input {
+      font-size: 1rem;
+      border-radius: $box-radius;
+      padding: 1rem;
+      margin-left: 3rem;
+      background-color: $base-color-nav;
+      border: none;
+    }
+  }
+  ul {
+    @include flexCenter;
+    justify-content: flex-start;
+    padding-left: 3rem;
+    margin-top: 1rem;
+
+    li {
+      font-family: inter;
+      margin: 0.8rem;
+
+      font-weight: 500;
+      border-radius: $box-radius;
+      cursor: pointer;
+    }
+    a {
+      font-size: 1.5rem;
+      color: $text-color;
+    }
+  }
+}
+
+// Lagar-Main-content:
+main {
+  background-color: $darkcolor;
+  color: $text-color;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  & section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 6em;
+    padding-top: 4em;
+    max-width: 1024px;
+
+    // Lagar-Main-navbar:
+    & #lagar-nav {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    & #lagar-nav div {
+      padding: 1em;
+    }
+
+    & #lagar-nav ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & #lagar-nav ul li {
+      background: $basecColorDiv;
+      margin: 0;
+      padding: 1em;
+      width: 100%;
+      border: 3px solid $darkcolor;
+      border-radius: $box-radius;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.2s;
+    }
+
+    // Hover-effect:
+    & #lagar-nav ul li:hover {
+      background: $baseColorSectionTwo;
+      transform: scale(1.05, 1.05);
+    }
+
+    & #lagar-nav ul li img {
+      margin: 0;
+      padding: 0;
+      background: $basecColorDiv;
+      border-radius: 50%;
+      transition: 0.2s;
+    }
+
+    // Hover-effect:
+    & #lagar-nav ul li:hover img {
+      background: $baseColorSectionTwo;
+      transform: rotate(-90deg);
+    }
+
+    & #lagar-nav ul li a {
+      font-family: $font-family-inter;
+      color: black;
+    }
+
+    // Lagar-Main-text
+    & article {
+      background: $darkcolor;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & h1 {
+        margin: 1em 1em 0.5em 0.5em;
+        font-size: 2rem;
+        color: $basecColorDiv;
+      }
+
+      p:first-of-type {
+        font-weight: bold;
+      }
+
+      & p {
+        margin: 1em;
+      }
+    }
+  }
+
+  // Lagar-Main-img:
+  & img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 40%;
+    height: auto;
+    background: $darkcolor;
+    padding: 2em;
+    margin: 2em;
+  }
+}
+
+// Header-navbar:
+#header-nav {
+  background-color: $darkcolor;
+}
+
+// Media Queries:
+
+@media only screen and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    justify-items: center;
+
+    & section {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & #lagar-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      & article {
+        background: $darkcolor;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & h1 {
+          margin: 1em 1em 0.5em 0.5em;
+          font-size: 2rem;
+          color: $basecColorDiv;
+        }
+
+        p:first-of-type {
+          font-weight: bold;
+        }
+
+        & p {
+          margin: 1em;
+        }
+      }
+    }
+
+    & img {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      max-width: 100%;
+      height: 100%;
+      background: $darkcolor;
+      padding: 2rem;
+      margin: 0;
+    }
+  }
+}

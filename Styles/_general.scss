@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: $darkcolor;
+  overflow-y: hidden;
+}
+a {
+  color: black;
+}
+
+.big-btn {
+  background-color: $basecColorDiv;
+  border-radius: $box-radius;
+  font-size: 25px;
+  padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  color: $darkcolor;
+}
+.big-btn:hover {
+  box-shadow: 2px 0px 10px rgb(24, 23, 23);
+}
+
+.opacity {
+  opacity: $dimmdown;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: $font-family-inter;
+  font-weight: 600;
+}
+
+p {
+  font-family: $font-family-poppins;
+  font-weight: 400;
+}

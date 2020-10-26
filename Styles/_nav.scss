@@ -61,10 +61,6 @@ nav {
       color: white;
     }
   }
-}
-
-//search menu nav
-.search-container {
   form {
     display: flex;
     text-align: center;
@@ -84,6 +80,8 @@ nav {
     }
   }
 }
+
+//search menu nav
 
 @media (max-width: 1700px) {
   nav {
@@ -108,10 +106,9 @@ nav {
       margin-top: 0rem;
     }
   }
-  .search-container {
-    form {
-      margin: 1rem;
-    }
+
+  form {
+    margin: 1rem;
   }
 }
 @media (max-width: 1024px) {
