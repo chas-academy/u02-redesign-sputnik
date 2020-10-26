@@ -1,3 +1,15 @@
+.info-nav {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  a {
+    font-size: 12px;
+    color: white;
+  }
+}
+
 .toggle-button {
   position: absolute;
   top: 1rem;
@@ -47,7 +59,7 @@ nav {
 
   ul {
     @include flexCenter;
-    margin-top: 1rem;
+
     li {
       font-family: inter;
       margin: 0.8rem;
@@ -118,6 +130,7 @@ nav {
   }
   .toggle-button {
     display: flex;
+    margin-top: 1.5rem;
   }
 
   .navbar-links {

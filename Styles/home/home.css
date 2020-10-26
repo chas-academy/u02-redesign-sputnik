@@ -1,3 +1,20 @@
+.info-nav {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.info-nav a {
+  font-size: 12px;
+  color: white;
+}
+
 .toggle-button {
   position: absolute;
   top: 1rem;
@@ -67,7 +84,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
 }
 
 nav ul li {
@@ -149,6 +165,7 @@ nav form button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1.5rem;
   }
   .navbar-links {
     display: none;
