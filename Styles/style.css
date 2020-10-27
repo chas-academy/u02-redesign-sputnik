@@ -126,9 +126,8 @@ nav form button {
 }
 
 @media (max-width: 1700px) {
-  nav li,
-  nav a {
-    font-size: 1rem;
+  a {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -159,9 +158,6 @@ nav form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;

@@ -69,6 +69,12 @@ p {
     background-color: $darkcolor;
   }
 }
+.info-nav {
+  a {
+    font-size: 12px;
+    color: black !important;
+  }
+}
 header {
   overflow: hidden;
   position: relative;
@@ -76,6 +82,11 @@ header {
 
   nav {
     z-index: 2;
+    .info-nav {
+      a {
+        color: black;
+      }
+    }
     a {
       color: $darkcolor;
     }
@@ -175,9 +186,7 @@ main {
     height: 100%;
     width: 100%;
   }
-  .Colorlink {
-    color: #ac4fc6;
-  }
+
   section {
     padding: 1.5rem;
     margin: 1.5rem;
@@ -236,9 +245,7 @@ main {
       }
     }
   }
-  .Colorlink {
-    color: $baseColorSectionThree;
-  }
+
   section {
     padding: 1.5rem;
     margin: 1.5rem;

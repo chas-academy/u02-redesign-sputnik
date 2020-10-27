@@ -123,9 +123,8 @@ nav form button {
 }
 
 @media (max-width: 1700px) {
-  nav li,
-  nav a {
-    font-size: 1rem;
+  a {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -156,9 +155,6 @@ nav form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;
@@ -263,6 +259,11 @@ p {
   background-color: #264653;
 }
 
+.info-nav a {
+  font-size: 12px;
+  color: black !important;
+}
+
 header {
   overflow: hidden;
   position: relative;
@@ -271,6 +272,10 @@ header {
 
 header nav {
   z-index: 2;
+}
+
+header nav .info-nav a {
+  color: black;
 }
 
 header nav a {
@@ -398,10 +403,6 @@ main .parallax_2 {
   width: 100%;
 }
 
-main .Colorlink {
-  color: #ac4fc6;
-}
-
 main section {
   padding: 1.5rem;
   margin: 1.5rem;
@@ -473,10 +474,6 @@ main section p {
 
 .press div h3 a {
   color: #264653;
-}
-
-.press .Colorlink {
-  color: #e76f51;
 }
 
 .press section {

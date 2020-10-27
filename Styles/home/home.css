@@ -124,9 +124,8 @@ nav form button {
 }
 
 @media (max-width: 1700px) {
-  nav li,
-  nav a {
-    font-size: 1rem;
+  a {
+    font-size: 1.2rem !important;
   }
 }
 
@@ -157,9 +156,6 @@ nav form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;
@@ -341,7 +337,6 @@ aside a:hover {
 
 .calender h3 {
   font-size: 2.5rem;
-  text-align: center;
   background-color: #e9c46a;
   padding: 1rem;
   border-radius: 10px 10px 0px 0px;
@@ -564,12 +559,22 @@ footer section h5 {
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-@media (max-width: 1700px) {
+@media (min-width: 1700px) {
   .firstSectionMain {
     margin-top: 8rem;
   }
   .grid-container {
-        grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside . . . . .";
+        grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea . ." "aside textarea . . . ." "aside . . . . .";
+  }
+  .grid-container .calender {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .calender {
+    max-height: 550px;
+    margin-left: 2rem;
   }
 }
 
@@ -610,21 +615,7 @@ footer section h5 {
     grid-area: textarea;
   }
   .calender {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-area: calender;
-    height: 300px;
-    margin: 5rem;
-  }
-  .calender h5 {
-    font-size: 1.2rem;
-  }
-  .calender p {
-    font-size: 1rem;
-  }
-  .calender h3 {
-    font-size: 1.5rem;
+    display: none;
   }
 }
 
