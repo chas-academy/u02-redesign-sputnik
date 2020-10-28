@@ -69,6 +69,12 @@ p {
     background-color: $darkcolor;
   }
 }
+.info-nav {
+  a {
+    font-size: 12px;
+    color: black !important;
+  }
+}
 header {
   overflow: hidden;
   position: relative;
@@ -76,6 +82,11 @@ header {
 
   nav {
     z-index: 2;
+    .info-nav {
+      a {
+        color: black;
+      }
+    }
     a {
       color: $darkcolor;
     }
@@ -173,11 +184,8 @@ main {
     position: absolute;
     top: 0%;
     height: 100%;
-    width: 100%;
   }
-  .Colorlink {
-    color: #ac4fc6;
-  }
+
   section {
     padding: 1.5rem;
     margin: 1.5rem;
@@ -236,9 +244,7 @@ main {
       }
     }
   }
-  .Colorlink {
-    color: $baseColorSectionThree;
-  }
+
   section {
     padding: 1.5rem;
     margin: 1.5rem;
@@ -367,10 +373,10 @@ footer {
       padding: 0.6rem;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
   footer {
@@ -381,5 +387,11 @@ footer {
         max-width: none;
       }
     }
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }

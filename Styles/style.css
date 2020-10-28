@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+.info-nav {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.info-nav a {
+  font-size: 12px;
+  color: white;
+}
+
 .toggle-button {
   position: absolute;
   top: 1rem;
@@ -69,7 +86,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
 }
 
 nav ul li {
@@ -109,13 +125,6 @@ nav form button {
   border-style: none;
 }
 
-@media (max-width: 1700px) {
-  nav li,
-  nav a {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 1200px) {
   nav .search {
     display: -webkit-box;
@@ -143,14 +152,12 @@ nav form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1.5rem;
   }
   .navbar-links {
     display: none;

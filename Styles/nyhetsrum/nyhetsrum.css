@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+.info-nav {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.info-nav a {
+  font-size: 12px;
+  color: white;
+}
+
 .toggle-button {
   position: absolute;
   top: 1rem;
@@ -66,7 +83,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
 }
 
 nav ul li {
@@ -106,13 +122,6 @@ nav form button {
   border-style: none;
 }
 
-@media (max-width: 1700px) {
-  nav li,
-  nav a {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 1200px) {
   nav .search {
     display: -webkit-box;
@@ -140,14 +149,12 @@ nav form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1.5rem;
   }
   .navbar-links {
     display: none;
@@ -246,6 +253,11 @@ p {
   background-color: #264653;
 }
 
+.info-nav a {
+  font-size: 12px;
+  color: black !important;
+}
+
 header {
   overflow: hidden;
   position: relative;
@@ -254,6 +266,10 @@ header {
 
 header nav {
   z-index: 2;
+}
+
+header nav .info-nav a {
+  color: black;
 }
 
 header nav a {
@@ -378,11 +394,6 @@ main .parallax_2 {
   position: absolute;
   top: 0%;
   height: 100%;
-  width: 100%;
-}
-
-main .Colorlink {
-  color: #ac4fc6;
 }
 
 main section {
@@ -456,10 +467,6 @@ main section p {
 
 .press div h3 a {
   color: #264653;
-}
-
-.press .Colorlink {
-  color: #e76f51;
 }
 
 .press section {
@@ -595,10 +602,10 @@ footer section h5 {
     padding: 0.6rem;
   }
   .nyhetsrum-header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .nyhetsrum-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   footer section {
     width: 100%;
@@ -606,6 +613,12 @@ footer section h5 {
   }
   footer section li {
     max-width: none;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
 /*# sourceMappingURL=nyhetsrum.css.map */
