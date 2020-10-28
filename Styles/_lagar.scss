@@ -9,53 +9,6 @@ html {
   background-color: $darkcolor;
 }
 
-// Main-Navbar
-nav {
-  position: relative;
-  grid-area: nav;
-
-  .search {
-    display: flex;
-    margin-top: 0.4rem;
-
-    button {
-      border: none;
-      background-color: $base-color-nav;
-      font-size: 1.5rem;
-      border-radius: $box-radius;
-      padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-      margin: 0.2rem 0rem 0rem 1rem;
-    }
-    input {
-      font-size: 1rem;
-      border-radius: $box-radius;
-      padding: 1rem;
-      margin-left: 3rem;
-      background-color: $base-color-nav;
-      border: none;
-    }
-  }
-  ul {
-    @include flexCenter;
-    justify-content: flex-start;
-    padding-left: 3rem;
-    margin-top: 1rem;
-
-    li {
-      font-family: inter;
-      margin: 0.8rem;
-
-      font-weight: 500;
-      border-radius: $box-radius;
-      cursor: pointer;
-    }
-    a {
-      font-size: 1.5rem;
-      color: $text-color;
-    }
-  }
-}
-
 // Lagar-Main-content:
 main {
   background-color: $darkcolor;
@@ -83,7 +36,18 @@ main {
     }
 
     & #lagar-nav div {
-      padding: 1em;
+      padding: 0.5em;
+      font-size: 1rem;
+      font-weight: normal;
+
+      & h3 a {
+        color: $text-color;
+        font-weight: normal;
+        font-family: $font-family-inter;
+      }
+      & h3 a:hover {
+        color: $baseColorSectionTwo;
+      }
     }
 
     & #lagar-nav ul {
