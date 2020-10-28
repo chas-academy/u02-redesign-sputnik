@@ -377,18 +377,17 @@ p{
   margin-top: 200px; 
 }
 
-/* Hitta en annan bild eller gör denna skalbar */
-
 footer {
   clear: both; 
-  border-top: solid 10px white; 
+  border-top: solid 100px white; 
   background-color: #E9C46A;
 }
 footer .wave {
   width: 100%;
   height: 100%;
-  background-color: white; 
+  background-color: none; /* Kanten på vågen */
   color: white; 
+  margin-top: -250px; 
 }
 footer .arrowup {
   width: 80px;
