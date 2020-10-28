@@ -122,12 +122,6 @@ nav form button {
   border-style: none;
 }
 
-@media (max-width: 1700px) {
-  a {
-    font-size: 1.2rem !important;
-  }
-}
-
 @media (max-width: 1200px) {
   nav .search {
     display: -webkit-box;
@@ -400,7 +394,6 @@ main .parallax_2 {
   position: absolute;
   top: 0%;
   height: 100%;
-  width: 100%;
 }
 
 main section {
@@ -609,10 +602,10 @@ footer section h5 {
     padding: 0.6rem;
   }
   .nyhetsrum-header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .nyhetsrum-header p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   footer section {
     width: 100%;
@@ -620,6 +613,12 @@ footer section h5 {
   }
   footer section li {
     max-width: none;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
 /*# sourceMappingURL=nyhetsrum.css.map */
