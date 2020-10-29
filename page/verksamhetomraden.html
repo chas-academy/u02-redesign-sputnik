@@ -8,41 +8,46 @@
     <link rel="stylesheet" href="../styles/verksam.css"> 
     <link rel="stylesheet" href="../styles/verksam1.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap">
 </head>
 
 
 <header id="headerScroll" class="grid-container">
-  <!--Navbar-->
   <nav>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div>
+      <ul class="info-nav">
+        <li><a href="#">In English</a></li>
+        <li><a href="#">Lättläst</a></li>
+        <li><a href="#">Anpassa</a></li>
+      </ul>
+    </div>
+    <a aria-haspopup="true" class="toggle-button">
+      <span  class="bar"></span>
+      <span  class="bar"></span>
+      <span  class="bar"></span>
     </a>
     <div class="navbar-links">
     <ul>
-      <li><a href="#" class="opacity">Start</a></li>
+      <li><a href="/page/index.html" class="opacity">Start</a></li>
       <li><a href="/page/omoss.html">Om oss</a></li>
       <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
       <li><a href="/page/statistik.html" >Statistik</a></li>
       <li class="dropdown">
         <a href="#" class="dropbtn">Övrigt</a>
         <div class="dropdown-content">
-          <a href="/page/publications.html">Publikationer</a>
+          <a href="/page/publikationer.html">Publikationer</a>
           <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
-          <a href="#">Nyhetsrum</a>
+          <a href="/page/nyhetsrum.html">Nyhetsrum</a>
           <a href="#">Kontakt</a>
+          <a href="#">Mina sidor</a>
         </div>
       </li>
       <!--search menu!-->
-      <div class="search-container">
-        <form action="submit">
-        <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+      <li><form action="submit">
+        <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
         <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
-      </form>
-      </div>
-     <!--search menu end!-->
+      </form></li>
     </ul>
   </div>
 </nav>
@@ -53,6 +58,7 @@
 
 
 <div class="title"><h1>Verksamhetsområden</h1></div>
+
 <div class="main">
   
 <div class="Left_side">
@@ -78,7 +84,6 @@
 		<div>
 			
 			   <div class="textContainer">
-           
 			   <h3>Yrkeshögskolan</h3>
 			   <p>
 				   Utbildningar som svarar mot arbetslivets behov av kvalificerad
@@ -99,25 +104,22 @@
 					   strukturerat sätt, för studier eller arbete, oavsett hur, var eller när de förvärvats.
 				   </p>
 			   </div>
-			   <div class="textContainer">
+			   <div class="textContainer" tabindex="0">
 				   <h3>SeQF</h3>
 				   <p>
 					   Sveriges referensram för kvalifikationer (SeQF) 
 					   ska synliggöra allt lärande för att öka matchningen på arbetsmarknaden.
            </p>
          </div>
-         
-     </div> 
-     			
+     </div> 	
   </div>
-  
   </div>
 </div>
-
+</main>
 
 <footer>
   
-  <img class="wave" src="/src/wave.jpg" alt="">
+  <img class="wave" src="/src/wave-removebg-preview.png" alt="">
   <article>
    <section>
      <h5>Kontakt</h5>
@@ -157,7 +159,6 @@
   </footer>
 </body> 
 </html>
-
 
 <!-- 
 
