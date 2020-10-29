@@ -527,7 +527,6 @@ aside a:hover {
           align-items: center;
   width: 100%;
   height: 80px;
-  background-color: #e9c46a;
   border-radius: 25px;
 }
 
@@ -558,6 +557,14 @@ aside a:hover {
           align-items: center;
 }
 
+.firstSectionMain .color-yellow-bg {
+  background-color: #e9c46a;
+}
+
+.firstSectionMain .color-orange-bg {
+  background-color: #f4a261;
+}
+
 .firstSectionMain .imgMain {
   width: 700px;
   height: 700px;
@@ -568,6 +575,10 @@ aside a:hover {
 }
 
 .firstSectionMain .changeColorSectionThree {
+  background-color: #e76f51;
+}
+
+.color-redOrange-bg {
   background-color: #e76f51;
 }
 

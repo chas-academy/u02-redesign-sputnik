@@ -136,8 +136,8 @@ aside {
     align-items: center;
     width: 100%;
     height: 80px;
-    background-color: $basecColorDiv;
     border-radius: $box-radius;
+
     .arrow {
       width: 60px;
       height: 60px;
@@ -160,6 +160,13 @@ aside {
       align-items: center;
     }
   }
+  //color for section
+  .color-yellow-bg {
+    background-color: $basecColorDiv;
+  }
+  .color-orange-bg {
+    background-color: $baseColorSectionTwo;
+  }
   .imgMain {
     width: 700px;
     height: 700px;
@@ -170,6 +177,9 @@ aside {
   .changeColorSectionThree {
     background-color: $baseColorSectionThree;
   }
+}
+.color-redOrange-bg {
+  background-color: $baseColorSectionThree;
 }
 
 //aktuellt
