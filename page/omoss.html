@@ -6,69 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>om oss</title>
     <link rel="stylesheet" href="/Styles/omoss.css">
-    <script src="/hamburgermenu.js" defer></script>"
+    <script src="/hamburgermenu.js" defer></script>
 </head>
-
 <body>
 
-
-
     <!--Navbar-->
-
-
-    <nav>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <nav id="arrow-up">
+        <div>
+          <ul class="info-nav">
+            <li><a href="#">In English</a></li>
+            <li><a href="#">Lättläst</a></li>
+            <li><a href="#">Anpassa</a></li>
+          </ul>
+        </div>
+        <a aria-haspopup="true" class="toggle-button">
+          <span  class="bar"></span>
+          <span  class="bar"></span>
+          <span  class="bar"></span>
         </a>
         <div class="navbar-links">
-            <ul>
-                <li><a href="#" class="opacity">Start</a></li>
-                <li><a href="/page/omoss.html">Om oss</a></li>
-                <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
-                <li><a href="/page/statistik.html">Statistik</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Övrigt</a>
-                    <div class="dropdown-content">
-                        <a href="/page/publications.html">Publikationer</a>
-                        <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
-                        <a href="#">Nyhetsrum</a>
-                        <a href="#">Kontakt</a>
-                    </div>
-                </li>
-
-
-
-
-
-
-
-                <!--search menu!-->
-                <div class="search-container">
-                    <form action="submit">
-                        <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
-                        <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
-                    </form>
-                </div>
-                <!--search menu end!-->
-            </ul>
-        </div>
+        <ul>
+          <li><a href="/page/index.html">Start</a></li>
+          <li><a href="/page/omoss.html">Om oss</a></li>
+          <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+          <li><a href="/page/statistik.html" >Statistik</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Övrigt</a>
+            <div class="dropdown-content">
+              <a href="/page/publikationer.html">Publikationer</a>
+              <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
+              <a href="/page/nyhetsrum.html">Nyhetsrum</a>
+              <a href="#">Kontakt</a>
+              <a href="#">Mina sidor</a>
+            </div>
+          </li>
+          <!--search menu!-->
+          <li><form action="submit">
+            <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+            <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+          </form></li>
+        </ul>
+      </div>
     </nav>
 
-
-
-
-
-
-
     <!--wrapper-->
-
 
     <div class="wrapper">
         <div class="content">
 
-            <div class=" center">
+            <div class="center">
                 <h1>OM OSS</h1>
                 <h2>Myndigheten för yrkeshögskolans huvuduppdrag är att ansvara för frågor som rör yrkeshögskolan <br>i
                     Sverige
@@ -110,9 +96,13 @@
                     <div class="container">
                         <img class="picture" src="/src/bild.jpg" alt="picture">
 
-                        <video width="400" height="260" controls>
-                            <source src="/src/video.mp4" vidoe/mp4">
-                        </video>
+                   
+                            <video width="300" height="260" controls>
+                                <source src="/src/video.mp4" type = "video/mp4">
+                            </video>
+
+                       
+                      
                     </div>
 
                 </div>
@@ -169,7 +159,7 @@
                 </ul>
             </section>
             <img src="/src/myhLogo.svg" alt="myndigheten-for-yrkeshogskola">
-            <a href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
+            <a href="#arrow-up"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
         </article>
     </footer>
 
