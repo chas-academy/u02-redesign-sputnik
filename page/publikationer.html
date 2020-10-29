@@ -14,37 +14,43 @@
 
 <body>
   <!--Navbar-->    
-  <nav id="header-nav">
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-      <ul>
-        <li><a href="#" class="opacity">Start</a></li>
-        <li><a href="/page/omoss.html">Om oss</a></li>
-        <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
-        <li><a href="/page/statistik.html">Statistik</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Övrigt</a>
-          <div class="dropdown-content">
-            <a href="/page/publications.html">Publikationer</a>
-            <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
-            <a href="/page/nyhetsrum.html">Nyhetsrum</a>
-            <a href="#">Kontakt</a>
-          </div>
-        </li>
-        <!--search menu!-->
-        <li>
-          <form action="submit">
-            <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
-            <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
-          </form>
-        </li>
-        <!--search menu end!-->
-      </ul>
-    </div>
+  <nav>
+	<div>
+	  <ul class="info-nav">
+		<li><a href="#">In English</a></li>
+		<li><a href="#">Lättläst</a></li>
+		<li><a href="#">Anpassa</a></li>
+	  </ul>
+	</div>
+	<a aria-haspopup="true" class="toggle-button">
+	  <span  class="bar"></span>
+	  <span  class="bar"></span>
+	  <span  class="bar"></span>
+	</a>
+	<div class="navbar-links">
+	<ul>
+	  <li><a href="/page/index.html">Start</a></li>
+	  <li><a href="/page/omoss.html">Om oss</a></li>
+	  <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+	  <li><a href="/page/statistik.html" >Statistik</a></li>
+	  <li class="dropdown">
+		<a href="#" class="dropbtn">Övrigt</a>
+		<div class="dropdown-content">
+		  <a href="/page/publikationer.html">Publikationer</a>
+		  <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
+		  <a href="/page/nyhetsrum.html">Nyhetsrum</a>
+		  <a href="#">Kontakt</a>
+		  <a href="#">Mina sidor</a>
+		</div>
+	  </li>
+	  <!--search menu!-->
+	  <li><form action="submit">
+		<input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+		<button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+	  </form></li>
+	</ul>
+  </div>
+</nav>
   </nav>  
   
   <!-- Main content: -->
