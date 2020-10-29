@@ -6,26 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>om oss</title>
     <link rel="stylesheet" href="/Styles/omoss.css">
+    <script src="/hamburgermenu.js" defer></script>"
 </head>
 
 <body>
 
 
-    <nav class="navbar">
 
-        <img class="logo" src="/src/myhLogo.svg" alt="logo">
-        <ul>
-            <li><a href="#">Start</a></li>
-            <li><a class="active" href="#">Om oss</a></li>
-            <li><a href="#">Verksamhetsområden</a></li>
-            <li><a href="#">Statistik</a></li>
-            <li><a href="#">Övrigt</a></li>
-            <li>Sök</li>
-            <input type="text" namn="sök" placeholder="Ange sökord"><button></button>
+    <!--Navbar-->
 
 
-        </ul>
+    <nav>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#" class="opacity">Start</a></li>
+                <li><a href="/page/omoss.html">Om oss</a></li>
+                <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+                <li><a href="/page/statistik.html">Statistik</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Övrigt</a>
+                    <div class="dropdown-content">
+                        <a href="/page/publications.html">Publikationer</a>
+                        <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
+                        <a href="#">Nyhetsrum</a>
+                        <a href="#">Kontakt</a>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+                <!--search menu!-->
+                <div class="search-container">
+                    <form action="submit">
+                        <input aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+                        <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+                    </form>
+                </div>
+                <!--search menu end!-->
+            </ul>
+        </div>
     </nav>
+
+
+
+
+
+
+
+    <!--wrapper-->
+
 
     <div class="wrapper">
         <div class="content">
@@ -85,9 +123,12 @@
         </div>
     </div>
 
+
+
+    <!--footer-->
     <footer>
 
-        <img class="wave" src="/src/wave.jpg" alt="">
+        <img class="wave" src="/src/wave-blue.png" alt="">
         <article>
 
             <section>
@@ -131,10 +172,6 @@
             <a href="#headerScroll"><img class="arrowup" src="/src/Vector.svg" alt="arrow"></a>
         </article>
     </footer>
-
-
-
-
 
 
 </body>
