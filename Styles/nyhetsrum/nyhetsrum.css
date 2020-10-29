@@ -335,10 +335,6 @@ html {
           box-shadow: 2px 0px 10px #181717;
 }
 
-.opacity {
-  opacity: 70%;
-}
-
 h1,
 h2,
 h3,
@@ -383,7 +379,6 @@ p {
 
 .info-nav a {
   font-size: 12px;
-  color: black !important;
 }
 
 header {
@@ -402,10 +397,6 @@ header nav .info-nav a {
 
 header nav a {
   color: #264653;
-}
-
-header nav .opacity {
-  opacity: 100%;
 }
 
 header nav form input {
@@ -454,15 +445,18 @@ header nav form button {
 .nyhetsrum-header h1 {
   color: #090505;
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 800;
   vertical-align: middle;
   margin-bottom: 2rem;
+  font-family: "inter";
 }
 
 .nyhetsrum-header p {
   font-weight: 500;
-  color: #090505;
-  font-size: 1.5rem;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "inter";
 }
 
 main {
