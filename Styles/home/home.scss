@@ -1,6 +1,7 @@
-@import "../_variabels.scss";
-@import "../_nav.scss";
-
+@import "../components/variabels";
+@import "../components/nav";
+@import "../components/footer";
+@import "../components/general";
 .grid-container {
   border-bottom: 2px solid #e76f51;
   height: 100vh;

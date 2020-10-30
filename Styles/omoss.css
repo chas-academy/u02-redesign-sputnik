@@ -97,50 +97,6 @@ nav form button {
   cursor: pointer;
   border-style: none;
 }
-@media (max-width: 1200px) {
-  nav .search {
-    display: flex;
-    justify-content: flex-end;
-  }
-  nav div {
-    font-size: 1rem;
-  }
-  nav ul li {
-    border-radius: 0px;
-    margin-top: 0rem;
-  }
-  form {
-    margin: 1rem;
-  }
-}
-@media (max-width: 1024px) {
-  nav {
-    flex-direction: column;
-  }
-  .toggle-button {
-    display: flex;
-    margin-top: 1.5rem;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul {
-    margin-top: 4rem;
-    padding-left: 0rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-links ul li {
-    text-align: center;
-  }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
-    display: flex;
-  }
-}
 
 body {
   background-color: #264653;
@@ -208,20 +164,6 @@ body {
   float: 5px;
 }
 
-@media only screen and (min-width: 1024px) {
-  .center h1 {
-    text-align: left;
-    font-size: 20px;
-  }
-  .center h2 h3 {
-    text-align: left;
-  }
-  .center .buttons {
-    text-align: left;
-    font-size: 1px;
-  }
-}
-
 /*footer*/
 
 footer {
@@ -278,4 +220,64 @@ footer section h5 {
   font-weight: 600;
   color: #264653;
   margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+/* media  */
+
+@media (max-width: 1200px) {
+  nav .search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav div {
+    font-size: 1rem;
+  }
+  nav ul li {
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+  form {
+    margin: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+  .toggle-button {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .center h1 {
+    text-align: left;
+    font-size: 20px;
+  }
+  .center h2 h3 {
+    text-align: left;
+  }
+  .center .buttons {
+    text-align: left;
+    font-size: 1px;
+  }
 }
