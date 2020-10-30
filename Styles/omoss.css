@@ -104,7 +104,16 @@ body {
 }
 
 /*wrapper*/
-
+.flexbackground {
+  display: flex;
+  flex-wrap: wrap;
+}
+.omoss_img_about_us {
+  height: 700px;
+  width: 700px;
+  display: flex;
+  flex: 1;
+}
 .wrapper {
   background: #264653;
   margin: 4rem 2rem 1rem 2rem;

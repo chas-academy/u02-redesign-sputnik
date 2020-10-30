@@ -7,6 +7,8 @@
   text-decoration: none;
   font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
 }
+
+/* nav-bar */
 .info-nav {
   cursor: pointer;
   display: flex;
@@ -139,10 +141,6 @@ nav form button {
   }
 }
 
-section {
-  z-index: 1;
-}
-
 .flexContainer1 {
   display: flex;
   align-items: center;
@@ -181,20 +179,6 @@ li,
 ul {
   list-style: none;
 }
-
-/*
-.content {
-  background-image: url("../src/backgroundpicture1.jpg");
-  background-size: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 20%;
-  background-color: white;
-  margin-top: 100px;
-}
-*/
 
 .main {
   display: flex;
@@ -289,43 +273,25 @@ p {
   font-size: 14px;
 }
 
-.backgroundpicture {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  opacity: 20%;
-  margin-top: 200px;
-}
-
+/* footer start */
 footer {
-  clear: both;
-  border-top: solid 100px white;
   background-color: #e9c46a;
-  filter: contrast(115%);
-  height: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e9c46a;
 }
 footer .wave {
   width: 100%;
-  background-color: none; /* Kanten på vågen */
-  color: white;
-  margin-top: -250px;
+  height: 100%;
+  background-color: white;
 }
 footer .arrowup {
   width: 80px;
   height: 80px;
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-footer article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  background-color: #e9c46a;
 }
 footer img {
   width: 300px;
@@ -347,6 +313,28 @@ footer section h5 {
   font-weight: 600;
   color: #264653;
   margin: 0.5rem 0rem 0.5rem 0rem;
+}
+@media (max-width: 900px) {
+  footer section {
+    width: 100%;
+    text-align: center;
+  }
+  footer section li {
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .arrowup {
+    display: none;
+  }
+  footer img {
+    width: 150px;
+    height: 150px;
+  }
+  footer article {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -386,18 +374,5 @@ footer section h5 {
   }
   .title {
     padding-top: 3rem;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  footer .arrowup {
-    display: none;
-  }
-  footer img {
-    width: 150px;
-    height: 150px;
-  }
-  footer article {
-    text-align: center;
   }
 }
