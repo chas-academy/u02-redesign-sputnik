@@ -1,5 +1,6 @@
 /*navbar */
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   scroll-behavior: smooth;
   margin: 0px;
@@ -106,6 +107,7 @@ body {
 
 .wrapper {
   background: #264653;
+  margin: 4rem 2rem 1rem 2rem;
   margin-top: 4rem;
   margin-left: 2rem;
 }
@@ -115,22 +117,19 @@ body {
 }
 
 .center h1 {
+  font-family: "Inter", "Poppins", Arial, Helvetica, sans-serif;
   margin: 1rem 0rem 1rem 0rem;
   color: #e9c46a;
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.center h2 {
+.center p {
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
-  font-weight: bold;
-}
-
-.center h3 {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
+  max-width: 60ch;
 }
 
 .center .buttons {
@@ -269,13 +268,6 @@ footer section h5 {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .center h1 {
-    text-align: left;
-    font-size: 20px;
-  }
-  .center h2 h3 {
-    text-align: left;
-  }
   .center .buttons {
     text-align: left;
     font-size: 1px;

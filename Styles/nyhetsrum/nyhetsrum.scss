@@ -1,7 +1,6 @@
 @import "../components/variabels";
 @import "../components/nav";
 @import "../components/footer";
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
 //Geniral styling here!
@@ -30,9 +29,6 @@ html {
   box-shadow: 2px 0px 10px rgb(24, 23, 23);
 }
 
-.opacity {
-  opacity: $dimmdown;
-}
 h1,
 h2,
 h3,
@@ -50,11 +46,14 @@ p {
   font-weight: 400;
 }
 //global styling end!
+.aktuellt-blue-bg {
+  background-image: linear-gradient(120deg, #00b4d8, #023e8a);
+}
 .parallax {
   z-index: -1;
   position: absolute;
   top: 0%;
-  background-image: url("/src/mounten.jpg");
+  background-image: url("/src/bluemounten.jpg");
   height: 100%;
   width: 100%;
   //create parallaz scrolling effect
@@ -74,7 +73,6 @@ p {
 .info-nav {
   a {
     font-size: 12px;
-    color: black !important;
   }
 }
 header {
@@ -84,18 +82,16 @@ header {
 
   nav {
     z-index: 2;
+
     .info-nav {
       a {
         color: black;
       }
     }
     a {
-      color: $darkcolor;
+      color: black;
     }
 
-    .opacity {
-      opacity: 100%;
-    }
     form {
       input {
         background: transparent;
@@ -108,6 +104,9 @@ header {
     }
   }
 }
+.home-nyhetsrum-nav {
+  text-align: center;
+}
 
 .nyhetsrum-header {
   padding-top: 8rem;
@@ -119,32 +118,37 @@ header {
   text-align: center;
   .nybtn {
     font-size: 1.2rem;
-    padding: 0.5rem;
-    background-color: transparent;
+    padding: 0.7rem;
+    background-color: #e9c46a;
     margin: 4rem 1rem 1rem 1rem;
-    border-color: $baseColorSectionThree;
+    border: none;
     cursor: pointer;
+    color: rgb(7, 5, 5);
+    border-radius: $box-radius;
   }
   .nybtn:hover {
-    padding: 0.6rem;
+    padding: 0.8rem;
   }
   h1 {
-    color: $darkcolor;
+    color: rgb(9, 5, 5);
     font-size: 5rem;
-    font-weight: 700;
+    font-weight: 800;
     vertical-align: middle;
     margin-bottom: 2rem;
+    font-family: "inter";
   }
   p {
     font-weight: 500;
-    color: $darkcolor;
-    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "inter";
   }
 }
 
 main {
-  padding: 5rem 0rem 5rem 0rem;
-  height: 100%;
+  padding-bottom: 5rem;
+  height: 100vh;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -159,26 +163,18 @@ main {
     width: 100%;
 
     h1 {
-      margin-top: 2rem;
+      margin-top: 4rem;
       font-size: 5rem;
       font-weight: 700;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
     }
     h2 {
       margin-top: 2rem;
       font-size: 1.2rem;
       font-weight: 700;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
       max-width: 20ch;
       margin: 0 auto;
-    }
-    h3 {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: $darkcolor;
-      a {
-        color: $darkcolor;
-      }
     }
   }
   .parallax_2 {
@@ -190,22 +186,24 @@ main {
 
   section {
     padding: 1.5rem;
-    margin: 1.5rem;
-    background-color: #ffd5bd;
+    margin: 1rem;
+    background-color: #caf0f8;
     text-align: center;
     border-radius: $box-radius;
     height: 300px;
 
     h1 {
       font-size: 1.5rem;
+      color: rgb(9, 5, 5);
     }
     h2 {
       font-size: 1.5rem;
+      color: rgb(9, 5, 5);
     }
     p {
       padding-top: 1rem;
       font-size: 1rem;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
       max-width: 30ch;
       margin: 0 auto;
     }
@@ -227,22 +225,22 @@ main {
       margin-top: 8rem;
       font-size: 5rem;
       font-weight: 700;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
     }
     h2 {
       padding: 1rem;
       font-size: 1.2rem;
       font-weight: 700;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
       max-width: 30ch;
       margin: 0 auto;
     }
     h3 {
       font-size: 1.2rem;
       font-weight: 500;
-      color: $darkcolor;
+      color: rgb(0, 0, 0);
       a {
-        color: $darkcolor;
+        color: rgb(9, 5, 5);
       }
     }
   }
@@ -250,21 +248,23 @@ main {
   section {
     padding: 1.5rem;
     margin: 1.5rem;
-    background-color: #ffd5bd;
+    background-color: #caf0f8;
     text-align: center;
     border-radius: $box-radius;
     height: 300px;
 
     h1 {
       font-size: 1.5rem;
+      color: rgb(9, 5, 5);
     }
     h2 {
       font-size: 1.5rem;
+      color: rgb(9, 5, 5);
     }
     p {
       padding-top: 1rem;
       font-size: 1rem;
-      color: $darkcolor;
+      color: rgb(9, 5, 5);
       max-width: 30ch;
       margin: 0 auto;
     }
@@ -273,45 +273,9 @@ main {
 
 //footer
 
-footer {
-  background-color: $basecColorDiv;
-  .footer-container {
-    background-color: red;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: $basecColorDiv;
-  }
-  .wave {
-    width: 100%;
-    height: 100%;
-  }
-  .arrowup {
-    width: 80px;
-    height: 80px;
-    transform: rotate(180deg);
-  }
-
-  img {
-    width: 300px;
-    height: 300px;
-  }
-  section {
-    margin: 2rem;
-    li {
-      color: $darkcolor;
-      max-width: 35ch;
-    }
-    a {
-      color: black;
-      text-decoration: underline;
-    }
-    h5 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: $darkcolor;
-      margin: 0.5rem 0rem 0.5rem 0rem;
-    }
+@media (max-width: 1025px) {
+  .home-nyhetsrum-nav {
+    display: none;
   }
 }
 

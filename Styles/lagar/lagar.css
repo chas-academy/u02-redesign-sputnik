@@ -187,7 +187,6 @@ footer {
 }
 
 footer .footer-container {
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
