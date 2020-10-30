@@ -353,7 +353,7 @@ p {
 }
 
 .aktuellt-blue-bg {
-  background-color: rgba(115, 178, 245, 0.933);
+  background-image: linear-gradient(120deg, #00b4d8, #023e8a);
 }
 
 .parallax {
@@ -396,7 +396,7 @@ header nav .info-nav a {
 }
 
 header nav a {
-  color: #264653;
+  color: black;
 }
 
 header nav form input {
@@ -407,6 +407,10 @@ header nav form button {
   height: 15px;
   width: 15px;
   background: transparent;
+}
+
+.home-nyhetsrum-nav {
+  text-align: center;
 }
 
 .nyhetsrum-header {
@@ -430,16 +434,16 @@ header nav form button {
 .nyhetsrum-header .nybtn {
   font-size: 1.2rem;
   padding: 0.7rem;
-  background-color: blanchedalmond;
+  background-color: #e9c46a;
   margin: 4rem 1rem 1rem 1rem;
-  border-color: #e76f51;
+  border: none;
   cursor: pointer;
   color: #070505;
   border-radius: 25px;
 }
 
 .nyhetsrum-header .nybtn:hover {
-  padding: 0.6rem;
+  padding: 0.8rem;
 }
 
 .nyhetsrum-header h1 {
@@ -461,7 +465,7 @@ header nav form button {
 
 main {
   padding-bottom: 5rem;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +492,7 @@ main div {
 }
 
 main div h1 {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-size: 5rem;
   font-weight: 700;
   color: #090505;
@@ -512,8 +516,8 @@ main .parallax_2 {
 
 main section {
   padding: 1.5rem;
-  margin: 1.5rem;
-  background-color: #277db6;
+  margin: 1rem;
+  background-color: #caf0f8;
   text-align: center;
   border-radius: 25px;
   height: 300px;
@@ -588,7 +592,7 @@ main section p {
 .press section {
   padding: 1.5rem;
   margin: 1.5rem;
-  background-color: #277db6;
+  background-color: #caf0f8;
   text-align: center;
   border-radius: 25px;
   height: 300px;
@@ -610,6 +614,12 @@ main section p {
   color: #090505;
   max-width: 30ch;
   margin: 0 auto;
+}
+
+@media (max-width: 1025px) {
+  .home-nyhetsrum-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
