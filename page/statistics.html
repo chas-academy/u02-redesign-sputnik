@@ -5,65 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles/stat.css" />
-  <script src="/hamburgermenu.js" defer></script>
+  <script src="/js/hamburgermenu.js" defer></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://myh.se/assets/images/favicon.ico">
   <title>Statistik</title>
 </head>
-
 <body>
   <header id="headerScroll">
-    <div class="logo">
-      <img src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor" width="160" height="160" />
-    </div>
+   
     <!--Navbar-->
-    <div>
-      <ul class="info-nav">
-        <li><a href="#">In English</a></li>
-        <li><a href="#">Lättläst</a></li>
-        <li><a href="#">Anpassa</a></li>
-      </ul>
-    </div>
     <nav>
-      <a aria-haspopup="true" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="/page/index.html">Start</a></li>
-          <li><a href="/page/omoss.html">Om oss</a></li>
-          <li>
-            <a href="/page/verksamhetomraden.html">Verksamhetsområden</a>
-          </li>
-          <li><a href="/page/statistik.html">Statistik</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Övrigt</a>
-            <div class="dropdown-content">
-              <a href="/page/publikationer.html">Publikationer</a>
-              <a href="/page/lagar.html">Lagar,regler,tillsyn</a>
-              <a href="/page/nyhetsrum.html">Nyhetsrum</a>
-              <a href="#">Kontakt</a>
-            </div>
-          </li>
-          <!--search menu!-->
-          <li>
-            <form action="submit">
-              <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord..." />
-              <button type="submit" class="btn">
-                <img src="/src/search.svg" alt="search button" />
-              </button>
-            </form>
-          </li>
+      <div>
+        
+        <ul class="info-nav">
+          <li><a href="#">In English</a></li>
+          <li><a href="#">Lättläst</a></li>
+          <li><a href="#">Anpassa</a></li>
+          
         </ul>
       </div>
-    </nav>
+      <a aria-haspopup="true" class="toggle-button">
+        <span  class="bar"></span>
+        <span  class="bar"></span>
+        <span  class="bar"></span>
+      </a>
+      <div class="navbar-links">
+       
+      <ul>
+        <li><img class="logo" src="/src/myhLogo.svg" alt="Myndigheten för yrkeshögskolor" width="160" height="160"/></li>
+        
+        
+        <li><a href="/page/index.html">Start</a></li>
+        <li><a href="/page/omoss.html">Om oss</a></li>
+        <li><a href="/page/verksamhetomraden.html">Verksamhetsområden</a></li>
+        <li><a href="/page/statistik.html" >Statistik</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Övrigt</a>
+          <div class="dropdown-content">
+            <a href="/page/publikationer.html">Publikationer</a>
+            <a href="/page/lagar.html" >Lagar,regler,tillsyn</a>
+            <a href="/page/nyhetsrum.html">Nyhetsrum</a>
+            <a href="#">Kontakt</a>
+            <a href="#">Mina sidor</a>
+          </div>
+        </li>
+        <!--search menu!-->
+        <li><form action="submit">
+          <input autocomplete aria-label="sök" name="search" class="search" type="search" placeholder="Sökord...">
+          <button type="submit" class="btn"><img src="/src/search.svg" alt="search button"></button>
+        </form></li>
+      </ul>
+    </div>
+  </nav>
   </header>
 
   <main>
     <section class="info">
-      <h1 tabindex="0">Statistik</h1>
+      <h1 >Statistik</h1>
       <img src="/src/statistikgubbe.png" class="statbild" alt="En bild på en man som visar statistik" />
-      <p tabindex="0">
+      <p>
         Här hittar du statistik om yrkeshögskoleutbildningar, konst- och
         kulturutbildningar och utbildningar med endast tillsyn samt
         tolkutbildningar inom folkbildningen. <br /><br /><em>Yrkeshögskoleutbildningar omfattar både
