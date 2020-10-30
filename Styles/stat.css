@@ -57,8 +57,9 @@ a:hover {
 
 header {
   box-sizing: border-box;
-  padding: 20px;
-  height: 200px;
+  margin: 20px;
+  height: 100%;
+  margin-bottom: 5rem;
 }
 
 .logo {
@@ -85,66 +86,46 @@ main {
   justify-content: center;
 }
 
+/* nav-bar */
 .info-nav {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 1.5rem;
-  margin-top: 0.5rem;
+  justify-content: flex-end;
+  margin-right: 2rem;
 }
-
 .info-nav a {
   font-size: 12px;
   color: white;
 }
-
-.info-nav li {
-  padding-left: 15px;
-}
-
 .toggle-button {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 40px;
   height: 35px;
 }
-
 .toggle-button .bar {
   height: 6px;
   width: 100%;
-  background-color: #faf8f8;
+  background-color: #264653;
   border-radius: 10px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #faf8f8;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 .dropdown-content :hover {
   background-color: #333;
   color: white;
   text-decoration: none;
 }
-
 .dropdown-content a {
   color: #264653;
   padding: 12px 16px;
@@ -152,35 +133,19 @@ main {
   display: block;
   text-align: left;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 nav {
   position: relative;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 5;
   grid-area: nav;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
+  background-color: #2a9d8f;
 }
-
 nav ul {
-    display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 nav ul li {
   font-family: inter;
   margin: 0.8rem;
@@ -188,90 +153,70 @@ nav ul li {
   border-radius: 25px;
   cursor: pointer;
 }
-
 nav ul a {
   font-size: 1.5rem;
   color: white;
 }
-
 nav form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
-
 nav form input {
-  background-color: #2a9d8f;
+  background-color: transparent;
   color: #faf8f8;
   border-style: none;
   width: 50%;
 }
-
 nav form button {
-  background-color: #2a9d8f;
+  background-color: transparent;
   color: white;
   cursor: pointer;
   border-style: none;
 }
-
-nav .search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0.4rem;
+@media (max-width: 1200px) {
+  nav .search {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav div {
+    font-size: 1rem;
+  }
+  nav ul li {
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+  form {
+    margin: 1rem;
+  }
 }
-
-nav .search button {
-  border: none;
-  background-color: #ffeb00;
-  font-size: 1.5rem;
-  border-radius: 25px;
-  padding: 1.2rem 2.8rem 1.4rem 2.8rem;
-  margin: 0.2rem 0rem 0rem 1rem;
-}
-
-nav .search input {
-  font-size: 1rem;
-  border-radius: 25px;
-  padding: 1rem;
-  margin-left: 3rem;
-  background-color: #ffeb00;
-  border: none;
-}
-
-::placeholder {
-  color: lightgrey;
-}
-
-.statbild {
-  width: 100%;
-}
-
-.search-container form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.search-container form input {
-  background: #fff;
-  border-style: none;
-  width: 50%;
-  margin-bottom: 12px;
-  margin-right: 5px;
-}
-.search-container form button {
-  background-color: #2a9d8f;
-  color: white;
-  cursor: pointer;
-  border-style: none;
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+  .toggle-button {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
 /* Navigation and search end */
@@ -280,7 +225,7 @@ nav .search input {
 .info {
   float: left;
   box-sizing: border-box;
-  padding: 20px;
+  margin: 0rem 1.2rem 1.2rem 1.2rem;
   width: 70%;
   height: auto;
 }
@@ -505,7 +450,6 @@ footer section h3 {
     display: flex;
   }
   .navbar-links ul {
-    
   }
   .info {
     width: 100%;
