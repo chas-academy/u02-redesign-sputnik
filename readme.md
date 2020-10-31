@@ -47,3 +47,15 @@ Apple iPhone 8 (414x736)
 
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
+
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Fijo-Lurk">
+            <img src="https://avatars1.githubusercontent.com/u/70694476?s=400&u=eebe2ab919b6cc1f788dff542528869ca1891fa2&v=4" width="100;" alt="Filip"/>
+            <br />
+            <sub><b>Filip</b></sub>
+        </a>
+    </td>
+   </table>
+
