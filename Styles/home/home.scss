@@ -2,6 +2,12 @@
 @import "../components/nav";
 @import "../components/footer";
 @import "../components/general";
+
+header {
+  background-color: $darkcolor;
+  overflow-y: hidden;
+}
+
 .grid-container {
   border-bottom: 2px solid #e76f51;
   height: 100vh;

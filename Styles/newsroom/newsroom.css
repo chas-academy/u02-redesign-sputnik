@@ -320,6 +320,25 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: black;
+}
+
+.big-btn {
+  background-color: #e9c46a;
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  color: #264653;
+}
+
+.big-btn:hover {
+  -webkit-box-shadow: 2px 0px 10px #181717;
+          box-shadow: 2px 0px 10px #181717;
+}
+
 h1,
 h2,
 h3,
@@ -331,8 +350,9 @@ button {
   font-weight: 600;
 }
 
-a {
-  color: black;
+p {
+  font-family: poppins;
+  font-weight: 400;
 }
 
 p {
@@ -454,7 +474,7 @@ header nav form button {
 main {
   margin: 0 auto;
   max-width: 1200px;
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -733,13 +753,8 @@ main .info-section p {
   .parallax {
     background-attachment: scroll;
   }
-  .calender-img-newsroom {
-    width: 200px;
-    height: 100px;
-  }
   .calender-header-text {
     font-size: 3rem;
-    margin: 1.2rem 0rem 1.5rem 0rem;
   }
   .calender .calender-section-newsroom {
     border-bottom: none;
@@ -752,6 +767,13 @@ main .info-section p {
   }
   .calender-section-newsroom p {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-device-width: 580px) {
+  .calender-img-newsroom {
+    width: 200px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=newsroom.css.map */
