@@ -320,21 +320,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.big-btn {
-  background-color: #e9c46a;
-  border-radius: 25px;
-  font-size: 25px;
-  padding: 0.4rem 1.5rem 0.4rem 1.5rem;
-  cursor: pointer;
-  border: none;
-  color: #264653;
-}
-
-.big-btn:hover {
-  -webkit-box-shadow: 2px 0px 10px #181717;
-          box-shadow: 2px 0px 10px #181717;
-}
-
 h1,
 h2,
 h3,
@@ -413,6 +398,21 @@ header nav form button {
   text-align: center;
 }
 
+.nybtn {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  background-color: #264653;
+  margin: 4rem 1rem 1rem 1rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 25px;
+  border-color: turquoise;
+}
+
+.nybtn:hover {
+  padding: 0.8rem;
+}
+
 .nyhetsrum-header {
   padding-top: 8rem;
   display: -webkit-box;
@@ -431,23 +431,8 @@ header nav form button {
   text-align: center;
 }
 
-.nyhetsrum-header .nybtn {
-  font-size: 1.2rem;
-  padding: 0.7rem;
-  background-color: #e9c46a;
-  margin: 4rem 1rem 1rem 1rem;
-  border: none;
-  cursor: pointer;
-  color: #070505;
-  border-radius: 25px;
-}
-
-.nyhetsrum-header .nybtn:hover {
-  padding: 0.8rem;
-}
-
 .nyhetsrum-header h1 {
-  color: #090505;
+  color: black;
   font-size: 5rem;
   font-weight: 800;
   vertical-align: middle;
@@ -464,7 +449,6 @@ header nav form button {
 }
 
 main {
-  padding-bottom: 5rem;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,7 +476,7 @@ main div {
 }
 
 main div h1 {
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-size: 5rem;
   font-weight: 700;
   color: #090505;
@@ -500,7 +484,7 @@ main div h1 {
 
 main div h2 {
   margin-top: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #090505;
   max-width: 20ch;
@@ -514,35 +498,34 @@ main .parallax_2 {
   height: 100%;
 }
 
-main section {
-  padding: 1.5rem;
+main .info-section {
   margin: 1rem;
+  padding: 1.5rem;
   background-color: #caf0f8;
   text-align: center;
   border-radius: 25px;
-  height: 300px;
+  height: 250px;
+  width: 300px;
 }
 
-main section h1 {
-  font-size: 1.5rem;
+main .info-section h1 {
+  font-size: 1.2rem;
   color: #090505;
 }
 
-main section h2 {
-  font-size: 1.5rem;
+main .info-section h2 {
+  font-size: 1.2rem;
   color: #090505;
 }
 
-main section p {
-  padding-top: 1rem;
+main .info-section p {
+  padding-top: 0.5rem;
   font-size: 1rem;
   color: #090505;
-  max-width: 30ch;
   margin: 0 auto;
 }
 
 .press {
-  padding-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,7 +547,7 @@ main section p {
 }
 
 .press div h1 {
-  margin-top: 8rem;
+  margin-top: 5rem;
   font-size: 5rem;
   font-weight: 700;
   color: #090505;
@@ -589,26 +572,25 @@ main section p {
   color: #090505;
 }
 
-.press section {
+.press .info-section {
   padding: 1.5rem;
   margin: 1.5rem;
   background-color: #caf0f8;
   text-align: center;
   border-radius: 25px;
-  height: 300px;
 }
 
-.press section h1 {
+.press .info-section h1 {
   font-size: 1.5rem;
   color: #090505;
 }
 
-.press section h2 {
+.press .info-section h2 {
   font-size: 1.5rem;
   color: #090505;
 }
 
-.press section p {
+.press .info-section p {
   padding-top: 1rem;
   font-size: 1rem;
   color: #090505;
@@ -616,23 +598,94 @@ main section p {
   margin: 0 auto;
 }
 
+.centerbtn {
+  margin: 0;
+}
+
+.articel-container-newsroom {
+  height: 100%;
+}
+
+.calender-header-text {
+  margin: 4rem 0rem 4rem 0rem;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calender .calender-section-newsroom {
+  padding: 1.5rem;
+  margin: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.calender .calender-section-newsroom p {
+  max-width: 50ch;
+  margin: 0 auto;
+}
+
+.calender-img-newsroom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 500px;
+  height: 500px;
+}
+
+.wave {
+  background-color: white;
+}
+
 @media (max-width: 1025px) {
   .home-nyhetsrum-nav {
     display: none;
   }
+  .calender-img-newsroom {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 900px) {
-  .press section {
-    height: 100%;
-  }
-  .press section h1 {
+  .calender-header-text {
     font-size: 1.2rem;
   }
-  .press section h2 {
+  .calender .calender-section-newsroom {
+    border-bottom: none;
+  }
+  .calender-section-newsroom h1 {
     font-size: 1.2rem;
   }
-  .press section p {
+  .calender-section-newsroom h2 {
+    font-size: 1.2rem;
+  }
+  .calender-section-newsroom p {
+    font-size: 0.8rem;
+  }
+  .press .info-section h1 {
+    font-size: 1.2rem;
+  }
+  .press .info-section h2 {
+    font-size: 1.2rem;
+  }
+  .press .info-section p {
     font-size: 0.8rem;
   }
   .press div h1 {
@@ -645,16 +698,17 @@ main section p {
   .press div h3 {
     font-size: 1rem;
   }
-  main section {
+  main {
     height: 100%;
+    padding-bottom: 5rem;
   }
-  main section h1 {
+  main .info-section h1 {
     font-size: 1.2rem;
   }
-  main section h2 {
+  main .info-section h2 {
     font-size: 1.2rem;
   }
-  main section p {
+  main .info-section p {
     font-size: 0.8rem;
   }
   main div h1 {
@@ -666,7 +720,7 @@ main section p {
   main div h3 {
     font-size: 1rem;
   }
-  .nyhetsrum-header .nybtn {
+  .nybtn {
     font-size: 0.8rem;
     margin: 1rem;
     padding: 0.6rem;
