@@ -365,7 +365,6 @@ header {
 
 .grid-container {
   border-bottom: 2px solid #e76f51;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;

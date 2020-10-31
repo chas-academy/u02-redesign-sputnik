@@ -15,7 +15,6 @@ a {
   color: white;
 }
 .myh-logo-nav {
-  display: flex;
   justify-items: start;
 }
 .about-us-nav {
