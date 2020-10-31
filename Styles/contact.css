@@ -1,151 +1,413 @@
-
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+.info-nav {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+.info-nav a {
+  font-size: 12px;
+  color: white;
+}
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 35px;
+}
+.toggle-button .bar {
+  height: 6px;
+  width: 100%;
+  background-color: #faf8f8;
+  border-radius: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #faf8f8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content :hover {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+.dropdown-content a {
+  color: #264653;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+nav {
+  position: relative;
+  grid-area: nav;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  font-family: inter;
+  margin: 0.8rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+nav ul a {
+  font-size: 1.5rem;
+  color: white;
+}
+nav form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+nav form input {
+  background-color: #264653;
+  color: #faf8f8;
+  border-style: none;
+  width: 50%;
+}
+nav form button {
+  background-color: #264653;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+}
+@media (max-width: 1200px) {
+  nav .search {
+    display: flex;
+    justify-content: flex-end;
   }
-
-body {
-    background-color: #264653;
+  nav div {
+    font-size: 1rem;
+  }
+  nav ul li {
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+  form {
+    margin: 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+  }
+  .toggle-button {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    margin-top: 4rem;
+    padding-left: 0rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+body {
+  background-color: #264653;
+  margin: 0px;
+}
+
+.kontakta-oss-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* .kontakta-oss-text-header {
+} */
+
 h1 {
-    color: #e9c46a;
-    margin-left: 15rem; 
-    margin-top: 3em; 
-    font-size: 40px;
+  text-align: center;
+  color: #e9c46a;
+  margin-top: 3em;
+  font-size: 80px;
 }
 
 h3 {
-    color: white; 
-    max-width: 30%; 
-    margin-left: 15rem; 
+  color: white;
+  max-width: 60ch;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 h4 {
-    color: white; 
-    font-size: 16px; 
-    max-width: 30%;
-    font-style: 100; 
-    margin-left: 15rem; 
+  font-weight: 500;
+  color: white;
+  font-size: 25px;
+  max-width: 60ch;
+  text-align: center;
+  margin: 0 auto;
 }
 
+/* Form start */
 
-/* Form start */ 
-
-.contactinfo {
-  display: flex; 
-  margin-left: 50rem;
-  width: 12em;
-  height: 2em;
-  position: absolute; 
-  margin-top: -19em; 
-  
+.contact {
+  margin-top: 4rem;
 }
 
-input {
-    width: 30em; 
-    height: 2em; 
+.contact h2 {
+  font-size: 1.2rem;
+  padding: 2rem 0 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-weight: lighter;
+  margin: 0rem 0.3rem 0rem 0.3rem;
 }
 
-.smalltextbox {
-    display: flex; 
-    font-size: 12px; 
-    color: white; 
-    
+.contact input {
+  width: 60%;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: 0;
+  margin-bottom: 3px;
 }
 
-.bigtextbox {
-    display: relative;  
-    font-size: 12px; 
-    width: 33em; 
-    height: 15em; 
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
-    
+.contact textarea {
+  width: 60%;
+  height: 9rem;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border: 0;
+  margin-bottom: 3px;
+  resize: none;
 }
 
-.button { 
-    font-size: 14px; 
-    font-style: bold; 
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    width: 5em; 
-    height: 2em; 
+form {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
 }
 
-/* Form end */ 
+.submit-btn {
+  cursor: pointer;
+}
+
+/* Form end */
 
 .box-container {
-    display: flex; 
-    margin-top: 10em; 
-    padding-right: 3em;  
-    background-color: #e9c46a;
-    width: 100%; 
-    height: 25em; 
-    font-size: 16px; 
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
-    color: black; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10em;
+  background-color: #e9c46a;
+  width: 100%;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+  color: black;
+}
+.kundforum-container {
+  max-width: 500px;
+}
+.box-container2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: center;
+}
+li {
+  margin: 0.3rem 0rem 0.3rem 0rem;
+  color: white;
+  max-width: 30ch;
+}
+
+.li-header {
+  color: #e9c46a;
+  font-size: 25px;
 }
 
 h5 {
-    display: flex; 
-    color: black; 
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
-    font-size: 25px;
+  display: flex;
+  color: black;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 0.7rem;
 }
-
 
 p {
-    display: flex; 
-    color: black;
-    font-size: 20px; 
-}
-
-
-.box-container2 {
-    display: flex; 
-    color: black;
-    margin-right: 40rem; 
-
+  color: black;
+  font-size: 25px;
+  margin: 0.7rem;
 }
 
 h6 {
-    display: flex; 
-    color: #e9c46a;
-    font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    
+  color: #e9c46a;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
-
-
+.map-container {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
 .map {
-    display: flex; 
-    position: absolute; 
-    margin-top: 3rem; 
-    border-radius: 10%;
-    width: 30em;
-    height: 30em;  
-    margin-left: 56rem; 
+  margin-top: 3rem;
+  border-radius: 10%;
+  width: 700px;
+  height: 600px;
 }
 
-@media (max-width: 320px) {
-  .box-container2 {
-    max-width: 320px; 
+footer {
+  background-color: #e9c46a;
+}
+
+footer .footer-container {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  background-color: #e9c46a;
+}
+/*   footer */
+footer .wave {
+  width: 100%;
+  height: 100%;
+}
+
+footer .arrowup {
+  width: 80px;
+  height: 80px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+footer img {
+  width: 300px;
+  height: 300px;
+}
+
+footer section {
+  margin: 2rem;
+}
+
+footer section li {
+  color: #264653;
+  max-width: 35ch;
+}
+
+footer section a {
+  color: black;
+  text-decoration: underline;
+}
+
+footer section h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #264653;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 50px;
   }
 
-  @media (max-width: 600px) {
-    .box-container2 {
-      max-width: 600px; 
-    }
+  h3 {
+    font-size: 20px;
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+  }
 
-  @media (max-width: 768px) {
-    .box-container2 {
-      max-width: 768px; 
-    }
+  h4 {
+    font-size: 20px;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+}
 
-  @media (max-width: 1024px) {
-    .box-container2 {
-      max-width: 1024px; 
-    }§
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  .box-container2 {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .map {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  form {
+    width: 600px;
+  }
+  #Text-area {
+    width: 80%;
+  }
+  .contact input {
+    width: 80%;
+  }
+  .box-container2 {
+    justify-content: center;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  h5 {
+    justify-content: center;
+  }
+}

@@ -43,7 +43,7 @@ Apple iPhone 8 (414x736)
 
 - [x] - Embedded media such as video and / or audio
 
-- [ ] - Static contact form
+- [x] - Static contact form
 
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
