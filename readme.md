@@ -58,14 +58,14 @@ Work according to agile project methods
         <a href="https://github.com/Fijo-Lurk">
             <img src="https://avatars1.githubusercontent.com/u/70694476?s=400&u=eebe2ab919b6cc1f788dff542528869ca1891fa2&v=4" width="100;" alt="Filip"/>
             <br />
-            <sub><b>Filip</b></sub>
+            <sub><b>Filip Johansson</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/thommie-wallin">
             <img src="https://avatars1.githubusercontent.com/u/70706437?s=460&v=4" width="100;" alt="Thommie-wallin"/>
             <br />
-            <sub><b>Thommie</b></sub>
+            <sub><b>Thommie wallin</b></sub>
         </a>
     </td>
      <td align="center">
