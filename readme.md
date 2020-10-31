@@ -56,42 +56,42 @@ Work according to agile project methods
 <tr>
     <td align="center">
         <a href="https://github.com/Fijo-Lurk">
-            <img src="https://avatars1.githubusercontent.com/u/70694476?s=400&u=eebe2ab919b6cc1f788dff542528869ca1891fa2&v=4" width="200;" alt="Filip"/>
+            <img src="https://avatars1.githubusercontent.com/u/70694476?s=400&u=eebe2ab919b6cc1f788dff542528869ca1891fa2&v=4" width="150;" alt="Filip"/>
             <br />
             <sub><b>Filip Johansson</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/thommie-wallin">
-            <img src="https://avatars1.githubusercontent.com/u/70706437?s=460&v=4" width="100;" alt="Thommie-wallin"/>
+            <img src="https://avatars1.githubusercontent.com/u/70706437?s=460&v=4" width="150;" alt="Thommie-wallin"/>
             <br />
             <sub><b>Thommie wallin</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/danielkarbelius">
-            <img src="https://avatars0.githubusercontent.com/u/70699411?s=460&u=d332127c392e2e61d57d1e774526d02a70c9b8d1&v=4" width="100;" alt="Daniel Karbelius"/>
+            <img src="https://avatars0.githubusercontent.com/u/70699411?s=460&u=d332127c392e2e61d57d1e774526d02a70c9b8d1&v=4" width="150;" alt="Daniel Karbelius"/>
             <br />
             <sub><b>Daniel Karbelius</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/IamShazaam">
-            <img src="https://avatars0.githubusercontent.com/u/71892760?s=460&u=a40399e7030fa04a05d37b3f65e78b822e1a5667&v=4" width="100;" alt="Jona"/>
+            <img src="https://avatars0.githubusercontent.com/u/71892760?s=460&u=a40399e7030fa04a05d37b3f65e78b822e1a5667&v=4" width="150;" alt="Jona"/>
             <br />
             <sub><b>IamShazaam</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/natalienilsson93">
-            <img src="https://avatars3.githubusercontent.com/u/70695262?s=460&v=4" width="100;" alt="natalienilsson93"/>
+            <img src="https://avatars3.githubusercontent.com/u/70695262?s=460&v=4" width="150;" alt="natalienilsson93"/>
             <br />
             <sub><b>Natalie Nilsson</b></sub>
         </a>
     </td>
      <td align="center">
         <a href="https://github.com/zahrasaad">
-            <img src="https://avatars1.githubusercontent.com/u/71315509?s=460&u=bf38c8fc46521810152f2366d300111fd210ab22&v=4" width="100;" alt="Zahrasaad"/>
+            <img src="https://avatars1.githubusercontent.com/u/71315509?s=460&u=bf38c8fc46521810152f2366d300111fd210ab22&v=4" width="150;" alt="Zahrasaad"/>
             <br />
             <sub><b>zahrasaad</b></sub>
         </a>
