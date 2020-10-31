@@ -1,0 +1,28 @@
+{
+  "name": "u02-redesign",
+  "version": "1.0.0",
+  "description": "rebuild myh pages",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chas-academy/u02-redesign-sputnik.git"
+  },
+  "author": "Filip Johansson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chas-academy/u02-redesign-sputnik/issues"
+  },
+  "homepage": "https://github.com/chas-academy/u02-redesign-sputnik#readme",
+  "devDependencies": {
+    "surge": "latest",
+    "git-scripts": "0.2.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain myh.surge.sh"
+    }
+  }
+}
