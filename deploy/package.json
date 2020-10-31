@@ -1,7 +1,7 @@
 {
   "name": "u02-redesign",
   "version": "1.0.0",
-  "description": "rebuild myh pages",
+  "description": "myh redesign",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,7 +22,8 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain myh.surge.sh"
+      "pre-push": "surge --project ./ --domain example-githooks.surge.sh"
     }
   }
+  
 }
