@@ -48,6 +48,10 @@ Apple iPhone 8 (414x736)
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
 
+
+## Contributors
+<!-- readme: contributors -start --> 
+
 <table>
 <tr>
     <td align="center">
@@ -93,4 +97,4 @@ Work according to agile project methods
         </a>
     </td>
    </table>
-
+<!-- readme: contributors -end -->
