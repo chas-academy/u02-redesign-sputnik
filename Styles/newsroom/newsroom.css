@@ -329,7 +329,10 @@ h6,
 button {
   font-family: inter;
   font-weight: 600;
-  color: #264653;
+}
+
+a {
+  color: black;
 }
 
 p {
@@ -337,7 +340,7 @@ p {
   font-weight: 400;
 }
 
-.aktuellt-blue-bg {
+body {
   background-image: linear-gradient(120deg, #00b4d8, #023e8a);
 }
 
@@ -449,7 +452,9 @@ header nav form button {
 }
 
 main {
-  height: 100vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,16 +609,19 @@ main .info-section p {
 
 .articel-container-newsroom {
   height: 100%;
+  margin: 0 auto;
 }
 
 .calender-header-text {
-  margin: 4rem 0rem 4rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
+  background-color: white;
 }
 
 .calender {
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,28 +665,9 @@ main .info-section p {
   .home-nyhetsrum-nav {
     display: none;
   }
-  .calender-img-newsroom {
-    width: 200px;
-    height: 100px;
-  }
 }
 
 @media (max-width: 900px) {
-  .calender-header-text {
-    font-size: 1.2rem;
-  }
-  .calender .calender-section-newsroom {
-    border-bottom: none;
-  }
-  .calender-section-newsroom h1 {
-    font-size: 1.2rem;
-  }
-  .calender-section-newsroom h2 {
-    font-size: 1.2rem;
-  }
-  .calender-section-newsroom p {
-    font-size: 0.8rem;
-  }
   .press .info-section h1 {
     font-size: 1.2rem;
   }
@@ -743,6 +732,26 @@ main .info-section p {
 @media only screen and (max-device-width: 768px) {
   .parallax {
     background-attachment: scroll;
+  }
+  .calender-img-newsroom {
+    width: 200px;
+    height: 100px;
+  }
+  .calender-header-text {
+    font-size: 3rem;
+    margin: 1.2rem 0rem 1.5rem 0rem;
+  }
+  .calender .calender-section-newsroom {
+    border-bottom: none;
+  }
+  .calender-section-newsroom h1 {
+    font-size: 1.2rem;
+  }
+  .calender-section-newsroom h2 {
+    font-size: 1.2rem;
+  }
+  .calender-section-newsroom p {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=newsroom.css.map */

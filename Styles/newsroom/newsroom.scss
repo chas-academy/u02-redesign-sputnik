@@ -25,17 +25,22 @@ h6,
 button {
   font-family: $font-family-inter;
   font-weight: 600;
-  color: $darkcolor;
+}
+a {
+  color: black;
 }
 
 p {
   font-family: $font-family-poppins;
   font-weight: 400;
 }
-//global styling end!
-.aktuellt-blue-bg {
+
+body {
   background-image: linear-gradient(120deg, #00b4d8, #023e8a);
 }
+
+//global styling end!
+
 .parallax {
   z-index: -1;
   position: absolute;
@@ -136,7 +141,9 @@ header {
 }
 
 main {
-  height: 100vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 80vh;
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -261,14 +268,17 @@ main {
 }
 .articel-container-newsroom {
   height: 100%;
+  margin: 0 auto;
 }
 .calender-header-text {
-  margin: 4rem 0rem 4rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
+  background-color: white;
 }
 .calender {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -300,30 +310,9 @@ main {
   .home-nyhetsrum-nav {
     display: none;
   }
-  .calender-img-newsroom {
-    width: 200px;
-    height: 100px;
-  }
 }
 
 @media (max-width: 900px) {
-  .calender-header-text {
-    font-size: 1.2rem;
-  }
-  .calender .calender-section-newsroom {
-    border-bottom: none;
-  }
-  .calender-section-newsroom {
-    h1 {
-      font-size: 1.2rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-  }
   .press {
     .info-section {
       h1 {
@@ -402,5 +391,27 @@ main {
 @media only screen and (max-device-width: 768px) {
   .parallax {
     background-attachment: scroll;
+  }
+  .calender-img-newsroom {
+    width: 200px;
+    height: 100px;
+  }
+  .calender-header-text {
+    font-size: 3rem;
+    margin: 1.2rem 0rem 1.5rem 0rem;
+  }
+  .calender .calender-section-newsroom {
+    border-bottom: none;
+  }
+  .calender-section-newsroom {
+    h1 {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
   }
 }
