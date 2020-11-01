@@ -62,12 +62,6 @@ header {
   margin-bottom: 5rem;
 }
 
-.logo {
-  float: left;
-  box-sizing: border-box;
-  margin-left: 2rem;
-}
-
 main {
   margin: auto;
   max-width: 1000px;
@@ -91,7 +85,7 @@ main {
   cursor: pointer;
   display: flex;
   justify-content: flex-end;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .info-nav a {
   font-size: 12px;
@@ -110,7 +104,7 @@ main {
 .toggle-button .bar {
   height: 6px;
   width: 100%;
-  background-color: #264653;
+  background-color: rgb(206, 175, 0);
   border-radius: 10px;
 }
 .dropdown-content {
@@ -150,7 +144,6 @@ nav ul li {
   font-family: inter;
   margin: 0.8rem;
   font-weight: 500;
-  border-radius: 25px;
   cursor: pointer;
 }
 nav ul a {
@@ -174,50 +167,6 @@ nav form button {
   cursor: pointer;
   border-style: none;
 }
-@media (max-width: 1200px) {
-  nav .search {
-    display: flex;
-    justify-content: flex-end;
-  }
-  nav div {
-    font-size: 1rem;
-  }
-  nav ul li {
-    border-radius: 0px;
-    margin-top: 0rem;
-  }
-  form {
-    margin: 1rem;
-  }
-}
-@media (max-width: 1024px) {
-  nav {
-    flex-direction: column;
-  }
-  .toggle-button {
-    display: flex;
-    margin-top: 1.5rem;
-  }
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul {
-    margin-top: 4rem;
-    padding-left: 0rem;
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-links ul li {
-    text-align: center;
-  }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-  .navbar-links.active {
-    display: flex;
-  }
-}
 
 /* Navigation and search end */
 /* Content and animation start */
@@ -225,8 +174,8 @@ nav form button {
 .info {
   float: left;
   box-sizing: border-box;
-  margin: 0rem 1.2rem 1.2rem 1.2rem;
   width: 70%;
+  padding: 20px;
   height: auto;
 }
 
@@ -396,7 +345,6 @@ footer section h3 {
     font-size: 1rem;
   }
   nav ul li {
-    border-radius: 0px;
     margin: 0.4rem;
     margin-top: 0rem;
   }
@@ -423,12 +371,12 @@ footer section h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 1.5rem;
   }
   .navbar-links {
     display: none;
     width: 100%;
   }
-
   .navbar-links ul {
     margin-top: 4rem;
     padding-left: 0rem;
@@ -449,9 +397,10 @@ footer section h3 {
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar-links ul {
-  }
   .info {
+    width: 100%;
+  }
+  .statbild {
     width: 100%;
   }
   aside {
@@ -490,9 +439,6 @@ footer section h3 {
 }
 
 @media (max-width: 763px) {
-  .info {
-    width: 100%;
-  }
   nav .search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -561,5 +507,9 @@ footer section h3 {
   }
   footer {
     text-align: center;
+  }
+  .sidebar {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
