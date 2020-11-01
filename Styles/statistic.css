@@ -54,7 +54,9 @@ a {
 a:hover {
   color: rgb(0, 0, 0);
 }
-
+.home-nyhetsrum-nav {
+  text-align: center;
+}
 header {
   box-sizing: border-box;
   margin: 20px;
