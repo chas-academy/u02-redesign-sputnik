@@ -4,6 +4,18 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: "Poppins";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter";
 }
 body {
   background-color: #264653;
