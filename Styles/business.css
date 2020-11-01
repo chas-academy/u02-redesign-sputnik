@@ -68,6 +68,7 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
+
 nav ul li {
   font-family: inter;
   margin: 0.8rem;
@@ -96,6 +97,9 @@ nav form button {
   cursor: pointer;
   border-style: none;
 }
+
+/* nav media query start */
+
 @media (max-width: 1200px) {
   nav .search {
     display: flex;
@@ -103,6 +107,7 @@ nav form button {
   }
   nav div {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
   nav ul li {
     border-radius: 0px;
@@ -125,7 +130,6 @@ nav form button {
     width: 100%;
   }
   .navbar-links ul {
-    margin-top: 4rem;
     padding-left: 0rem;
     width: 100%;
     flex-direction: column;
@@ -140,6 +144,7 @@ nav form button {
     display: flex;
   }
 }
+/* nav media query end */
 
 .flexContainer1 {
   display: flex;
@@ -375,5 +380,11 @@ footer section h5 {
   }
   .title {
     padding-top: 3rem;
+  }
+  .info-nav {
+    padding-bottom: 3.5rem;
+  }
+  .toggle-button .bar {
+    background-color: white;
   }
 }
