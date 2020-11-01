@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  color: lightgray;
+  color: rgb(0, 0, 0);
 }
 
 header {
@@ -104,7 +104,7 @@ main {
 .toggle-button .bar {
   height: 6px;
   width: 100%;
-  background-color: rgb(206, 175, 0);
+  background-color: white;
   border-radius: 10px;
 }
 .dropdown-content {
@@ -180,6 +180,7 @@ nav form button {
 
 .statbild {
 width: 100%;
+height: auto;
 }
 
 .animation {
