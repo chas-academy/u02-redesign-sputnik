@@ -8,6 +8,8 @@
 
 <a href="https://www.figma.com/file/oMR5ic6sLd2IVY8ZVC1U14/myh?node-id=0%3A1">Figma design</a>
 
+# [Myh redesign website](http://teampereda.com/myh-sputnik-redesign/)
+---
 ## Goals
 
 A redesigned version of MYH.se (Links to an external page.) Links to an external page. on one of the group members' study domains
