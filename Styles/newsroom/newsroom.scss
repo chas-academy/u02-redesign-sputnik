@@ -44,7 +44,11 @@ body {
     font-size: 12px;
   }
 }
-
+form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 25px;
+}
 header {
   overflow: hidden;
   position: relative;

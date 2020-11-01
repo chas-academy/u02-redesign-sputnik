@@ -292,6 +292,7 @@ html {
 
 a {
   color: black;
+  font-family: "Poppins";
 }
 
 .big-btn {
@@ -358,6 +359,12 @@ body {
 
 .info-nav a {
   font-size: 12px;
+}
+
+form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 25px;
 }
 
 header {
