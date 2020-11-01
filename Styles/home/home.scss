@@ -10,7 +10,6 @@ header {
 
 .grid-container {
   border-bottom: 2px solid #e76f51;
-  height: 100vh;
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -76,7 +75,7 @@ aside {
   color: $darkcolor;
 
   h5 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: $darkcolor;
     margin-left: 0.8rem;
   }
@@ -192,9 +191,11 @@ aside {
 .aktuelltheader {
   margin-top: 6rem;
   margin-bottom: 4rem;
+  padding: 2rem;
   color: $darkcolor;
   font-size: 5rem;
   text-align: center;
+  background-color: $basecColorDiv;
 }
 .flexContainer {
   display: flex;
@@ -221,7 +222,6 @@ aside {
 
   .aktuelltimg {
     border-radius: $box-radius;
-    width: 100%;
   }
 }
 
@@ -239,14 +239,14 @@ aside {
       "aside textarea . . . ."
       "aside . . . . .";
     .calender {
-      max-height: 500px;
+      max-height: 400px;
     }
   }
 }
 @media (max-width: 1700px) {
   .calender {
     max-height: 550px;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }
 
@@ -255,10 +255,12 @@ aside {
     div {
       h3 {
         font-size: 1.5rem;
+        margin: 2.2rem;
       }
       p {
         font-size: 1rem;
         max-width: 35ch;
+        margin: 2.2rem;
       }
     }
     img {
@@ -426,9 +428,6 @@ aside {
 }
 @media (max-width: 500px) {
   footer {
-    .arrowup {
-      display: none;
-    }
     img {
       width: 150px;
       height: 150px;
@@ -462,5 +461,14 @@ aside {
   .calender {
     grid-area: calender;
     height: 500px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    div {
+      img {
+        margin-left: 3.5rem;
+      }
+    }
   }
 }

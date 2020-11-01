@@ -262,50 +262,19 @@ footer section h5 {
   .press div h3 {
     font-size: 1rem;
   }
-  main section {
-    height: 100%;
-  }
-  main section h1 {
-    font-size: 1.2rem;
-  }
-  main section h2 {
-    font-size: 1.2rem;
-  }
-  main section p {
-    font-size: 0.8rem;
-  }
-  main div h1 {
-    font-size: 2.5rem;
-  }
-  main div h2 {
-    font-size: 1.5rem;
-  }
-  main div h3 {
-    font-size: 1rem;
-  }
-  .nyhetsrum-header .nybtn {
-    font-size: 0.8rem;
-    margin: 1rem;
-    padding: 0.6rem;
-  }
-  .nyhetsrum-header h1 {
-    font-size: 4rem;
-  }
-  .nyhetsrum-header p {
-    font-size: 1.2rem;
-  }
   footer section {
     width: 100%;
     text-align: center;
+    margin: 0.5rem;
   }
   footer section li {
     max-width: none;
   }
 }
 
-@media only screen and (max-device-width: 768px) {
-  .parallax {
-    background-attachment: scroll;
+@media (max-width: 600px) {
+  .arrowup {
+    display: none;
   }
 }
 
@@ -365,7 +334,6 @@ header {
 
 .grid-container {
   border-bottom: 2px solid #e76f51;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.5fr 1.5fr 1fr 1fr 1fr 1fr;
@@ -440,7 +408,7 @@ aside a:hover {
 }
 
 .calender h5 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: #264653;
   margin-left: 0.8rem;
 }
@@ -586,9 +554,11 @@ aside a:hover {
 .aktuelltheader {
   margin-top: 6rem;
   margin-bottom: 4rem;
+  padding: 2rem;
   color: #264653;
   font-size: 5rem;
   text-align: center;
+  background-color: #e9c46a;
 }
 
 .flexContainer {
@@ -628,62 +598,6 @@ aside a:hover {
 
 .flexContainer .aktuelltimg {
   border-radius: 25px;
-  width: 100%;
-}
-
-footer {
-  background-color: #e9c46a;
-}
-
-footer .footer-container {
-  background-color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: #e9c46a;
-}
-
-footer .wave {
-  width: 100%;
-  height: 100%;
-}
-
-footer .arrowup {
-  width: 80px;
-  height: 80px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-footer img {
-  width: 300px;
-  height: 300px;
-}
-
-footer section {
-  margin: 2rem;
-}
-
-footer section li {
-  color: #264653;
-  max-width: 35ch;
-}
-
-footer section a {
-  color: black;
-  text-decoration: underline;
-}
-
-footer section h5 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #264653;
-  margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 @media (min-width: 1700px) {
@@ -694,24 +608,26 @@ footer section h5 {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea . ." "aside textarea . . . ." "aside . . . . .";
   }
   .grid-container .calender {
-    max-height: 500px;
+    max-height: 400px;
   }
 }
 
 @media (max-width: 1700px) {
   .calender {
     max-height: 550px;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }
 
 @media (max-width: 1200px) {
   .flexContainer div h3 {
     font-size: 1.5rem;
+    margin: 2.2rem;
   }
   .flexContainer div p {
     font-size: 1rem;
     max-width: 35ch;
+    margin: 2.2rem;
   }
   .flexContainer img {
     height: 320px;
@@ -871,9 +787,6 @@ footer section h5 {
 }
 
 @media (max-width: 500px) {
-  footer .arrowup {
-    display: none;
-  }
   footer img {
     width: 150px;
     height: 150px;
@@ -904,6 +817,12 @@ footer section h5 {
     -ms-grid-column-span: 2;
     grid-area: calender;
     height: 500px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer div img {
+    margin-left: 3.5rem;
   }
 }
 /*# sourceMappingURL=home.css.map */

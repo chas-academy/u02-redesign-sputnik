@@ -66,51 +66,20 @@ footer {
       }
     }
   }
-  main {
-    section {
-      height: 100%;
-      h1 {
-        font-size: 1.2rem;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-      p {
-        font-size: 0.8rem;
-      }
-    }
-    div {
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      h3 {
-        font-size: 1rem;
-      }
-    }
-  }
-  .nyhetsrum-header {
-    .nybtn {
-      font-size: 0.8rem;
-      margin: 1rem;
-      padding: 0.6rem;
-    }
-    h1 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  }
+
   footer {
     section {
       width: 100%;
       text-align: center;
+      margin: 0.5rem;
       li {
         max-width: none;
       }
     }
+  }
+}
+@media (max-width: 600px) {
+  .arrowup {
+    display: none;
   }
 }

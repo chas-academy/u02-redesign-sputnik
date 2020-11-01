@@ -259,50 +259,19 @@ footer section h5 {
   .press div h3 {
     font-size: 1rem;
   }
-  main section {
-    height: 100%;
-  }
-  main section h1 {
-    font-size: 1.2rem;
-  }
-  main section h2 {
-    font-size: 1.2rem;
-  }
-  main section p {
-    font-size: 0.8rem;
-  }
-  main div h1 {
-    font-size: 2.5rem;
-  }
-  main div h2 {
-    font-size: 1.5rem;
-  }
-  main div h3 {
-    font-size: 1rem;
-  }
-  .nyhetsrum-header .nybtn {
-    font-size: 0.8rem;
-    margin: 1rem;
-    padding: 0.6rem;
-  }
-  .nyhetsrum-header h1 {
-    font-size: 4rem;
-  }
-  .nyhetsrum-header p {
-    font-size: 1.2rem;
-  }
   footer section {
     width: 100%;
     text-align: center;
+    margin: 0.5rem;
   }
   footer section li {
     max-width: none;
   }
 }
 
-@media only screen and (max-device-width: 768px) {
-  .parallax {
-    background-attachment: scroll;
+@media (max-width: 600px) {
+  .arrowup {
+    display: none;
   }
 }
 
@@ -743,6 +712,7 @@ main .info-section p {
   footer section {
     width: 100%;
     text-align: center;
+    margin: 0.5rem;
   }
   footer section li {
     max-width: none;
@@ -774,6 +744,9 @@ main .info-section p {
   .calender-img-newsroom {
     width: 200px;
     height: 200px;
+  }
+  .arrowup {
+    display: none;
   }
 }
 /*# sourceMappingURL=newsroom.css.map */

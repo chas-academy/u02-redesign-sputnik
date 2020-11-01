@@ -1,10 +1,12 @@
 ## Assignment u02-redesign
 
 <div  align="center">
-
-<img  width="300"  src="https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"  alt="HTML & CSS Logotypes">
-
+<img  width="200"  src="https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"  alt="HTML & CSS Logotypes">
 </div>
+
+# Our design
+
+<a href="https://www.figma.com/file/oMR5ic6sLd2IVY8ZVC1U14/myh?node-id=0%3A1">Figma design</a>
 
 ## Goals
 
@@ -48,9 +50,24 @@ Apple iPhone 8 (414x736)
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
 
+<!-- structure exampel -->
+
+## folder structure
+
+| name       | type   | description                                        |
+| ---------- | ------ | -------------------------------------------------- |
+| js         | folder | This folder is where our javaScript will be stored |
+| page       | folder | all .html file will be stored here                 |
+| src        | folder | img and video                                      |
+| styles     | folder | styling for projekt                                |
+| .gitignore | file   | remove window and OS generated files               |
+| readme.md  | file   | description fro the projekt                        |
+
+<!-- readme: contributors -start -->
+
+---
 
 ## Contributors
-<!-- readme: contributors -start --> 
 
 <table>
 <tr>

@@ -356,6 +356,7 @@ main {
     section {
       width: 100%;
       text-align: center;
+      margin: 0.5rem;
       li {
         max-width: none;
       }
@@ -390,5 +391,8 @@ main {
   .calender-img-newsroom {
     width: 200px;
     height: 200px;
+  }
+  .arrowup {
+    display: none;
   }
 }
