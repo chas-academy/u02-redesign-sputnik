@@ -18,7 +18,7 @@ main {
   justify-items: center;
   align-items: center;
 
-  & section {
+  & .section {
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
@@ -145,7 +145,7 @@ main {
     grid-template-rows: 1fr 0.3fr;
     justify-items: center;
 
-    & section {
+    & .section {
       grid-column: 1/2;
       grid-row: 1/2;
       display: flex;

@@ -171,10 +171,13 @@ a {
   background: #e9c46a;
 }
 
-.buttons .picture {
-  height: 240px;
-  width: 280px;
-  float: 5px;
+.buttons .container {
+  max-width: 600px;
+}
+
+.buttons .container video {
+  max-width: 100%;
+  height: auto;
 }
 
 /*footer*/
