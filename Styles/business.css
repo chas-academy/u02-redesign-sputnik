@@ -19,6 +19,12 @@
   font-size: 12px;
   color: white;
 }
+.home-nyhetsrum-nav {
+  text-align: center;
+}
+a {
+  color: white;
+}
 .toggle-button {
   position: absolute;
   top: 1rem;
