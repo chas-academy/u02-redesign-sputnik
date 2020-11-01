@@ -318,6 +318,7 @@ footer section h5 {
   footer section {
     width: 100%;
     text-align: center;
+    margin: 0.5rem;
   }
   footer section li {
     max-width: none;

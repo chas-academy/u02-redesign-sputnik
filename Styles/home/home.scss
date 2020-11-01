@@ -191,9 +191,11 @@ aside {
 .aktuelltheader {
   margin-top: 6rem;
   margin-bottom: 4rem;
+  padding: 2rem;
   color: $darkcolor;
   font-size: 5rem;
   text-align: center;
+  background-color: $basecColorDiv;
 }
 .flexContainer {
   display: flex;
@@ -220,7 +222,6 @@ aside {
 
   .aktuelltimg {
     border-radius: $box-radius;
-    width: 100%;
   }
 }
 
@@ -254,10 +255,12 @@ aside {
     div {
       h3 {
         font-size: 1.5rem;
+        margin: 2.2rem;
       }
       p {
         font-size: 1rem;
         max-width: 35ch;
+        margin: 2.2rem;
       }
     }
     img {
@@ -425,9 +428,6 @@ aside {
 }
 @media (max-width: 500px) {
   footer {
-    .arrowup {
-      display: none;
-    }
     img {
       width: 150px;
       height: 150px;

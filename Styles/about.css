@@ -102,7 +102,17 @@ nav form button {
 body {
   background-color: #264653;
 }
+.about-color-code-header {
+  color: #e9c46a;
+}
 
+.about-us-nav {
+  text-align: center;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
 /*wrapper*/
 .flexbackground {
   display: flex;
@@ -128,9 +138,9 @@ body {
 .center h1 {
   font-family: "Inter", "Poppins", Arial, Helvetica, sans-serif;
   margin: 1rem 0rem 1rem 0rem;
-  color: #e9c46a;
+  color: white;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .center p {
@@ -139,10 +149,6 @@ body {
   font-size: 20px;
   font-weight: 400;
   max-width: 60ch;
-}
-
-.center .buttons {
-  margin: 5px 0 0 15px;
 }
 
 .buttons button {
@@ -158,7 +164,7 @@ body {
 }
 
 .buttons .btn {
-  margin: 20px;
+  margin: 25px 0px 20px 0px;
 }
 
 .buttons button:hover {
@@ -274,10 +280,23 @@ footer section h5 {
   .navbar-links.active {
     display: flex;
   }
+  .omoss_img_about_us {
+    height: 300px;
+    width: 300px;
+  }
 }
-@media only screen and (min-width: 1024px) {
-  .center .buttons {
-    text-align: left;
-    font-size: 1px;
+@media (max-width: 500px) {
+  .center p {
+    font-size: 16px;
+  }
+  .center h1 {
+    font-size: 30px;
+  }
+  .arrowup {
+    display: none;
+  }
+  footer section {
+    text-align: center;
+    margin: 0.5rem;
   }
 }

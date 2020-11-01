@@ -1,10 +1,10 @@
 ## Assignment u02-redesign
 
 <div  align="center">
-
 <img  width="300"  src="https://miro.medium.com/max/792/1*lJ32Bl-lHWmNMUSiSq17gQ.png"  alt="HTML & CSS Logotypes">
-
 </div>
+
+<a href="https://www.figma.com/file/oMR5ic6sLd2IVY8ZVC1U14/myh?node-id=0%3A1">Figma design</a>
 
 ## Goals
 
@@ -48,9 +48,9 @@ Apple iPhone 8 (414x736)
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
 
-
 ## Contributors
-<!-- readme: contributors -start --> 
+
+<!-- readme: contributors -start -->
 
 <table>
 <tr>
