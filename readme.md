@@ -60,7 +60,7 @@ Work according to agile project methods
 | page       | folder | all .html file will be stored here                 |
 | src        | folder | img and video                                      |
 | styles     | folder | styling for projekt                                |
-| .gitignore | file   | remove window and OS generated files               |
+| .gitignore | file   | remove windows and OS generated files               |
 | readme.md  | file   | description fro the projekt                        |
 
 <!-- readme: contributors -start -->
