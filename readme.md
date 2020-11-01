@@ -50,9 +50,24 @@ Apple iPhone 8 (414x736)
 The page should be created completely from scratch with your own HTML & CSS, but may take inspiration from the existing structure (no frameworks are allowed).
 Work according to agile project methods
 
-## Contributors
+<!-- structure exampel -->
+
+## folder structure
+
+| name       | type   | description                                        |
+| ---------- | ------ | -------------------------------------------------- |
+| js         | folder | This folder is where our javaScript will be stored |
+| page       | folder | all .html file will be stored here                 |
+| src        | folder | img and video                                      |
+| styles     | folder | styling for projekt                                |
+| .gitignore | file   | remove window and OS generated files               |
+| readme.md  | file   | description fro the projekt                        |
 
 <!-- readme: contributors -start -->
+
+---
+
+## Contributors
 
 <table>
 <tr>
