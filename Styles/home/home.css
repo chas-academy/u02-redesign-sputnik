@@ -97,7 +97,7 @@ nav ul li {
 }
 
 nav ul a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -333,6 +333,7 @@ header {
 }
 
 .grid-container {
+  height: 110vh;
   border-bottom: 2px solid #e76f51;
   display: -ms-grid;
   display: grid;
@@ -598,6 +599,7 @@ aside a:hover {
 
 .flexContainer .aktuelltimg {
   border-radius: 25px;
+  width: 100%;
 }
 
 @media (min-width: 1700px) {
@@ -679,6 +681,12 @@ aside a:hover {
   }
 }
 
+@media (min-width: 1000px) {
+  .myh-logo-none {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .flexContainer div {
     margin: 2rem 2rem 2rem 2rem;
@@ -724,6 +732,25 @@ aside a:hover {
 }
 
 @media (max-width: 650px) {
+  .textarea .big-btn {
+    font-size: 0.8rem;
+    margin: 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .textarea h1,
+  .textarea h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .textarea p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
   aside {
     display: none;
   }
@@ -773,6 +800,10 @@ aside a:hover {
     height: 250px;
     margin: 0rem;
   }
+  .firstSectionMain .textContainer {
+    max-width: 330px;
+    margin: 1rem auto;
+  }
   .firstSectionMain .textContainer .arrow {
     width: 45px;
     height: 45px;
@@ -796,13 +827,22 @@ aside a:hover {
   }
   .textarea .big-btn {
     font-size: 0.8rem;
+    margin: 2rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .textarea h1,
   .textarea h2 {
     font-size: 1.8rem;
+    text-align: center;
   }
   .textarea p {
     font-size: 0.8rem;
+    text-align: center;
   }
   .firstSectionMain h2 {
     font-size: 1.8rem;

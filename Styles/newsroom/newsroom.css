@@ -94,7 +94,7 @@ nav ul li {
 }
 
 nav ul a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -352,6 +352,7 @@ body {
 
 .toggle-button .bar {
   background-color: #264653;
+  cursor: pointer;
 }
 
 .info-nav a {
@@ -443,7 +444,7 @@ header nav form button {
 main {
   margin: 0 auto;
   max-width: 1200px;
-  height: 100vh;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,6 +600,7 @@ main .info-section p {
 .articel-container-newsroom {
   height: 100%;
   margin: 0 auto;
+  background-color: white;
 }
 
 .calender-header-text {
@@ -610,6 +612,8 @@ main .info-section p {
 }
 
 .calender {
+  max-width: 1400px;
+  margin: 0 auto;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
