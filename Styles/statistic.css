@@ -100,7 +100,6 @@ main {
   justify-content: space-between;
   width: 40px;
   height: 35px;
-  cursor: pointer;
 }
 .toggle-button .bar {
   height: 6px;
@@ -167,12 +166,6 @@ nav form button {
   cursor: pointer;
   border-style: none;
 }
-.home-nyhetsrum-nav {
-  text-align: center;
-}
-a {
-  color: white;
-}
 
 /* Navigation and search end */
 /* Content and animation start */
@@ -186,8 +179,8 @@ a {
 }
 
 .statbild {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 .animation {
@@ -524,7 +517,10 @@ footer section ul li {
     font-size: 14px;
     margin-top: 10px;
   }
-  .arrowup {
-    display: none;
+  .pilbig {
+    visibility: hidden;
+  }
+  .pil {
+    visibility: hidden;
   }
 }
