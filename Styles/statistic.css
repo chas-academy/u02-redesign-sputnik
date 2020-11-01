@@ -166,6 +166,12 @@ nav form button {
   cursor: pointer;
   border-style: none;
 }
+.home-nyhetsrum-nav {
+  text-align: center;
+}
+a {
+  color: white;
+}
 
 /* Navigation and search end */
 /* Content and animation start */
@@ -179,7 +185,7 @@ nav form button {
 }
 
 .statbild {
-width: 100%;
+  width: 100%;
 }
 
 .animation {

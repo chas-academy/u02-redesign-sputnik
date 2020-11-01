@@ -19,6 +19,12 @@
   width: 40px;
   height: 35px;
 }
+.home-nyhetsrum-nav {
+  text-align: center;
+}
+a {
+  color: white;
+}
 .toggle-button .bar {
   height: 6px;
   width: 100%;
