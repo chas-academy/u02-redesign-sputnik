@@ -179,8 +179,8 @@ nav form button {
 }
 
 .statbild {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .animation {
@@ -522,5 +522,8 @@ footer section ul li {
   }
   .pil {
     visibility: hidden;
+  }
+  .arrowup {
+    display: none;
   }
 }
