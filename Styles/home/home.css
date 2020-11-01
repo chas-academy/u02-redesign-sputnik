@@ -608,7 +608,7 @@ aside a:hover {
         grid-template-areas: "aside nav nav nav nav nav" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea calender calender" "aside textarea textarea textarea . ." "aside textarea . . . ." "aside . . . . .";
   }
   .grid-container .calender {
-    max-height: 500px;
+    max-height: 400px;
   }
 }
 

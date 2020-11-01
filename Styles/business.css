@@ -187,6 +187,8 @@ ul {
 
 .main {
   display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 .title {
@@ -195,15 +197,22 @@ ul {
 }
 
 .Right_side {
+  margin-bottom: 8rem;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   padding: 15px;
 }
 
 .Left_side {
+  max-width: 700px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   padding: 15px;
 }
