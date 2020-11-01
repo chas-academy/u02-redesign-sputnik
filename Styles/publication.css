@@ -28,6 +28,7 @@ ul {
   color: white;
 }
 .toggle-button {
+  cursor: pointer;
   position: absolute;
   top: 1rem;
   right: 1.5rem;

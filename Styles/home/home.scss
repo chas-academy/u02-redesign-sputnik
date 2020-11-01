@@ -233,13 +233,6 @@ aside {
     margin-top: 8rem;
   }
   .grid-container {
-    grid-template-areas:
-      "aside nav nav nav nav nav"
-      "aside textarea textarea textarea calender calender"
-      "aside textarea textarea textarea calender calender"
-      "aside textarea textarea textarea . ."
-      "aside textarea . . . ."
-      "aside . . . . .";
     .calender {
       max-height: 400px;
     }
