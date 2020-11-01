@@ -75,7 +75,7 @@ aside {
   color: $darkcolor;
 
   h5 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: $darkcolor;
     margin-left: 0.8rem;
   }
@@ -245,7 +245,7 @@ aside {
 @media (max-width: 1700px) {
   .calender {
     max-height: 550px;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }
 
@@ -461,5 +461,14 @@ aside {
   .calender {
     grid-area: calender;
     height: 500px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    div {
+      img {
+        margin-left: 3.5rem;
+      }
+    }
   }
 }
