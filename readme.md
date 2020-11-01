@@ -8,6 +8,8 @@
 
 <a href="https://www.figma.com/file/oMR5ic6sLd2IVY8ZVC1U14/myh?node-id=0%3A1">Figma design</a>
 
+# [Myh redesign website](http://teampereda.com/myh-sputnik-redesign/)
+
 ## Goals
 
 A redesigned version of MYH.se (Links to an external page.) Links to an external page. on one of the group members' study domains
@@ -60,7 +62,7 @@ Work according to agile project methods
 | page       | folder | all .html file will be stored here                 |
 | src        | folder | img and video                                      |
 | styles     | folder | styling for projekt                                |
-| .gitignore | file   | remove window and OS generated files               |
+| .gitignore | file   | remove windows and OS generated files               |
 | readme.md  | file   | description fro the projekt                        |
 
 <!-- readme: contributors -start -->
