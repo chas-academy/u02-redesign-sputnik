@@ -11,16 +11,6 @@
   text-decoration: none;
   font-family: "Poppins", "Inter", Arial, Helvetica, sans-serif;
 }
-a {
-  color: white;
-}
-.myh-logo-nav {
-  display: flex;
-  justify-items: start;
-}
-.about-us-nav {
-  text-align: center;
-}
 .info-nav {
   cursor: pointer;
   display: flex;
@@ -119,8 +109,8 @@ body {
   flex-wrap: wrap;
 }
 .omoss_img_about_us {
-  height: 500px;
-  width: 500px;
+  height: 700px;
+  width: 700px;
   display: flex;
   flex: 1;
 }
@@ -138,9 +128,9 @@ body {
 .center h1 {
   font-family: "Inter", "Poppins", Arial, Helvetica, sans-serif;
   margin: 1rem 0rem 1rem 0rem;
-  color: white;
+  color: #e9c46a;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .center p {
@@ -161,7 +151,6 @@ body {
   font-size: 25px;
   font-weight: bold;
   background-color: #e9c46a;
-  border: 5px solid #e9c46a;
   outline: none;
   cursor: pointer;
   border-radius: 25px;
@@ -180,9 +169,6 @@ body {
   height: 240px;
   width: 280px;
   float: 5px;
-}
-.about-color-code-header {
-  color: #e9c46a;
 }
 
 /*footer*/
@@ -205,7 +191,7 @@ footer .arrowup {
   transform: rotate(180deg);
 }
 
-footer article {
+footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
