@@ -523,4 +523,7 @@ footer section ul li {
     font-size: 14px;
     margin-top: 10px;
   }
+  .arrowup {
+    display: none;
+  }
 }

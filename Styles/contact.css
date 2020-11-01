@@ -198,7 +198,7 @@ h4 {
   text-align: center;
   color: #ffffff;
   font-weight: lighter;
-  margin: 0rem 0.3rem 0rem 0.3rem;
+  margin: 0rem 1rem 0rem 1rem;
 }
 
 .contact input {
@@ -238,6 +238,7 @@ form {
 /* Form end */
 
 .box-container {
+  padding: 2rem 0.5rem 2rem 0.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -290,6 +291,7 @@ h6 {
   font-size: 20px;
 }
 .map-container {
+  margin: 3rem 0rem 3rem 0rem;
   display: flex;
   justify-content: center;
   height: 600px;
@@ -356,9 +358,6 @@ footer section h5 {
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
-@media only screen and (max-width: 320px) {
-}
-
 @media only screen and (max-width: 600px) {
   p {
     font-size: 14px;
@@ -416,5 +415,14 @@ footer section h5 {
   }
   h5 {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .arrowup {
+    display: none;
+  }
+  footer section {
+    text-align: center;
+    margin: 0.5rem;
   }
 }
